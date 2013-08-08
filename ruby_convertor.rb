@@ -23,7 +23,7 @@ class ConvertorPPT_HTML
 
  CONVERTOR_SDK_DIR ='c:\\inetpub\\wwwroot\\files_for_redistribution\\'
  INPUT_DIR         ='c:\\inetpub\\wwwroot\\input_ppt\\'
- OUTPUT_DIR        ='c:\\inetpub\\wwwroot\\output_html\\'
+ OUTPUT_DIR        ='c:\\inetpub\\wwwroot\\output_html\\ppts_html\\'
  UPLOAD_DIR        ='c:/inetpub/wwwroot/upload/'
  LOG_DIR           ='c:\\inetpub\\wwwroot\\log\\'
  state = 'init'
