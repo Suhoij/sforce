@@ -2,7 +2,7 @@
   define("USERNAME", "e-detmobile@customertimes.com");
   define("PASSWORD", "poqw09123");
   define("SECURITY_TOKEN", "vYwfdDbmbtdJI7gRnlJZLwIe");
-  define("PATH_TOOLKIT","sfextapp/Force.com-Toolkit-for-PHP/");
+  define("PATH_TOOLKIT","Force.com-Toolkit-for-PHP/");
   define("PATH_UPLOAD","upload/");
   define("PATH_UNZIP","output_html/html_zip/");
   define("PATH_SLIDERS","output_html/sliders_html/");
@@ -13,33 +13,37 @@
     var $data;
     var $f_id;
     var $f_name;
+    var $sliders_id_force=array();
+    var $sliders_id_cloud=array();
     function __construct() {
         $this->f_id=$_GET['f_id'];
-	    $this->mySforceConnection = new SforcePartnerClient();
-	    $this->mySforceConnection->createConnection(PATH_TOOLKIT."partner.wsdl.xml");
-	    $this->mySforceConnection->login(USERNAME, PASSWORD.SECURITY_TOKEN);
-        //echo "<br> login done ";//var_dump($this->mySforceConnection);
-        $this->state='login';
+	$this->mySforceConnection = new SforcePartnerClient();
+	$this->mySforceConnection->createConnection(PATH_TOOLKIT."partner.wsdl.xml");
+	$this->mySforceConnection->login(USERNAME, PASSWORD.SECURITY_TOKEN);
+        //echo "<br> login done ";
+        //var_dump($this->mySforceConnection);
+        $this->state=';login';
     }
     public function takeFile($f_id) {
        try {
         //---take body----
-        $query    = "SELECT Body FROM Attachment WHERE Id='$this->f_id'";
+        $query    = "SELECT Body FROM Attachment WHERE ParentId='$this->f_id'";
         //echo "<br> takeFile q=$query";
-	    $response = $this->mySforceConnection->query($query);
+	$response = $this->mySforceConnection->query($query);
+        //echo "<br>response=".$response;
         $this->data = base64_decode(strip_tags($response->records[0]->any));
         $this->state='get_data';
         //echo $this->data;
         } catch (Exception $e) {
-            $this->state='error-'.$e->getMessage();
+            $this->state=';error-'.$e->getMessage();
             echo   $this->state;
         }
     }
     public function takeName($f_id) {
      try {
        //---take name---
-        $query    = "SELECT Name FROM Attachment WHERE Id='$f_id'";
-	    $response = $this->mySforceConnection->query($query);
+        $query    = "SELECT Name FROM Attachment WHERE ParentId='$f_id'";
+	$response = $this->mySforceConnection->query($query);
         $this->f_name   =  $response->records[0]->any;
      } catch (Exception $e) {
             $this->state='error-name-'.$e->getMessage();
@@ -75,6 +79,27 @@
         $this->state.="error-unzip-dir;"; ;
       }
   }
+//---- $sf->takeSlidersId();
+//--   $sf->findAbsentSliders();
+//--   $sf->createAbsentSliders();
+   public function takeSlidersId() {
+       $query    = "SELECT Id FROM Slide__c";
+       //echo "<br> takeSlidersId q=$query";
+       $response = $this->mySforceConnection->query($query);
+       //var_dump($response->records);
+       //echo "<br><br>records[0]=".$response->records[0]->Id[0];
+       //echo "<br><br>records[1]=".$response->records[1]->Id[0];
+       echo "<br> SForce Sliders count=".count($response->records);
+       $L=count($response->records);
+       for ($i = 0; $i < $L; $i++) {    
+          array_push($this->sliders_id_force,$response->records[$i]->Id[0]);
+	  echo ("<br>$i)".$response->records[$i]->Id[0]);
+	
+       }
+	//var_dump($this->sliders_id_force);
+   }
+//-----
+ 
   public function createSliderHTML(){
    try {
    if(preg_match('/error/',$this->state)) return;
@@ -91,11 +116,11 @@
 
 
     } else {
-      $this->state.='error-copy-html';
+      $this->state.=';error-copy-html';
     }
     //--move file to dir
     }catch (Exception $e) {
-            $this->state.='error-create-file-'.$e->getMessage();
+            $this->state.=';error-create-file-'.$e->getMessage();
     }
   }
  }

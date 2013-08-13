@@ -7,12 +7,14 @@ if (isset($_GET['f_id'])&&(isset($_GET['f_name']))) {
   define("USERNAME", "e-detmobile@customertimes.com");
   define("PASSWORD", "poqw09123");
   define("SECURITY_TOKEN", "vYwfdDbmbtdJI7gRnlJZLwIe");
-  define("PATH_TOOLKIT","sfextapp/Force.com-Toolkit-for-PHP/");
+  define("PATH_TOOLKIT","Force.com-Toolkit-for-PHP/");
   define("PATH_UNZIP","output_html/html_zip/");
   require_once (PATH_TOOLKIT.'soapclient/SforcePartnerClient.php');
-
+  echo "<br> login init... ";
   $mySforceConnection = new SforcePartnerClient();
+  echo "<br> login init... new";
   $mySforceConnection->createConnection(PATH_TOOLKIT."partner.wsdl.xml");
+  echo "<br> login init... connect";
   $mySforceConnection->login(USERNAME, PASSWORD.SECURITY_TOKEN);
   echo "<br> login done ";
 
@@ -20,10 +22,10 @@ if (isset($_GET['f_id'])&&(isset($_GET['f_name']))) {
   $query    = "SELECT Body FROM Attachment WHERE Id='$f_id'";
   echo "<br> takeFile q=$query";
   $response = $mySforceConnection->query($query);
-  var_dump($response);
+  //var_dump($response);
   $data     = base64_decode(strip_tags($response->records[0]->any));
-  $state='data-sf-done';
-  //echo "<br> data=data";
+  $state='data-sf-done;';
+  echo "<br> data=$data";
 
   //sleep(2);
   //---take name---

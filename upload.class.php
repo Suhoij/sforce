@@ -29,7 +29,8 @@ class Upload {
     closedir($myDirectory);
     //	count elements in array
     $indexCount = count($dirArray);
-    print ("<a href='http://ppt-to-html.cloudapp.net'>Home</a>");
+    //print ("<a href='http://ppt-to-html.cloudapp.net'>Home</a>");
+    print ("<a href='http://ppthtml2.cloudapp.net'>Home</a>");
     print ('<h1>Uploaded files list</h1>');
     Print ("$indexCount-2 files<br>\n");
     // sort 'em

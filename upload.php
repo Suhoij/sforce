@@ -12,7 +12,7 @@
     // Upload(Field name of Form, File Type, upload directory)
 	//$upload = new Upload('file', 'audio/mpeg', 'upload/' );
 	//$upload = new Upload('file', 'application/pdf', 'output_html/' );
-    $upload = new Upload('file', 'application/pdf', 'upload/' );
+    $upload = new Upload('file', 'application/zip', 'upload/' );
     switch ($_GET['action']) {
       case 'list':
         $upload->show_files();

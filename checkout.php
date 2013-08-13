@@ -1,12 +1,15 @@
 <?php
+
 if (isset($_GET['type'])&& ($_GET['type']=='slider')) {
-   include "sf_ext.php";
+
+   
    //echo '<br>sf_ext included<br>';
    $f_id=$_GET['f_id'];
    if (is_dir(getcwd().'/output_html/sliders_html/'.$f_id)) {
      echo "yes";
    } else {
-      //echo "<br>No dir ".$f_id;
+      include "sf_ext.php";
+      echo "<br>No dir ".$f_id;
       $sf=new SfExt();
       //echo "<br> sf init";
       $sf->takeFile($f_id);

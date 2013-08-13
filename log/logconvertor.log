@@ -1,0 +1,8 @@
+# Logfile created on 2013-08-09 14:25:25 +0000 by logger.rb/36483
+I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Start listen:  state:init
+I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Files in dir:1
+I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/Samples.ppt  time:2013-08-09 14:25:25 +0000
+I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Start convert:  file:Samples.ppt
+I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\Samples.ppt /o:c:\inetpub\wwwroot\output_html\ppts_html\Samples.ppt\index.html
+I, [2013-08-09T14:25:26.630608 #4804]  INFO -- : Done convert file:Samples.ppt  time:2013-08-09 14:25:26 +0000
+I, [2013-08-09T14:25:26.630608 #4804]  INFO -- : Files in dir:0

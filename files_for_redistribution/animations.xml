@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<animations>
+  <default signin="fadein" signout="fadeout" emphasis="empahsis" path="" special=""/>
+  <sign>
+    <effect ppt="Appear" css="fadein"/>
+    <effect ppt="Fade" css="fadein"/>
+    <effect ppt="Box" css="fadein"/>
+    <effect ppt="Fly" direction="Down" css="fadein"/>
+    <effect ppt="Fly" direction="Left" css="fadein"/>
+    <effect ppt="Fly" direction="Right" css="fadein"/>
+    <effect ppt="Ascend" css="fadein"/>
+  </sign>
+  <signout>
+    <effect ppt="Appear" css="fadeout"/>
+    <effect ppt="Fade" css="fadeout"/>
+    <effect ppt="Fly" css="fadeout"/>
+    <effect ppt="Ascend" css="fadeout"/>    
+  </signout>
+  <emphasis>
+    <effect ppt="FlashBulb" css="empahsis"/>
+    <effect ppt="Flicker" css="empahsis"/>
+    <effect ppt="Teeter" css="empahsis"/>
+    <effect ppt="Spin" amount="180" css="empahsis"/>
+    <effect ppt="ColorBlend" color="#00FF00" css="fadeout"/>
+  </emphasis>
+  <path>    
+  </path>
+  <special>    
+  </special>
+</animations>

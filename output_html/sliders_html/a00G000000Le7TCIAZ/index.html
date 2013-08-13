@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="/JSLibrary/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/iview.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bjqs.css"/>
+    <!--<script type="text/javascript" src="/JSLibrary/js/jquery-1.8.2.min.js"></script>-->
+    <script type="text/javascript" src="js/edge_includes/jquery-1.7.1.min.js"></script>
+    
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+
+    <script type="text/javascript" src="js/edge_includes/bjqs-1.3.min.js"></script>
+
+    <!-- CONTENT_START -->
+    <style type="text/css">
+        #holder {
+            position:relative;
+            width:1024px; height:760px;
+            background: #dad6cd;
+            background: -moz-linear-gradient(top, #dad6cd 0%, #ffffff 48%, #ffffff 91%, #fafaf9 93%, #f6f6f2 95%, #e2e1dd 96%, #e7e7e3 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dad6cd), color-stop(48%,#ffffff), color-stop(91%,#ffffff), color-stop(93%,#fafaf9), color-stop(95%,#f6f6f2), color-stop(96%,#e2e1dd), color-stop(100%,#e7e7e3));
+            background: -webkit-linear-gradient(top, #dad6cd 0%,#ffffff 48%,#ffffff 91%,#fafaf9 93%,#f6f6f2 95%,#e2e1dd 96%,#e7e7e3 100%);
+            background: -o-linear-gradient(top, #dad6cd 0%,#ffffff 48%,#ffffff 91%,#fafaf9 93%,#f6f6f2 95%,#e2e1dd 96%,#e7e7e3 100%);
+            background: -ms-linear-gradient(top, #dad6cd 0%,#ffffff 48%,#ffffff 91%,#fafaf9 93%,#f6f6f2 95%,#e2e1dd 96%,#e7e7e3 100%);
+            background: linear-gradient(to bottom, #dad6cd 0%,#ffffff 48%,#ffffff 91%,#fafaf9 93%,#f6f6f2 95%,#e2e1dd 96%,#e7e7e3 100%);
+            border-top:8px solid #7aac4a;
+            overflow:hidden;
+        }
+        #header { width:auto; height:120px; margin:30px 30px 10px 70px; overflow:hidden; }
+        #header h1 {
+            font-size:30px; line-height:40px; color:#664C00; letter-spacing:1px;
+            margin:0; padding:0;
+        }
+        #test-slideshow{
+            width: 1000px;
+            margin: 25px auto;
+            border:solid;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        var paper = Raphael(10, 50, 320, 200);
+        var circle = paper.circle(50, 40, 10);
+        circle.attr("fill", "#f00");
+        circle.attr("stroke", "#fff");
+
+        $('#test-slideshow').bjqs({
+            'height' : 320,
+            'width' : 620,
+            'responsive' : true
+        });
+
+    </script>
+</head>
+<body>
+
+<div id="holder">
+
+    <div id="header">
+        <h1>Slideshow: the size, the effect of the appearance, speed of scrolling, description, preview.</h1>
+    </div>
+
+    <p><img src="images/sittingbabies.png"/></p>
+    <p><img src="images/man.png"/></p>
+    <p><img src="images/bigslide.png"/></p>
+
+
+    <div id="test-slideshow">
+        <ul class="bjqs">
+            <li><img src="images/sittingbabies.png"/></li>
+            <li><img src="images/man.png"/></li>
+            <li><img src="images/bigslide.png"/></li>
+        </ul>
+    </div>
+</div>
+<!-- CONTENT_END -->
+</body>
+</html>

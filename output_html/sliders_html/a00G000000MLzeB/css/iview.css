@@ -1,0 +1,242 @@
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* */
+	
+	padding: 0px;
+	margin: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 100%;
+	outline: none;
+}
+/**/
+
+/* The slider */
+#iview {
+	position: relative;
+	/*width: 900px;*/
+	background: #000000;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	margin: 30px auto;
+	}
+	#iview .iviewSlider {
+		/*width: 900px;
+		height: 400px;
+		background-size: auto 100% !important;*/
+		-webkit-border-radius: 4px 4px 0px 0px;
+		-moz-border-radius: 4px 4px 0px 0px;
+		border-radius: 4px 4px 0px 0px;
+		display: block;
+		overflow: hidden;
+		}
+		#iview .iviewSlider div {
+		/*	height:inherit !important;
+		width: 900px;
+		height: 400px;
+		background-position: center 0 !important;*/
+		}
+
+
+/* The timer in the Slider */
+#iview-timer {
+	position: absolute;
+	z-index: 100;
+	border-radius: 5px;
+	cursor: pointer;
+	}
+	#iview-timer div { border-radius: 3px; }
+
+
+/* The Preloader in the Slider */
+#iview-preloader {
+	position: absolute;
+	width: 150px;
+	height: 3px;
+	border: 1px solid #666666;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 1px;
+	z-index: 1000;
+	}
+	#iview-preloader div {
+		float: left;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		height: 3px;
+		background: #666666;
+		width: 0px;
+		}
+
+/* The strips and boxes in the Slider */
+.iview-strip,
+.iview-block {
+	display:block;
+	position:absolute;
+	z-index:5;
+	}
+
+
+/* Direction nav styles (e.g. Next & Prev) */
+.iview-directionNav a {
+	position:absolute;
+	bottom:0;
+	width:35px;
+	height:50px;
+	background-image: url(../images/nav_paddles_bar.png);
+	background-repeat:no-repeat;
+	display: block;
+	cursor:pointer;
+	text-indent: -9999px;
+	z-index:40;
+	}
+	a.iview-prevNav {
+		left:0px;
+		background-position: 0 0;
+		}
+	a.iview-nextNav {
+		right:0px;
+		background-position: -40px 0;
+		}
+  
+  
+  
+/* Control nav styles (e.g. 1,2,3...) */
+.iview-controlNav {
+	position:absolute;
+	left:0;
+	bottom:0;
+	height: 50px;
+	width:100%;
+	background: repeat-x 0 0 ;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAIAAAASmSbdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGlJREFUeNpkyskRAyEQQ9FvomDf4Ur+0fUAHp98eFVSSay1lIACUQhvRn1Ebr795u9+Njl9g7/OnPP8GGPQ+0+ntXbVWimlXDnnLZHSFo9IjIEQAt4fHucdzjnsYe1lXtoYjNFobR4BBgCKnCT0GQk7CQAAAABJRU5ErkJggg==);
+	-webkit-border-radius: 0px 0px 4px 4px;
+	-moz-border-radius: 0px 0px 4px 4px;
+	border-radius: 0px 0px 4px 4px;
+	z-index:9;
+	}
+	.iview-controlNav .iview-items {
+		display: block;
+		overflow:hidden;
+		margin: 0px 35px;
+		}
+		.iview-controlNav .iview-items ul {
+			width:3000px;/**/
+			list-style: none;
+			}
+			.iview-controlNav .iview-items ul li {
+				display: inline;
+				position: relative;
+				}
+				.iview-controlNav a 		{ z-index:9; cursor:pointer; }
+				.iview-controlNav a.active 	{ font-weight:bold; }
+		
+					.iview-controlNav a img {
+						height: 34px;
+						border:1px solid #000000 ;
+						-webkit-border-radius: 2px;
+						-moz-border-radius: 2px;
+						border-radius: 2px;
+						margin: 7px 7px 0px 0px;
+						}
+					.iview-controlNav a.active img { border-color: #999999; }
+
+	
+.dotNav .iview-controlNav {
+	text-align:center;
+	}
+	.dotNav .iview-controlNav .iview-items ul {
+		width:100%;/**/
+		}
+		.dotNav .iview-controlNav .iview-items ul li {
+			display: inline-block;
+			padding:18px 8px 0;
+			}
+			.dotNav .iview-controlNav .iview-items ul li a {
+				width:15px;
+				height:15px;
+				background:#999999;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				display:block;
+				cursor:pointer;
+				text-indent:-12000px !important; 
+				}
+				.dotNav .iview-controlNav .iview-items ul li a:hover  { background:#666666; }
+				.dotNav .iview-controlNav .iview-items ul li a.active,
+				.dotNav .iview-controlNav .iview-items ul li a.active:hover { background: #009900; }
+	
+#iview-tooltip { display:none !important; }
+.iview-controlNav .iview-tooltip { position: absolute; }
+
+
+
+/* The captions in the Slider */
+.iview-caption {
+	position:absolute;
+	width:270px;
+	background:#333333;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	font-size: 12px;
+	color: #ffffff;
+	cursor: default;
+	padding: 10px 15px;
+	z-index:4;
+	}
+	.caption-contain {
+		font-size: 12px;
+		line-height:18px;
+		color: #ffffff;
+		}
+
+
+/* The video show in the Slider */
+.iview-video-show {
+	background: #000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+}
+.iview-video-show .iview-video-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.iview-video-show .iview-video-container a.iview-video-close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: #222;
+	color: #FFF;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	line-height: 29px;
+	font-size: 22px;
+	font-weight: bold;
+	overflow: hidden;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.iview-video-show .iview-video-container a.iview-video-close:hover {
+	background: #444;
+}
+
+
+
