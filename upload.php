@@ -25,11 +25,14 @@
         $sf->takeFile($_GET['f_id']);
         $f_full_name=getcwd()."\\upload\\$f_name";
         $handle = fopen($f_full_name, 'w');
-            //$res=fwrite($handle, $data);
-            $res=fwrite($handle, 'test');
-            fclose($handle);
+        //$res=fwrite($handle, $data);
+        $res=fwrite($handle, 'test');
+        fclose($handle);
         echo "<br>Take done";
         break;
+      case 'send':
+         $upload->uploaded();
+         break;
       default:
          $upload->uploaded();
     }

@@ -6,3 +6,10 @@ I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Start convert:  file:Samples.pp
 I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\Samples.ppt /o:c:\inetpub\wwwroot\output_html\ppts_html\Samples.ppt\index.html
 I, [2013-08-09T14:25:26.630608 #4804]  INFO -- : Done convert file:Samples.ppt  time:2013-08-09 14:25:26 +0000
 I, [2013-08-09T14:25:26.630608 #4804]  INFO -- : Files in dir:0
+I, [2013-08-20T13:35:03.804680 #3324]  INFO -- : Start listen:  state:init
+I, [2013-08-20T13:35:03.805678 #3324]  INFO -- : Files in dir:1
+I, [2013-08-20T13:35:03.805678 #3324]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/Sample.ppt  time:2013-08-20 13:35:03 +0000
+I, [2013-08-20T13:35:03.806681 #3324]  INFO -- : Start convert:  file:Sample.ppt
+I, [2013-08-20T13:35:03.808680 #3324]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\Sample.ppt /o:c:\inetpub\wwwroot\output_html\ppts_html\Sample.ppt\index.html
+I, [2013-08-20T13:35:38.330139 #3324]  INFO -- : Done convert file:Sample.ppt  time:2013-08-20 13:35:38 +0000
+I, [2013-08-20T13:35:38.331140 #3324]  INFO -- : Files in dir:0
