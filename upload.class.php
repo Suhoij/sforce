@@ -16,6 +16,7 @@ class Upload {
   var $type;
   var $upload_dir;
   var $filename;
+  var $uploaded_file_name;
   var $cloud_toke='???';
   var $org_id;
   var $app_id;
@@ -80,9 +81,46 @@ else {
 }
 }
 function moveSlide(){
+  $this->slide_id= (isset($_POST['slide_id']))?$_POST['slide_id']:null;
+  $this->state .= "move data;";
+  try {
+  if (!is_dir(PATH_SLIDERS.$this->org_id)) {
+          mkdir(PATH_SLIDERS.$this->org_id);
+   }
+   if (!is_dir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id)) {
+          mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id);
+   }
+   if (!is_dir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/'.$this->slide_id)) {
+          mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/'.$this->slide_id);
+   }
 
+   //$file_ext = end(explode('.', $this->uploaded_file_name));
+   //if ($file_ext=='zip') {
+       //--b: unzip controls file---
+       $path_sliders_org_app = PATH_SLIDERS. $this->org_id.'/'.$this->app_id.'/'.$this->slide_id;
+       $upload_file_source   = PATH_UPLOAD.$this->org_id.'_'.$this->app_id.'_sources.zip';
+       //---unzip source
+       $this->unzipFile($upload_file_source, $path_sliders_org_app);
+       //---unzip jslib
+       $this->unzipFile(PATH_UPLOAD.'JSLibrary.zip', $path_sliders_org_app);
+       //--e: unzip controls file---
+   //}
+   $path_sliders_org_app = PATH_SLIDERS. $this->org_id.'/'.$this->app_id;
+   $upload_file_source   = PATH_UPLOAD.$this->org_id.'_'.$this->app_id.'_'.$this->uploaded_file_name;
+   $slider_main_file     = PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/'.$this->slide_id.'/index.html';
+   if (copy( $upload_file_source, $slider_main_file)) {
+      //unlink($upload_file_source);
+   }
+   else {
+      $this->state .= ';error-copy-html:$this->org_id';
+   }
+   $this->state="done";
+   }  catch (Exception $e) {
+      $this->state.=';error-move-data '. $e->getMessage();
+   }
 }
 function moveData(){
+  $this->state.= "move data;";
   try {
   if (!is_dir(PATH_SLIDERS.$this->org_id)) {
           mkdir(PATH_SLIDERS.$this->org_id);
@@ -91,21 +129,25 @@ function moveData(){
           mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id);
    }
    $path_sliders_org_app = PATH_SLIDERS. $this->org_id.'/'.$this->app_id;
-   $upload_file_source = PATH_UPLOAD.'sources.zip'.$this->app_id.'_sources.zip';
-   $slider_main_file = PATH_SLIDERS.$this->f_id.'/index.html';
+   $upload_file_source   = PATH_UPLOAD.$this->org_id.'_'.$this->app_id.'_'.$this->uploaded_file_name;
+
    //---unzip source
-   $this->unzipFile(PATH_UPLOAD.'sources.zip', $path_sliders_org_app);
+   $this->unzipFile($upload_file_source, $path_sliders_org_app);
    //---unzip jslib
    $this->unzipFile(PATH_UPLOAD.'JSLibrary.zip', $path_sliders_org_app);
-   if (copy(PATH_UPLOAD . $this->org_id.'_'.$this->app_id.'_index.html', $slider_main_file)) {
+   /*
+   if (copy( $upload_file_source, $slider_main_file)) {
       unlink($slider_upload_file);
    }
    else {
       $this->state .= ';error-copy-html:$this->org_id';
    }
+   */
+   $this->state="done";
    } catch (Exception $e) {
       $this->state.=';error-move-data '. $e->getMessage();
    }
+   echo $this->state;
 }
 function pickUpData(){
 
@@ -115,14 +157,15 @@ function uploadFromForce(){
       $this->cloud_token=$_POST['cloud_token'];
       $this->org_id  = $_POST['org_id'];
       $this->app_id  = $_POST['app_id'];
-      $this->slide_id= $_POST['slide_id'];
+
       $from    = $_FILES[$this->fieldname]["tmp_name"];
-      $to      = $this->upload_dir . $_FILES[$this->fieldname]["name"];
+      $to      = $_FILES[$this->fieldname]["name"];
+      $this->uploaded_file_name=$to;
       $part='';
       if (isset($_POST['data_part'])){
           $part='pt_'.$_POST['data_part'].'_';
       }
-      if (move_uploaded_file($from, $part.$this->org_id.'_'.$this->app_id.'_'. $to)) {
+      if (move_uploaded_file($from, PATH_UPLOAD. $part.$this->org_id.'_'.$this->app_id.'_'. $to)) {
         //echo "Uploaded..";
          if (isset($_POST['slide_id'])) {
             $this->moveSlide();
@@ -130,7 +173,7 @@ function uploadFromForce(){
            if (isset($_POST['data_part'])&&($_POST['data_part']==0)) {
                $this->pickUpData();
            } else {
-               $this->moveData();
+               //$this->moveData();
             }
          }
 
@@ -139,12 +182,12 @@ function uploadFromForce(){
 
 }
 function uploaded() {
- echo " 1)PARAMS: cloud_token=$this->cloud_token org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
-if (isset($_POST['cloud_token'])) {
-    $this->uploadFromForce();
-    echo " 2)PARAMS: cloud_token=$this->cloud_token org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
-    return ;
-}
+ echo " 1)PARAMS: cloud_token=".$_POST['cloud_token']." org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
+  if (isset($_POST['cloud_token'])) {
+      $this->uploadFromForce();
+      echo " 2)PARAMS: cloud_token=$this->cloud_token org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
+      return ;
+  }
   if (1 == 1) {
 //--check the same name---
     //if ($_FILES[$this->fieldname]["error"] == 0) {
