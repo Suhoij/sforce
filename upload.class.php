@@ -99,8 +99,12 @@ function moveSlide(){
        //--b: unzip controls file---
        $path_sliders_org_app = PATH_SLIDERS. $this->org_id.'/'.$this->app_id.'/'.$this->slide_id;
        $upload_file_source   = PATH_UPLOAD.$this->org_id.'_'.$this->app_id.'_sources.zip';
-       //---unzip source
-       $this->unzipFile($upload_file_source, $path_sliders_org_app);
+       if (file_exists($upload_file_source)) {
+            //---unzip source
+            $this->unzipFile($upload_file_source, $path_sliders_org_app);
+       } else {
+             $this->state .= ';error sources.zip file';
+       }
        //---unzip jslib
        $this->unzipFile(PATH_UPLOAD.'JSLibrary.zip', $path_sliders_org_app);
        //--e: unzip controls file---
@@ -182,10 +186,10 @@ function uploadFromForce(){
 
 }
 function uploaded() {
- echo " 1)PARAMS: cloud_token=".$_POST['cloud_token']." org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
+ //echo " 1)PARAMS: cloud_token=".$_POST['cloud_token']." org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
   if (isset($_POST['cloud_token'])) {
       $this->uploadFromForce();
-      echo " 2)PARAMS: cloud_token=$this->cloud_token org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
+      //echo " 2)PARAMS: cloud_token=$this->cloud_token org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
       return ;
   }
   if (1 == 1) {
