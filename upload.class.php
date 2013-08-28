@@ -8,6 +8,8 @@
 define('CLOUD_TOKEN','12345');
 define("PATH_UPLOAD", "upload/");
 define("PATH_SLIDERS", "preview/slide/");   //"output_html/sliders_html/"
+//define("PATH_SLIDERS", "output_html/sliders_html/");   //"output_html/sliders_html/"
+//define("PATH_SLIDERS", "previews/sliders/");   //"output_html/sliders_html/"
 error_reporting(E_ALL);
 
 class Upload {
@@ -88,7 +90,7 @@ public function unzipFile($name, $dir_file_unzip) {
 }
 function moveSlide(){
   $this->slide_id= (isset($_POST['slide_id']))?$_POST['slide_id']:null;
-  $this->state .= "move data;";
+  $this->state .= "move slide data;";
   try {
    if (!is_dir(PATH_SLIDERS.$this->org_id)) {
           mkdir(PATH_SLIDERS.$this->org_id);
@@ -106,13 +108,15 @@ function moveSlide(){
    $slider_main_file     = PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/'.$this->slide_id.'/index.html';
    if (file_exists($slider_main_file)) {
         $dt = date("D M d, Y G:i");
-        rename($slider_main_file,"_old_$dt.html");
+        //$dt=time();
+        unlink($slider_main_file);
+        //rename($slider_main_file,"index_old.html");
    }
 
    if (copy( $upload_file_source, $slider_main_file)) {
       //unlink($upload_file_source);
       $this->slider_main_file=$slider_main_file;
-      $this->setBaseTagSlide();
+      //$this->setBaseTagSlide();
    }
    else {
       $this->state .= ';error-copy-html:$this->org_id';
@@ -220,12 +224,12 @@ function uploaded() {
       return ;
   }
   if (1 == 1) {
-//--check the same name---
-    //if ($_FILES[$this->fieldname]["error"] == 0) {
+      //--check the same name---
+      //if ($_FILES[$this->fieldname]["error"] == 0) {
       echo "<b>File name: </b>" . $_FILES[$this->fieldname]["name"] . "<br />";
       echo "<b>File type: </b>" . $_FILES[$this->fieldname]["type"] . "<br />";
       echo "<b>File size: </b>" . (($_FILES[$this->fieldname]["size"] / 1024) / 1024) . " Mb<br />";
-//echo "<b>File Tmp: </b>" . $_FILES[$this->fieldname]["tmp_name"] . "<br />";
+      //echo "<b>File Tmp: </b>" . $_FILES[$this->fieldname]["tmp_name"] . "<br />";
       if (move_uploaded_file($_FILES[$this->fieldname]["tmp_name"], $this->upload_dir . $_FILES[$this->fieldname]["name"])) {
         echo "Uploaded..";
       }
