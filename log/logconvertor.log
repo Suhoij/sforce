@@ -1,22 +1,22 @@
-# Logfile created on 2013-08-09 14:25:25 +0000 by logger.rb/36483
-I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Start listen:  state:init
-I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Files in dir:1
-I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/Samples.ppt  time:2013-08-09 14:25:25 +0000
-I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Start convert:  file:Samples.ppt
-I, [2013-08-09T14:25:25.536858 #4804]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\Samples.ppt /o:c:\inetpub\wwwroot\output_html\ppts_html\Samples.ppt\index.html
-I, [2013-08-09T14:25:26.630608 #4804]  INFO -- : Done convert file:Samples.ppt  time:2013-08-09 14:25:26 +0000
-I, [2013-08-09T14:25:26.630608 #4804]  INFO -- : Files in dir:0
-I, [2013-08-20T13:35:03.804680 #3324]  INFO -- : Start listen:  state:init
-I, [2013-08-20T13:35:03.805678 #3324]  INFO -- : Files in dir:1
-I, [2013-08-20T13:35:03.805678 #3324]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/Sample.ppt  time:2013-08-20 13:35:03 +0000
-I, [2013-08-20T13:35:03.806681 #3324]  INFO -- : Start convert:  file:Sample.ppt
-I, [2013-08-20T13:35:03.808680 #3324]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\Sample.ppt /o:c:\inetpub\wwwroot\output_html\ppts_html\Sample.ppt\index.html
-I, [2013-08-20T13:35:38.330139 #3324]  INFO -- : Done convert file:Sample.ppt  time:2013-08-20 13:35:38 +0000
-I, [2013-08-20T13:35:38.331140 #3324]  INFO -- : Files in dir:0
-I, [2013-08-22T14:18:50.517121 #736]  INFO -- : Start listen:  state:init
-I, [2013-08-22T14:18:50.518121 #736]  INFO -- : Files in dir:1
-I, [2013-08-22T14:18:50.518121 #736]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/Sample_1.ppt  time:2013-08-22 14:18:50 +0000
-I, [2013-08-22T14:18:50.518121 #736]  INFO -- : Start convert:  file:Sample_1.ppt
-I, [2013-08-22T14:18:50.520121 #736]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\Sample_1.ppt /o:c:\inetpub\wwwroot\output_html\ppts_html\Sample_1.ppt\index.html
-I, [2013-08-22T14:19:24.313921 #736]  INFO -- : Done convert file:Sample_1.ppt  time:2013-08-22 14:19:24 +0000
-I, [2013-08-22T14:19:24.314922 #736]  INFO -- : Files in dir:0
+# Logfile created on 2013-09-02 12:55:08 +0000 by logger.rb/36483
+I, [2013-09-02T12:55:08.717135 #4768]  INFO -- : Start listen:  state:init
+I, [2013-09-02T12:55:08.718135 #4768]  INFO -- : Files in dir:1
+I, [2013-09-02T12:55:08.718135 #4768]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME  Project_v2.pptx  time:2013-09-02 12:55:08 +0000
+I, [2013-09-02T12:55:08.719134 #4768]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME  Project_v2.pptx
+I, [2013-09-02T12:55:08.720133 #4768]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME  Project_v2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000DTkc0IAD\index.html
+I, [2013-09-02T12:55:10.358845 #4768]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME  Project_v2.pptx  time:2013-09-02 12:55:10 +0000
+I, [2013-09-02T12:55:10.359845 #4768]  INFO -- : Files in dir:0
+I, [2013-09-02T12:58:07.518370 #4592]  INFO -- : Start listen:  state:init
+I, [2013-09-02T12:58:07.519371 #4592]  INFO -- : Files in dir:1
+I, [2013-09-02T12:58:07.520370 #4592]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME-Project_v2.pptx  time:2013-09-02 12:58:07 +0000
+I, [2013-09-02T12:58:07.520370 #4592]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME-Project_v2.pptx
+I, [2013-09-02T12:58:07.522371 #4592]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME-Project_v2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000DTkc0IAD\index.html
+I, [2013-09-02T12:58:50.981556 #4592]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000DTkc0IAD_CME-Project_v2.pptx  time:2013-09-02 12:58:50 +0000
+I, [2013-09-02T12:58:50.982556 #4592]  INFO -- : Files in dir:0
+I, [2013-09-03T13:31:56.566650 #4156]  INFO -- : Start listen:  state:init
+I, [2013-09-03T13:31:56.569648 #4156]  INFO -- : Files in dir:1
+I, [2013-09-03T13:31:56.569648 #4156]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx  time:2013-09-03 13:31:56 +0000
+I, [2013-09-03T13:31:56.569648 #4156]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx
+I, [2013-09-03T13:31:56.579650 #4156]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000DTkc0IAD\index.html
+I, [2013-09-03T13:36:00.973357 #4156]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx  time:2013-09-03 13:36:00 +0000
+I, [2013-09-03T13:36:00.981356 #4156]  INFO -- : Files in dir:0

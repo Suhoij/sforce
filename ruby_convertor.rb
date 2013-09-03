@@ -23,11 +23,13 @@ class ConvertorPPT_HTML
 
  CONVERTOR_SDK_DIR ='c:\\inetpub\\wwwroot\\files_for_redistribution\\'
  INPUT_DIR         ='c:\\inetpub\\wwwroot\\input_ppt\\'
- OUTPUT_DIR        ='c:\\inetpub\\wwwroot\\output_html\\ppts_html\\'
+ OUTPUT_DIR        ='c:\\inetpub\\wwwroot\\preview\\ppt\\'   #--'c:\\inetpub\\wwwroot\\output_html\\ppts_html\\'
  UPLOAD_DIR        ='c:/inetpub/wwwroot/upload/'
  LOG_DIR           ='c:\\inetpub\\wwwroot\\log\\'
  state = 'init'
  @@log=''
+ @@org_id=''
+ @@app_id=''
 #------------------------init------------------------
 def initialize
   require 'logger'
@@ -42,10 +44,30 @@ def convert(f)
 	#--%x(#{CONVERTOR_SDK_DIR}ppt2html5.exe /i:#{INPUT_DIR}#{f} /o:#{OUTPUT_DIR}index.html) 
 	file_out_dir=OUTPUT_DIR
 	file_name=File.basename(f,"*.*")
-	if ! Dir.exist?(file_out_dir+file_name)
-     		Dir.mkdir(file_out_dir+file_name)
-     		file_out_dir=file_out_dir+file_name
+	org_id=f.split('_')[0]	
+	#----for many presentation------------------
+	if ! org_id.nil?
+	   app_id=f.split('_')[1]
+	   if ! app_id.nil?
+	        if ! Dir.exist?(file_out_dir+org_id)
+		     Dir.mkdir(file_out_dir+org_id)
+		end
+	        if ! Dir.exist?(file_out_dir+org_id+'\\'+app_id)
+		     Dir.mkdir(file_out_dir+org_id+'\\'+app_id)
+		end
+	        file_out_dir=file_out_dir+"#{org_id}\\#{app_id}"  #---+file_name
+	    else
+	      	
+	       if ! Dir.exist?(file_out_dir+file_name)
+		       Dir.mkdir(file_out_dir+file_name)
+		       file_out_dir=file_out_dir+file_name
+	       end 
+	   end
+	   
+	 #code
 	end
+	
+
 	@state='convert'
 	begin
 	  @@log.info("Start convert:  file:"+f)
@@ -68,21 +90,21 @@ def listen
      @@log.info("Start listen:  state:"+@state)
      while 1
         next if @state=='convert'
-  	#--read files upload_dir
-	#--Dir.entries(UPLOAD_DIR).select {|f| !File.directory? f}
-	files_to_convert=Dir[UPLOAD_DIR+"*.ppt"]+Dir[UPLOAD_DIR+"*.pptx"]
-	@@log.info("Files in dir:"+files_to_convert.size.to_s )
-	if files_to_convert.size == 0
-		@@log.close
-		abort
-	else
-	   file=files_to_convert.first
-           if !file.nil?
-	      time = Time.now
-	      @@log.info("Convert file:"+file+"  time:"+time.inspect)
-	      convert File.basename(file)
+  	    #--read files upload_dir
+	    #--Dir.entries(UPLOAD_DIR).select {|f| !File.directory? f}
+	    files_to_convert=Dir[UPLOAD_DIR+"*.ppt"]+Dir[UPLOAD_DIR+"*.pptx"]
+	    @@log.info("Files in dir:"+files_to_convert.size.to_s )
+	    if files_to_convert.size == 0
+		    @@log.close
+		    abort
+	    else
+	        file=files_to_convert.first
+            if !file.nil?
+	            time = Time.now
+	            @@log.info("Convert file:"+file+"  time:"+time.inspect)
+	            convert File.basename(file)
            end
-	end
+	    end
   	
      end
 end #--lister

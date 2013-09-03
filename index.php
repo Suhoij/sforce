@@ -21,8 +21,12 @@
         <input type="submit" name="submit" value="Upload"  />
 
     </form>
-<?php 
-
+<?php
+   if (isset($_GET['convert'])) {
+       echo "<br>convert start...";
+       system("start cmd.exe ".getcwd()."/ruby_convertor.bat");
+       echo "<br>convert done...";
+   }
 ?>
 </body>
 </html>
