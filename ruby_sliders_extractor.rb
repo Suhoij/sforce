@@ -12,7 +12,7 @@
   ppt.visible = true
   ## system "start c:/inetpub/wwwroot/upload/Abbott.pptx"
   presentation = ppt.Presentations.Open('c:/inetpub/wwwroot/upload/Abbott.pptx');
-
+  #
   sliders_cnt=ppt.ActivePresentation.Slides.Count()
   log.info("SLIDERS_CNT :"+sliders_cnt.to_s)
   sleep 5
