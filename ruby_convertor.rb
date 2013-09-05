@@ -43,32 +43,32 @@ end
 def convert(f)
 	#--%x(#{CONVERTOR_SDK_DIR}ppt2html5.exe /i:#{INPUT_DIR}#{f} /o:#{OUTPUT_DIR}index.html) 
 	if (not @@org_id.empty?) and (not @@org_id.empty?)
-    file_out_dir=OUTPUT_DIR +"#{@@org_id}\\#{@@app_id}"
+    file_out_dir=OUTPUT_DIR+@@org_id+'\\'+@@app_id
   else
     file_out_dir=OUTPUT_DIR
   end
 	file_name=File.basename(f,"*.*")
-	org_id=f.split('_')[0]	
-	#----for many presentation------------------
-	if ! org_id.nil?
-	   app_id=f.split('_')[1]
-	   if ! app_id.nil?
-	        if ! Dir.exist?(file_out_dir+org_id)
-		          Dir.mkdir(file_out_dir+org_id)
-		      end
-	        if ! Dir.exist?(file_out_dir+org_id+'\\'+app_id)
-		          Dir.mkdir(file_out_dir+org_id+'\\'+app_id)
-		      end
-	        file_out_dir=file_out_dir+"#{org_id}\\#{app_id}"  #---+file_name
-	    else
-	      	
-	       if ! Dir.exist?(file_out_dir+file_name)
-		          Dir.mkdir(file_out_dir+file_name)
-		          file_out_dir=file_out_dir+file_name
-	       end 
-	   end
-
-	end
+	#org_id=f.split('_')[0]
+	##----for many presentation------------------
+	#if ! org_id.nil?
+	#   app_id=f.split('_')[1]
+	#   if ! app_id.nil?
+	#        if ! Dir.exist?(file_out_dir+org_id)
+	#	          Dir.mkdir(file_out_dir+org_id)
+	#	      end
+	#        if ! Dir.exist?(file_out_dir+org_id+'\\'+app_id)
+	#	          Dir.mkdir(file_out_dir+org_id+'\\'+app_id)
+	#	      end
+	#        file_out_dir=file_out_dir+"#{org_id}\\#{app_id}"  #---+file_name
+	#    else
+	#
+	#       if ! Dir.exist?(file_out_dir+file_name)
+	#	          Dir.mkdir(file_out_dir+file_name)
+	#	          file_out_dir=file_out_dir+file_name
+	#       end
+	#   end
+  #
+	#end
 
 	@state='convert'
 	begin
@@ -94,16 +94,16 @@ def extractSliders (f)
     log.level = Logger::INFO
 
     ppt = WIN32OLE.new('PowerPoint.Application')
-    ppt.visible = false
+    #-----ppt.visible = false
     presentation = ppt.Presentations.Open(INPUT_DIR+f);
     sliders_cnt=ppt.ActivePresentation.Slides.Count()
     log.info(" ExtractSliders org_id=#{@@org_id} app_id=#{@@app_id} SLIDERS_CNT="+sliders_cnt.to_s)
     sleep 2 #---wait while ppt build sliders list
 
-    if ! Dir.exist?(OUTPUT_DIR+"#{@@org_id}\\#{@@app_id}\\sliders")
-         Dir.mkdir(OUTPUT_DIR+"#{@@org_id}\\#{@@app_id}\\sliders")
+    if ! Dir.exist?(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
+         Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
     end
-    sliders_dir = OUTPUT_DIR+"#{@@org_id}\\#{@@app_id}\\sliders\\"
+    sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
     for i in 1..sliders_cnt
       ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i}.jpg", ".jpg", 1024,768)
     end
@@ -142,18 +142,18 @@ def listen
               @@org_id='1111111' if (@@org_id.nil? )
               @@app_id='1111111' if (@@app_id.nil? )
               #----------------------------------create dir(s)--------------------------------
-              if ! Dir.exist?(OUTPUT_DIR+"#{@@org_id}")
-                Dir.mkdir(OUTPUT_DIR+"#{@@org_id}")
+              if ! Dir.exist?(OUTPUT_DIR+@@org_id)
+                Dir.mkdir(OUTPUT_DIR+@@org_id)
               end
-              if ! Dir.exist?(OUTPUT_DIR+"#{@@org_id}\\#{@@app_id}")
-                Dir.mkdir(OUTPUT_DIR+"#{@@org_id}\\#{@@app_id}")
+              if ! Dir.exist?(OUTPUT_DIR+@@org_id+"\\"+@@app_id)
+                Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id)
               end
 	            convert File.basename(file)
 	            extractSliders File.basename(file)
               #------------rename upload-input file-------------------------------------------
 
-              File.rename("#{INPUT_DIR}#{file}","#{INPUT_DIR}#{file_name}"+".done")
-              File.rename("#{UPLOAD_DIR}#{file}","#{UPLOAD_DIR}#{file_name}"+".done")
+              File.rename("#{INPUT_DIR}#{file_name}","#{INPUT_DIR}#{file_name}"+".done")
+              File.rename("#{UPLOAD_DIR}#{file_name}","#{UPLOAD_DIR}#{file_name}"+".done")
            end
 	    end
   	
