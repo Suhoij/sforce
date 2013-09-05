@@ -132,14 +132,15 @@ def listen
 		    abort
 	    else
 	          file=files_to_convert.first
+            file_name=File.basename(file,"*.*")
             if !file.nil?
 	            time = Time.now
 	            @@log.info("Convert file:"+file+"  time:"+time.inspect)
               #-----------------------------------get org_id,app_id from file name-----------
-              @@org_id=file.split(ORG_APP_DELIM)[0]
-              @@app_id=file.split(ORG_APP_DELIM)[1]
-              @@org_id='1111111' if @@org_id.nil?
-              @@app_id='1111111' if @@app_id.nil?
+              @@org_id=file_name.split(ORG_APP_DELIM)[0]
+              @@app_id=file_name.split(ORG_APP_DELIM)[1]
+              @@org_id='1111111' if (@@org_id.nil? )
+              @@app_id='1111111' if (@@app_id.nil? )
               #----------------------------------create dir(s)--------------------------------
               if ! Dir.exist?(OUTPUT_DIR+"#{@@org_id}")
                 Dir.mkdir(OUTPUT_DIR+"#{@@org_id}")
@@ -150,7 +151,7 @@ def listen
 	            convert File.basename(file)
 	            extractSliders File.basename(file)
               #------------rename upload-input file-------------------------------------------
-              file_name=File.basename(file,"*.*")
+
               File.rename("#{INPUT_DIR}#{file}","#{INPUT_DIR}#{file_name}"+".done")
               File.rename("#{UPLOAD_DIR}#{file}","#{UPLOAD_DIR}#{file_name}"+".done")
            end
