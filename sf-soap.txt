@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hel="http://soap.sforce.com/schemas/class/HelperClass">
+   <soapenv:Header>
+      <hel:AllowFieldTruncationHeader>
+         <hel:allowFieldTruncation>0</hel:allowFieldTruncation>
+      </hel:AllowFieldTruncationHeader>
+
+      <hel:CallOptions>
+         <hel:client>27.0</hel:client>
+      </hel:CallOptions>
+      <hel:SessionHeader>
+         <hel:sessionId>00DG0000000CkUd!AQ0AQHtb7v7X.MLjW24R6JvPeMQCXAwLkcPiB7DoZa39GuaUDhVHnqQsavHESXUlLGydy2e2zOoUBVpvtMQapJw6TiFfbWSo</hel:sessionId>
+      </hel:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <hel:presentationUploaded>
+         <hel:sliders_cnt>10</hel:sliders_cnt>
+      </hel:presentationUploaded>
+   </soapenv:Body>
+</soapenv:Envelope>
