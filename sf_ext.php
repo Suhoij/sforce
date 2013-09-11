@@ -1,7 +1,8 @@
-<?php
-define("USERNAME", "e-detmobile@customertimes.com");
-define("PASSWORD", "poqw09123");
-define("SECURITY_TOKEN", "vYwfdDbmbtdJI7gRnlJZLwIe");
+﻿<?php
+define("USERNAME", "e-det@customertimes.com");//e-detmobile@customertimes.com
+define("PASSWORD", "poqw09123");  //9123   //swatch13   //poqw0912
+define("SECURITY_TOKEN", "ZElP3rrmQjZhVzgawVOX6zgn9"); //Bn7D3AJssElaQ4HJaOdekMio2    //vYwfdDbmbtdJI7gRnlJZLwIe
+
 define("PATH_TOOLKIT", "Force.com-Toolkit-for-PHP/");
 define("PATH_UPLOAD", "upload/");
 define("PATH_UNZIP", "output_html/html_zip/");
@@ -13,15 +14,118 @@ class SfExt {
   var $data;
   var $f_id;
   var $f_name;
+  var $sf_url;
+  var $session_id;
   var $sliders_id_force = array();
   var $sliders_id_cloud = array();
   var $sliders_absent = array();
-  function __construct() {
-    $this->f_id = $_GET['f_id'];
-    $this->mySforceConnection = new SforcePartnerClient();
-    $this->mySforceConnection->createConnection(PATH_TOOLKIT . "partner.wsdl.xml");
-    $this->mySforceConnection->login(USERNAME, PASSWORD . SECURITY_TOKEN);
-    $this->state = ';login';
+  function __construct($session_id='',$sf_url='') {
+     try {
+      $this->f_id = $_GET['f_id'];
+      $this->session_id=$session_id;
+      $this->sf_url=$sf_url;
+
+
+
+      if (!empty($session_id)) {
+        $this->postData(); die();
+         //$this->mySforceConnection->attach( $this->sf_url, $this->session_id);
+         $this->mySforceConnection = new SforceBaseClient();
+         $this->mySforceConnection->namespace='http://soap.sforce.com/schemas/class/HelperClass';
+          session_start();
+          $this->mySforceConnection->createConnection(PATH_TOOLKIT . "sf-call-wsdl.xml");
+          //$this->mySforceConnection->login(USERNAME, PASSWORD . SECURITY_TOKEN);
+          $this->mySforceConnection->setEndpoint($this->sf_url);
+          $this->mySforceConnection->setSessionHeader($this->session_id);
+         //$this->mySforceConnection = new SforcePartnerClient();
+              //$this->mySforceConnection->createConnection(PATH_TOOLKIT . "sf-call-wsdl.xml");
+         //$this->mySforceConnection->createConnection(PATH_TOOLKIT . "apex.wsdl.xml");
+         //$this->mySforceConnection->createConnection(PATH_TOOLKIT . "partner-last.wsdl.xml");
+         //$this->mySforceConnection->login(USERNAME, PASSWORD . SECURITY_TOKEN);
+              //$this->mySforceConnection->setSessionHeader($this->session_id);
+              //$this->mySforceConnection->setEndpoint($this->sf_url);
+      } else {
+        $this->mySforceConnection = new SforcePartnerClient();
+        $this->mySforceConnection->createConnection(PATH_TOOLKIT . "partner.wsdl.xml");
+        $this->mySforceConnection->login(USERNAME, PASSWORD . SECURITY_TOKEN);
+        echo $this->mySforceConnection->getLocation();   die();
+        $this->state = ';login';
+      }
+      } catch (Exception $e){
+           $this->state = ';login-error-' . $e->getMessage();
+           echo $this->state;
+      }
+  }
+  public function execSfCode($str) {
+    try {
+      //$response = $this->mySforceConnection->query($str);
+      //$url='http://na11.salesforce.com/services/Soap/class/HelperClass';
+      //$url='http://soap.sforce.com/schemas/class/HelperClass';
+      //$response = $this->mySforceConnection->setEndpoint($this->sf_url);
+      //var_dump( $this->mySforceConnection);
+      //$describe = $this->mySforceConnection->describeSObjects(array('Lead'));
+      //print_r($describe);
+     // $response = $this->mySforceConnection->describeGlobal();
+      //$response = $this->mySforceConnection->presentationUploaded(2);
+      //$query = "SELECT Body FROM Attachment WHERE Id='00PG0000008kLcZ'";
+      //$query = "SELECT FirstName, LastName FROM Contact";
+
+      //$response = $this->mySforceConnection->query($query);
+
+      //$response = $this->mySforceConnection->getLocation();
+             //$sforce_header = new SoapHeader("https://na11.salesforce.com/services/Soap/class/HelperClass", "SessionHeader", array( "sessionId" => $this->session_id ) );
+             //var_dump($sforce_header);
+             //$this->mySforceConnection->setHeaders( array( $sforce_header ) );
+              //$response = $this->mySforceConnection;
+              //$response = $this->mySforceConnection->getNamespace();
+              //$response = $this->mySforceConnection->describeGlobal();
+              //$response = $this->mySforceConnection->getFunctions();
+              //$response = $this->mySforceConnection->getLocation();
+              //$response = $this->mySforceConnection->getConnection();
+              //$response = $this->mySforceConnection->presentationUploaded(62);
+              //$response = $this->mySforceConnection->getTypes();
+              //$response = $this->mySforceConnection->getSessionId();
+
+              $response=$this->mySforceConnection->presentationUploaded(10);
+               var_dump($response);
+
+    } catch (Exception $e) {
+       $this->state = ';execSfCode-error-' . $e->getMessage();
+    }
+  }
+  public function postData(){
+      $post_url='https://na11.salesforce.com/services/Soap/class/HelperClass';
+      $post_data=file_get_contents(getcwd()."\sf-soap.txt");
+      echo $post_data;
+      $headers  =  array("Content-type: text/xml;charset=\"utf-8\"",
+            "Accept: text/xml",
+            "Cache-Control: no-cache",
+            "Pragma: no-cache",
+            "SOAPAction: \"run\"",
+            "Content-length: ".strlen($post_data)
+       );
+      $ch = curl_init();
+      curl_setopt($ch, CURLOPT_URL,$post_url);
+      curl_setopt($ch, CURLOPT_POST, 1);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+      curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+      //curl_setopt($ch, CURLOPT_POSTFIELDS,"postvar1=value1&postvar2=value2&postvar3=value3");
+      curl_setopt($ch, CURLOPT_POSTFIELDS,$post_data);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+      $http_result = curl_exec($ch);
+      $error = curl_error($ch);
+      $http_code = curl_getinfo($ch ,CURLINFO_HTTP_CODE);
+
+      curl_close($ch);
+      //fclose($fp);
+
+      print $http_code;
+      print "<br />Result:<br />$http_result";
+      if ($error) {
+         print "<br />Error:<br />$error";
+      }
   }
   public function takeFile($f_id) {
     try {
@@ -41,7 +145,7 @@ class SfExt {
   }
   public function takeName($f_id) {
     try {
-//---take name---
+    //---take name---
       $query = "SELECT Name FROM Attachment WHERE ParentId='$f_id'";
       $response = $this->mySforceConnection->query($query);
       $this->f_name = $response->records[0]->any;
@@ -54,7 +158,7 @@ class SfExt {
     try {
       if (preg_match('/error/', $this->state))
         return;
-//---save file---
+        //---save file---
       if (!empty ($this->f_name)) {
         $f_full_name = getcwd() . "\\upload\\" . $this->f_id . '_' . $this->f_name;
         if (empty ($this->data)) {
@@ -104,7 +208,6 @@ class SfExt {
     foreach ($dir as $item) {
       $s_arr = explode('/', $item);
       $s_id = $s_arr[count($s_arr) - 1];
-      //print_r("<br>" . $s_id);
       array_push($this->sliders_id_cloud, $s_id);
     }
 
@@ -124,15 +227,12 @@ class SfExt {
     $cnt=0;
     $L=count($this->sliders_absent);
     for ($i = 0; $i < $L; $i++) {
-
         $this->f_id = $this->sliders_absent[$i];
         $this->createSliderHTML();
         sleep(2);
         $cnt++;
     }
      $this->state .=";done-create-absent(cnt=$cnt)";
-     //echo "<br> DONE create Absent cnt=$cnt";
-
   }
   //-----
   public function deleteFolder($folder) {
