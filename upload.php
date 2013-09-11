@@ -9,9 +9,6 @@
 <?php
 
 	include 'upload.class.php';
-    // Upload(Field name of Form, File Type, upload directory)
-	//$upload = new Upload('file', 'audio/mpeg', 'upload/' );
-	//$upload = new Upload('file', 'application/pdf', 'output_html/' );
     $upload = new Upload('file', 'application/zip', 'upload/' );
     switch ($_GET['action']) {
       case 'list':
@@ -25,7 +22,7 @@
         $sf->takeFile($_GET['f_id']);
         $f_full_name=getcwd()."\\upload\\$f_name";
         $handle = fopen($f_full_name, 'w');
-        //$res=fwrite($handle, $data);
+
         $res=fwrite($handle, 'test');
         fclose($handle);
         echo "<br>Take done";
@@ -36,13 +33,7 @@
       default:
          $upload->uploaded();
     }
-    /*
-    if ($_GET['action']=='list') {
-        $upload->show_files();
-    } else {
-        $upload->uploaded();
-    }
-    */
+   
 ?>
 </body>
 </html>

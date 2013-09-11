@@ -22,7 +22,7 @@ if (isset($_GET['f_id'])&&(isset($_GET['f_name']))) {
   $query    = "SELECT Body FROM Attachment WHERE Id='$f_id'";
   echo "<br> takeFile q=$query";
   $response = $mySforceConnection->query($query);
-  //var_dump($response);
+
   $data     = base64_decode(strip_tags($response->records[0]->any));
   $state='data-sf-done;';
   echo "<br> data=$data";
@@ -55,7 +55,6 @@ if (isset($_GET['f_id'])&&(isset($_GET['f_name']))) {
             if ($res === TRUE) {
               $zip->extractTo($dir_file_unzip);
               $zip->close();
-              //echo '<br>UNZIP done!';
               $state.='data-unzip-done;';
             } else {
               $state.="error-unzip-dir;"; ;

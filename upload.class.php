@@ -35,8 +35,7 @@ class Upload {
     $this->type = $n_type;
     $this->type_arr = array('application/ppt', 'application/pptx', 'application/vnd.ms-powerpoint');
     $this->upload_dir = $n_upload_dir;
-    //$this->filename = $n_filename;
-    //$this->uploaded();
+
   }
   function show_files() {
     $myDirectory = opendir($this->upload_dir);
@@ -49,16 +48,17 @@ class Upload {
     print ("<a href='http://ppthtml2.cloudapp.net'>Home</a>");
     print ('<h1>Uploaded files list</h1>');
     Print ("$indexCount-2 files<br>\n");
-    // sort 'em
+
     sort($dirArray);
-    // print 'em
+
     print ("<TABLE border=1 cellpadding=5 cellspacing=0 class=whitelinks>\n");
     print ("<TR><TH>Filename</TH><th>FileExt</th><th>Filesize</th></TR>\n");
     // loop through the array of files and print them all
     for ($index = 0; $index < $indexCount; $index++) {
      $cur_ext= pathinfo(getcwd()."/".$this->upload_dir.$dirArray[$index], PATHINFO_EXTENSION);
-     if ( (!isset($_GET['all'])) && ($cur_ext=='zip')){ continue;}
+     if ( (!isset($_GET['all'])) && ($cur_ext=='zip')) { continue;}
      if ( (!isset($_GET['all'])) && ($cur_ext=='html')){ continue;}
+     if ( (!isset($_GET['all'])) && ($cur_ext=='done')){ continue;}
 
        if (substr("$dirArray[$index]", 0, 1) != ".") { // don't list hidden files
 
@@ -84,7 +84,6 @@ public function unzipFile($name, $dir_file_unzip) {
         if ($res === TRUE) {
           $zip->extractTo($dir_file_unzip);
           $zip->close();
-
           $this->state .= 'data-unzip-done;';
         }
         else {
@@ -142,7 +141,6 @@ function moveData(){
           mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/sources');
    }
    $path_sliders_org_app = PATH_SLIDERS. $this->org_id.'/'.$this->app_id.'/sources';
-   //$upload_file_source   = PATH_UPLOAD.$this->org_id.'_'.$this->app_id.'_'.$this->uploaded_file_name;
 
    //---unzip source
    $this->unzipFile( $this->uploaded_file_name, $path_sliders_org_app);
@@ -275,11 +273,7 @@ function uploadFromForce(){
             $this->moveSlide();
          } else {
             $this->moveData();
-//           if (isset($_POST['data_part'])&&($_POST['data_part']==0)) {
-//               $this->pickUpData();
-//           } else {
-//               $this->moveData();
-//            }
+
          }
 
       } else "error: can't upload data,org_id=$this->org_id,app_id=$this->app_id";
