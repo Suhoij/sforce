@@ -33,7 +33,7 @@
       default:
          $upload->uploaded();
     }
-   
+
 ?>
 </body>
 </html>

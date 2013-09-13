@@ -13,8 +13,8 @@ define('PATH_LOG','C:/Windows/Temp/');
 define('FILE_LOG','log_php.txt');
 define("PATH_UPLOAD", "upload/");
 define("PATH_SLIDERS", "preview/slide/");   //"output_html/sliders_html/"
-//define("PATH_SLIDERS", "output_html/sliders_html/");   //"output_html/sliders_html/"
-//define("PATH_SLIDERS", "previews/sliders/");   //"output_html/sliders_html/"
+define("PATH_PPTS", "preview/ppt/");
+
 error_reporting(E_ALL);
 
 class Upload {
@@ -30,6 +30,8 @@ class Upload {
   var $org_id;
   var $app_id;
   var $slide_id;
+  var $ppt_session_id;//--sessionId from active SF all
+  var $sf_url;        //--SF soap endpoint url
   function __construct($n_fieldname, $n_type, $n_upload_dir) {
     $this->fieldname = $n_fieldname;
     $this->type = $n_type;
@@ -275,10 +277,30 @@ function uploadFromForce(){
             $this->moveData();
 
          }
+         //---extract and write json-data for ppt soap call
+         if (isset($_POST['ppt_session_id'])&&(isset($_POST['sf_url']))) {
+           $this->ppt_session_id=$_POST['ppt_session_id'];
+           $this->sf_url=$_POST['sf_url'];
+           $this->writePptParams();
+         }
 
       } else "error: can't upload data,org_id=$this->org_id,app_id=$this->app_id";
   }
 
+}
+function writePptParams(){
+    if (!is_dir(PATH_PPTS.$this->org_id.'/'.$this->app_id)) {
+        $this->state.=";error-ppt_params-no dir";
+    } else {
+        $cur_path_ppt=PATH_PPTS.$this->org_id.'/'.$this->app_id;
+        $json_str='{"ppt_session_id":"'.$this->ppt_session_id.'","sf_url":"'.$this->sf_url.'"}';
+        $content='<?php'.chr(10).chr(13);
+        $content.='$ppt_params='."'".$json_str."';"."\n\n";
+        $content.='var_dump($ppt_params);'."\n\n";
+        $content.='?>';
+        file_put_contents($cur_path_ppt.'/ppt_params.php',$content);
+        file_put_contents($cur_path_ppt.'/ppt_params.json',$json_str);
+    }
 }
 function uploaded() {
  //echo " 1)PARAMS: cloud_token=".$_POST['cloud_token']." org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];

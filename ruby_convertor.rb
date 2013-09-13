@@ -24,6 +24,8 @@ class ConvertorPPT_HTML
  CONVERTOR_SDK_DIR ='c:\\inetpub\\wwwroot\\files_for_redistribution\\'
  INPUT_DIR         ='c:\\inetpub\\wwwroot\\input_ppt\\'
  OUTPUT_DIR        ='c:\\inetpub\\wwwroot\\preview\\ppt\\'   #--'c:\\inetpub\\wwwroot\\output_html\\ppts_html\\'
+ PPT_DIR           ='c:\\inetpub\\wwwroot\\preview\\ppt\\'
+ PPT_PARAMS_FILE   ='ppt_params.json'
  UPLOAD_DIR        ='c:/inetpub/wwwroot/upload/'
  LOG_DIR           ='c:\\inetpub\\wwwroot\\log\\'
  state = 'init'
@@ -38,6 +40,9 @@ def initialize
   @@log=Logger.new(LOG_DIR+'logconvertor.log')
   @@log.level = Logger::INFO
   ##--@@log=Logger.new(STDOUT)
+  @@send_url='https://na11.salesforce.com/services/Soap/class/HelperClass'
+  @@ppt_session_id='00DG0000000CkUd!AQ0AQAxXVKnoBXnd8ShtRFLlgmrPr4v39SryHDPflE1mN1xVAWJNcr2WtSu0pUNo4QW06lkGQ7CRmVTQu7BPuBAHqYgT0D1e'
+
 end
 #------------------------convert---------------------
 def convert(f)
@@ -96,15 +101,15 @@ def extractSliders (f)
     ppt = WIN32OLE.new('PowerPoint.Application')
     #-----ppt.visible = false
     presentation = ppt.Presentations.Open(INPUT_DIR+f);
-    sliders_cnt=ppt.ActivePresentation.Slides.Count()
-    log.info(" ExtractSliders org_id=#{@@org_id} app_id=#{@@app_id} SLIDERS_CNT="+sliders_cnt.to_s)
+    @@sliders_cnt=ppt.ActivePresentation.Slides.Count()
+    log.info(" ExtractSliders org_id=#{@@org_id} app_id=#{@@app_id} SLIDERS_CNT="+@@sliders_cnt.to_s)
     sleep 2 #---wait while ppt build sliders list
 
     if ! Dir.exist?(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
          Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
     end
     sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
-    for i in 1..sliders_cnt
+    for i in 1..@@sliders_cnt
       ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i}.jpg", ".jpg", 1024,768)
     end
     ppt.ActivePresentation.Close()
@@ -116,6 +121,71 @@ def extractSliders (f)
    end
 
 
+end
+#------------------------extract ppt params----------
+def extractPptParams
+   content=File.read(PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE)
+   unless content.empty?
+     require 'json'
+     #--extract json string from content
+     ppt_params=JSON.parse(content)
+
+   end
+   @@send_url=ppt_params['sf_url']
+   @@ppt_session_id=ppt_params['ppt_session_id']
+   rescue RuntimeError => error
+     log.info('Extract PptParams ERROR '+error.inspect)
+end
+#-----------------------getSoapXml--------------------
+def getSoapXml
+s_id    = @@ppt_session_id
+soap_url= @@send_url  #--http://soap.sforce.com/schemas/class/HelperClass
+cur_sliders_cnt=@@sliders_cnt
+tpl=%{
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hel="#{soap_url}">
+   <soapenv:Header>
+      <hel:AllowFieldTruncationHeader>
+         <hel:allowFieldTruncation>0</hel:allowFieldTruncation>
+      </hel:AllowFieldTruncationHeader>
+
+      <hel:CallOptions>
+         <hel:client>27.0</hel:client>
+      </hel:CallOptions>
+      <hel:SessionHeader>
+         <hel:sessionId>#{s_id}</hel:sessionId>
+      </hel:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <hel:presentationUploaded>
+         <hel:sliders_cnt>#{cur_sliders_cnt}</hel:sliders_cnt>
+      </hel:presentationUploaded>
+   </soapenv:Body>
+</soapenv:Envelope>
+}
+end
+#------------------------send state-------------------
+def sendState
+  extractPptParam()
+  require 'rest-client'
+  RestClient.log=LOG_DIR+'send_sf.txt'   #--$stdout
+  #send_url='https://c.na11.visual.force.com/apex/test'
+  post_data=getSoapXml()
+  #---ENV['PERL_LWP_SSL_VERIFY_HOSTNAME']=0;
+  send_res = RestClient.post(
+      @@send_url,
+      post_data,{
+      "content-type" => "text/xml;charset=\"utf-8\"",
+      "Accept" =>"text/xml",
+      "Cache-Control" => "no-cashe",
+      "Pragma" =>"no-cashe",
+      "SOAPAction" =>"\"Run\"",
+      "Content-length" =>post_data.size,
+      "verify_ssl" => 0
+
+      }
+  )
+  RestClient.log << send_res.code
+  RestClient.log << send_res.body
 end
 #------------------------listen-----------------------
 def listen
