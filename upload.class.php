@@ -290,17 +290,18 @@ function uploadFromForce(){
 }
 function writePptParams(){
     if (!is_dir(PATH_PPTS.$this->org_id.'/'.$this->app_id)) {
-        $this->state.=";error-ppt_params-no dir";
-    } else {
-        $cur_path_ppt=PATH_PPTS.$this->org_id.'/'.$this->app_id;
-        $json_str='{"ppt_session_id":"'.$this->ppt_session_id.'","sf_url":"'.$this->sf_url.'"}';
-        $content='<?php'.chr(10).chr(13);
-        $content.='$ppt_params='."'".$json_str."';"."\n\n";
-        $content.='var_dump($ppt_params);'."\n\n";
-        $content.='?>';
-        file_put_contents($cur_path_ppt.'/ppt_params.php',$content);
-        file_put_contents($cur_path_ppt.'/ppt_params.json',$json_str);
+       mkdir(PATH_PPTS.$this->org_id.'/'.$this->app_id);
+       $this->state.=";warring-ppt_params-no dir";
     }
+    $cur_path_ppt=PATH_PPTS.$this->org_id.'/'.$this->app_id;
+    $json_str='{"ppt_session_id":"'.$this->ppt_session_id.'","sf_url":"'.$this->sf_url.'"}';
+    $content='<?php'.chr(10).chr(13);
+    $content.='$ppt_params='."'".$json_str."';"."\n\n";
+    $content.='var_dump($ppt_params);'."\n\n";
+    $content.='?>';
+    file_put_contents($cur_path_ppt.'/ppt_params.php',$content);
+    file_put_contents($cur_path_ppt.'/ppt_params.json',$json_str);
+
 }
 function uploaded() {
  //echo " 1)PARAMS: cloud_token=".$_POST['cloud_token']." org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
