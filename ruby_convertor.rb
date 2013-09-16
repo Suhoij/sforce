@@ -41,7 +41,8 @@ def initialize
   @@log.level = Logger::INFO
   ##--@@log=Logger.new(STDOUT)
   @@send_url='https://na11.salesforce.com/services/Soap/class/HelperClass'
-  @@ppt_session_id='00DG0000000CkUd!AQ0AQAxXVKnoBXnd8ShtRFLlgmrPr4v39SryHDPflE1mN1xVAWJNcr2WtSu0pUNo4QW06lkGQ7CRmVTQu7BPuBAHqYgT0D1e'
+  @@soap_url='http://soap.sforce.com/schemas/class/HelperClass'
+  @@ppt_session_id='00DG0000000CkUd!AQ0AQASO7j5Ae1w4EEXNK0SzBcDqAJUh7CiTdDb4Jlp_.XRM7qWOzPy4NBKokqrrOUMIj6295JXBP2ZdlgTqzUCCjXE6UNBJ'
 
 end
 #------------------------convert---------------------
@@ -97,8 +98,12 @@ def extractSliders (f)
     require 'win32ole'
     log=Logger.new(LOG_DIR+'logextractor.log')
     log.level = Logger::INFO
+    begin
+      ppt = WIN32OLE.open('PowerPoint.Application')
+    rescue
+      ppt = WIN32OLE.new('PowerPoint.Application')
+    end
 
-    ppt = WIN32OLE.new('PowerPoint.Application')
     #-----ppt.visible = false
     presentation = ppt.Presentations.Open(INPUT_DIR+f);
     @@sliders_cnt=ppt.ActivePresentation.Slides.Count()
@@ -117,7 +122,7 @@ def extractSliders (f)
    rescue   RuntimeError => error
      log.info('Extract slider ERROR '+error.inspect)
    ensure
-     log.info("Extract slider DONE! org_id=#{@@org_id} app_id=#{@app_id}" )
+     log.info("Extract slider DONE! org_id=#{@@org_id} app_id=#{@@app_id}" )
    end
 
 
@@ -131,16 +136,17 @@ def extractPptParams
      ppt_params=JSON.parse(content)
 
    end
-   @@send_url=ppt_params['sf_url']
-   @@ppt_session_id=ppt_params['ppt_session_id']
+   @@send_url       = ppt_params['sf_url']         if not ppt_params['sf_url'].empty?
+   @@ppt_session_id = ppt_params['ppt_session_id'] if not ppt_params['ppt_session_id'].empty?
    rescue RuntimeError => error
-     log.info('Extract PptParams ERROR '+error.inspect)
+     @@log.info('Extract PptParams ERROR '+error.inspect)
 end
 #-----------------------getSoapXml--------------------
 def getSoapXml
 s_id    = @@ppt_session_id
-soap_url= @@send_url  #--http://soap.sforce.com/schemas/class/HelperClass
+soap_url= @@soap_url  #--http://soap.sforce.com/schemas/class/HelperClass
 cur_sliders_cnt=@@sliders_cnt
+cur_app_id=@@app_id
 tpl=%{
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hel="#{soap_url}">
    <soapenv:Header>
@@ -158,6 +164,7 @@ tpl=%{
    <soapenv:Body>
       <hel:presentationUploaded>
          <hel:sliders_cnt>#{cur_sliders_cnt}</hel:sliders_cnt>
+         <hel:app_id>#{cur_app_id}</hel:app_id>
       </hel:presentationUploaded>
    </soapenv:Body>
 </soapenv:Envelope>
@@ -181,7 +188,6 @@ def sendState
       "SOAPAction" =>"\"Run\"",
       "Content-length" =>post_data.size,
       "verify_ssl" => 0
-
       }
   )
   RestClient.log << send_res.code

@@ -22,7 +22,8 @@ class SFSender
     @@log=Logger.new(LOG_DIR+'logsend.log')
     @@log.level = Logger::INFO
     @@send_url='https://na11.salesforce.com/services/Soap/class/HelperClass'
-    @@ppt_session_id='00DG0000000CkUd!AQ0AQAxXVKnoBXnd8ShtRFLlgmrPr4v39SryHDPflE1mN1xVAWJNcr2WtSu0pUNo4QW06lkGQ7CRmVTQu7BPuBAHqYgT0D1e'
+    @@soap_url='http://soap.sforce.com/schemas/class/HelperClass'
+    @@ppt_session_id='00DG0000000CkUd!AQ0AQASO7j5Ae1w4EEXNK0SzBcDqAJUh7CiTdDb4Jlp_.XRM7qWOzPy4NBKokqrrOUMIj6295JXBP2ZdlgTqzUCCjXE6UNBJ'
     @@org_id='00DG0000000CkUdMAK'
     @@app_id='a01G000000BRpLFIA2'
     @@sliders_cnt=12
@@ -30,8 +31,9 @@ class SFSender
 #-----------------------getSoapXml--------------------
 def getSoapXml
   s_id    = @@ppt_session_id
-  soap_url= @@send_url  #--http://soap.sforce.com/schemas/class/HelperClass
+  soap_url= @@soap_url  #--http://soap.sforce.com/schemas/class/HelperClass
   cur_sliders_cnt=@@sliders_cnt
+  cur_app_id=@@app_id
   tpl=%{
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hel="#{soap_url}">
    <soapenv:Header>
@@ -49,6 +51,7 @@ def getSoapXml
    <soapenv:Body>
       <hel:presentationUploaded>
          <hel:sliders_cnt>#{cur_sliders_cnt}</hel:sliders_cnt>
+         <hel:app_id>#{cur_app_id}</hel:app_id>
       </hel:presentationUploaded>
    </soapenv:Body>
 </soapenv:Envelope>
@@ -81,11 +84,12 @@ def sendState
       post_data,{
       "content-type" => "text/xml;charset=\"utf-8\"",
       "Accept" =>"text/xml",
-      "Cache-Control" => "no-cashe",
-      "Pragma" =>"no-cashe",
+      "Cache-Control" => "no-cache",
+      "Pragma" =>"no-cache",
       "SOAPAction" =>"\"Run\"",
       "Content-length" =>post_data.size,
-      "verify_ssl" => 0
+      "verify_ssl" => 0,
+      "verify_host" => 0
 
        }
   )
