@@ -22,8 +22,8 @@ class SFSender
     @@log=Logger.new(LOG_DIR+'logsend.log')
     @@log.level = Logger::INFO
     @@send_url='https://na11.salesforce.com/services/Soap/class/HelperClass'
-    @@soap_url='http://soap.sforce.com/schemas/class/HelperClass'
-    @@ppt_session_id='00DG0000000CkUd!AQ0AQASO7j5Ae1w4EEXNK0SzBcDqAJUh7CiTdDb4Jlp_.XRM7qWOzPy4NBKokqrrOUMIj6295JXBP2ZdlgTqzUCCjXE6UNBJ'
+    @@schema_url='http://soap.sforce.com/schemas/class/HelperClass'
+    @@ppt_session_id='00DG0000000CkUd!AQ0AQGm6koOyXnC8wEqRnUPgNXCl2d14HDwKJmsOovS0QC0On9eIr7F0kijnFUJI0A9oi5I_ewziKnewkLpFDQQtv2kV6DYC'
     @@org_id='00DG0000000CkUdMAK'
     @@app_id='a01G000000BRpLFIA2'
     @@sliders_cnt=12
@@ -31,7 +31,7 @@ class SFSender
 #-----------------------getSoapXml--------------------
 def getSoapXml
   s_id    = @@ppt_session_id
-  soap_url= @@soap_url  #--http://soap.sforce.com/schemas/class/HelperClass
+  soap_url= @@schema_url  #--http://soap.sforce.com/schemas/class/HelperClass
   cur_sliders_cnt=@@sliders_cnt
   cur_app_id=@@app_id
   tpl=%{
@@ -66,7 +66,7 @@ def extractPptParams
     ppt_params=JSON.parse(content)
 
   end
-  @@send_url=ppt_params['sf_url']
+  @@send_url=ppt_params['send_url']
   @@ppt_session_id=ppt_params['ppt_session_id']
 rescue RuntimeError => error
   @@log.info('Extract PptParams ERROR '+error.inspect)
