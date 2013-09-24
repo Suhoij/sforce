@@ -41,8 +41,8 @@ def initialize
   @@log.level = Logger::INFO
   ##--@@log=Logger.new(STDOUT)
   @@send_url='https://na11.salesforce.com/services/Soap/class/HelperClass'
-  @@soap_url='http://soap.sforce.com/schemas/class/HelperClass'
-  @@ppt_session_id='00DG0000000CkUd!AQ0AQASO7j5Ae1w4EEXNK0SzBcDqAJUh7CiTdDb4Jlp_.XRM7qWOzPy4NBKokqrrOUMIj6295JXBP2ZdlgTqzUCCjXE6UNBJ'
+  @@schema_url='http://soap.sforce.com/schemas/class/HelperClass'
+  @@ppt_session_id='00DG0000000CkUd!AQ0AQGm6koOyXnC8wEqRnUPgNXCl2d14HDwKJmsOovS0QC0On9eIr7F0kijnFUJI0A9oi5I_ewziKnewkLpFDQQtv2kV6DYC'
 
 end
 #------------------------convert---------------------
@@ -129,22 +129,25 @@ def extractSliders (f)
 end
 #------------------------extract ppt params----------
 def extractPptParams
-   content=File.read(PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE)
+  begin
+  content=File.read(PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE)
    unless content.empty?
      require 'json'
      #--extract json string from content
      ppt_params=JSON.parse(content)
 
    end
-   @@send_url       = ppt_params['sf_url']         if not ppt_params['sf_url'].empty?
-   @@ppt_session_id = ppt_params['ppt_session_id'] if not ppt_params['ppt_session_id'].empty?
+   @@send_url         = ppt_params['send_url']         if not ppt_params['schema_url'].empty?
+   @@schema_url       = ppt_params['schema_url']       if not ppt_params['schema_url'].empty?
+   @@ppt_session_id   = ppt_params['ppt_session_id']   if not ppt_params['ppt_session_id'].empty?
    rescue RuntimeError => error
      @@log.info('Extract PptParams ERROR '+error.inspect)
+   end
 end
 #-----------------------getSoapXml--------------------
 def getSoapXml
 s_id    = @@ppt_session_id
-soap_url= @@soap_url  #--http://soap.sforce.com/schemas/class/HelperClass
+soap_url= @@schema_url  #--http://soap.sforce.com/schemas/class/HelperClass
 cur_sliders_cnt=@@sliders_cnt
 cur_app_id=@@app_id
 tpl=%{
@@ -172,7 +175,8 @@ tpl=%{
 end
 #------------------------send state-------------------
 def sendState
-  extractPptParam()
+begin
+  extractPptParams()
   require 'rest-client'
   RestClient.log=LOG_DIR+'send_sf.txt'   #--$stdout
   #send_url='https://c.na11.visual.force.com/apex/test'
@@ -192,21 +196,39 @@ def sendState
   )
   RestClient.log << send_res.code
   RestClient.log << send_res.body
+rescue RuntimeError => error
+  @@log.info('SendState  ERROR '+error.inspect)
+
 end
+end
+#-----------------------exec_every_seconds---------
+ def exec_every_seconds(seconds)
+   last_tick = Time.now
+   loop do
+     sleep 0.1
+     if Time.now - last_tick >= seconds
+       yield
+       last_tick = Time.now
+     end
+   end
+ end
 #------------------------listen-----------------------
 def listen
      time = Time.now
      @@log.info("Start listen:  state:"+@state)
      while 1
+
        next if @state=='convert'
+       sleep 2
   	    #--read files upload_dir
-	    #--Dir.entries(UPLOAD_DIR).select {|f| !File.directory? f}
-	    files_to_convert=Dir[UPLOAD_DIR+"*.ppt"]+Dir[UPLOAD_DIR+"*.pptx"]
-	    @@log.info("Files in dir:"+files_to_convert.size.to_s )
-	    if files_to_convert.size == 0
-		    @@log.close
-		    abort
-	    else
+	     #--Dir.entries(UPLOAD_DIR).select {|f| !File.directory? f}
+	     files_to_convert=Dir[UPLOAD_DIR+"*.ppt"]+Dir[UPLOAD_DIR+"*.pptx"]
+
+	      if files_to_convert.size == 0
+		      #@@log.close
+		      #abort
+        else
+            @@log.info("Files in dir:"+files_to_convert.size.to_s )
 	          file=files_to_convert.first
             file_name=File.basename(file,"*.*")
             if !file.nil?
@@ -226,12 +248,13 @@ def listen
               end
 	            convert File.basename(file)
 	            extractSliders File.basename(file)
+              sendState()
               #------------rename upload-input file-------------------------------------------
 
               File.rename("#{INPUT_DIR}#{file_name}","#{INPUT_DIR}#{file_name}"+".done")
               File.rename("#{UPLOAD_DIR}#{file_name}","#{UPLOAD_DIR}#{file_name}"+".done")
            end
-	    end
+	      end
   	
      end
 end #--lister
