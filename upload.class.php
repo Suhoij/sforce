@@ -1,5 +1,5 @@
 <?php
-/////////////// Upload SLIDE CLASS ////////////////
+/////////////// Upload SLIDE-PPT CLASS ////////////////
 //***********************************************
 //************************************************
 //**************   CREATED BY  *******************
@@ -27,11 +27,13 @@ class Upload {
   var $uploaded_file_name;
   var $type_sf_file;//--html,zip,ppt
   var $cloud_toke='???';
+  var $action='';
   var $org_id;
   var $app_id;
   var $slide_id;
   var $ppt_session_id;//--sessionId from active SF all
-  var $sf_url;        //--SF soap endpoint url
+  var $schema_url;        //--SF soap schema url
+  var $send_url;        //--SF soap endpoint post send url
   function __construct($n_fieldname, $n_type, $n_upload_dir) {
     $this->fieldname = $n_fieldname;
     $this->type = $n_type;
@@ -47,7 +49,7 @@ class Upload {
     }
     closedir($myDirectory);
     $indexCount = count($dirArray);
-    print ("<a href='http://ppthtml2.cloudapp.net'>Home</a>");
+    print ("<a href='".CLOUD_BASE."'>Home</a>");
     print ('<h1>Uploaded files list</h1>');
     Print ("$indexCount-2 files<br>\n");
 
@@ -80,7 +82,7 @@ class Upload {
     }
     print ("</TABLE>\n");
   }
-public function unzipFile($name, $dir_file_unzip) {
+function unzipFile($name, $dir_file_unzip) {
         $zip = new ZipArchive;
         $res = $zip->open($name);
         if ($res === TRUE) {
@@ -89,9 +91,24 @@ public function unzipFile($name, $dir_file_unzip) {
           $this->state .= 'data-unzip-done;';
         }
         else {
-          $this->state .= "error-unzip-dir;";
-
+          $this->state .= "error-unzip-dir; dir_file_unzip=".$dir_file_unzip;
+          error_log(__FUNCTION__.' '.$this->state);
         }
+}
+function deleteFiles($tp_file) {
+   try {
+      if ($tp_file=='ppt'){
+        $old_dir=getcwd().'/preview/'.$tp_file.'/'.$this->org_id.'/'.$this->app_id;
+      }
+      if ($tp_file=='slide'){
+        $old_dir=getcwd().'/preview/'.$tp_file.'/'.$this->org_id.'/'.$this->app_id.'/'.$this->slide_id;
+      }
+      $deleted_dir=$old_dir.'-deleted';
+      rename($old_dir,$deleted_dir);
+   } catch (Exception $e) {
+      $this->state.=";error-delete-$tp_file ". $e->getMessage();
+      error_log('ERROR-deletFiles, dir='.$old_dir);
+   }
 }
 function moveSlide(){
   $this->slide_id= (isset($_POST['slide_id']))?$_POST['slide_id']:null;
@@ -128,10 +145,11 @@ function moveSlide(){
    $this->state="done";
    }  catch (Exception $e) {
       $this->state.=';error-move-data '. $e->getMessage();
+      error_log(__FUNCTION__.' '.$this->state);
    }
 }
 function moveData(){
-  $this->state.= "move data;";
+  $this->state.= ";move data";
   try {
   if (!is_dir(PATH_SLIDERS.$this->org_id)) {
           mkdir(PATH_SLIDERS.$this->org_id);
@@ -143,11 +161,12 @@ function moveData(){
           mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/sources');
    }
    $path_sliders_org_app = PATH_SLIDERS. $this->org_id.'/'.$this->app_id.'/sources';
-
-   //---unzip source
-   $this->unzipFile( $this->uploaded_file_name, $path_sliders_org_app);
-   //---unzip jslib
-   $this->unzipFile(PATH_UPLOAD.'JSLibrary.zip', $path_sliders_org_app);
+   if  (($this->type_sf_file=='zip')&&(preg_match('/source/i',$this->uploaded_file_name))) {
+         //---unzip source
+         $this->unzipFile( $this->uploaded_file_name, $path_sliders_org_app);
+         //---unzip jslib
+         $this->unzipFile(PATH_UPLOAD.'JSLibrary.zip', $path_sliders_org_app);
+   }
    /*
    if (copy( $upload_file_source, $slider_main_file)) {
       unlink($slider_upload_file);
@@ -159,8 +178,9 @@ function moveData(){
    $this->state="done";
    } catch (Exception $e) {
       $this->state.=';error-move-data '. $e->getMessage();
+      error_log(__FUNCTION__.' '.$this->state);
    }
-   echo $this->state;
+   //echo $this->state;
 }
 function pickUpData(){
    try {
@@ -200,6 +220,7 @@ function pickUpData(){
     }
    } catch (Exception $e) {
      $this->state.=';error-pickupdata '. $e->getMessage();
+     error_log(__FUNCTION__.' '.$this->state);
    }
 }
 function setBaseTagSlide() {
@@ -243,17 +264,29 @@ function uploadFromForce(){
       $this->cloud_token=$_POST['cloud_token'];
       $this->org_id  = $_POST['org_id'];
       $this->app_id  = $_POST['app_id'];
-      $this->slide_id=$_POST['slide_id'];
+      $this->slide_id= $_POST['slide_id'];
       $from    = $_FILES[$this->fieldname]["tmp_name"];
       $to      = $_FILES[$this->fieldname]["name"];
       $this->setTypeSfFile($to);
       $this->uploaded_file_name=$to;
       $part='';
+      if (isset($_POST['action'])&&(preg_match('/delete/i',$_POST['action']))){
+          if (preg_match('/ppt|pptx/i',$_POST['action'])) {
+                $this->deleteFiles('ppt');
+          }
+          if (preg_match('/slide|slider/i',$_POST['action'])) {
+                $this->deleteFiles('slide');
+          }
+          $this->state.=';done';
+          echo $this->state;
+          return; //--EXIT from protocol--
+      }
       if (isset($_POST['data_part'])){
           $part='pt_'.$_POST['data_part'].'_';
           if ($_POST['data_part']==0) {
-             $this->pickUpData();
-             return;
+              $this->pickUpData();
+              $this->moveData();
+              return;
          }
       }
       $move_to_file= PATH_UPLOAD. $part.$this->org_id.'_'.$this->app_id.'_';
@@ -278,36 +311,47 @@ function uploadFromForce(){
 
          }
          //---extract and write json-data for ppt soap call
-         if (isset($_POST['ppt_session_id'])&&(isset($_POST['sf_url']))) {
+         if (isset($_POST['ppt_session_id'])&&(isset($_POST['schema_url']))) {
            $this->ppt_session_id=$_POST['ppt_session_id'];
-           $this->sf_url=$_POST['sf_url'];
+           $this->schema_url=$_POST['schema_url'];
+           $this->send_url=$_POST['send_url'];
            $this->writePptParams();
          }
+         $this->state='done';
 
-      } else "error: can't upload data,org_id=$this->org_id,app_id=$this->app_id";
+      } else {
+          $this->state.="error: can't upload data,org_id=$this->org_id,app_id=$this->app_id";
+          error_log(__FUNCTION__.' '.$this->state);
+        }
+   echo $this->state;
   }
 
 }
 function writePptParams(){
+
+  try {
     if (!is_dir(PATH_PPTS.$this->org_id.'/'.$this->app_id)) {
        mkdir(PATH_PPTS.$this->org_id.'/'.$this->app_id);
        $this->state.=";warring-ppt_params-no dir";
     }
     $cur_path_ppt=PATH_PPTS.$this->org_id.'/'.$this->app_id;
-    $json_str='{"ppt_session_id":"'.$this->ppt_session_id.'","sf_url":"'.$this->sf_url.'"}';
+    $json_str='{"ppt_session_id":"'.$this->ppt_session_id.'","schema_url":"'.$this->schema_url.'","send_url":"'.$this->send_url.'"}';
     $content='<?php'.chr(10).chr(13);
     $content.='$ppt_params='."'".$json_str."';"."\n\n";
     $content.='var_dump($ppt_params);'."\n\n";
     $content.='?>';
+
     file_put_contents($cur_path_ppt.'/ppt_params.php',$content);
     file_put_contents($cur_path_ppt.'/ppt_params.json',$json_str);
+    } catch (Exception $e) {
+        $this->state.=';error-writePptParams '. $e->getMessage();
+        error_log(__FUNCTION__.' '.$this->state);
+   }
 
 }
 function uploaded() {
- //echo " 1)PARAMS: cloud_token=".$_POST['cloud_token']." org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
   if (isset($_POST['cloud_token'])) {
       $this->uploadFromForce();
-      //echo " 2)PARAMS: cloud_token=$this->cloud_token org_id=$this->org_id ; app_id=$this->app_id file_name=".$_FILES[$this->fieldname]['name'];
       return ;
   }
   if (1 == 1) {
@@ -324,6 +368,7 @@ function uploaded() {
     else {
       //echo "Error: " . $_FILES[$this->fieldname]["error"] . "<br />";
       echo "Error: " . var_dump($this->fieldname). "<br />";
+      error_log(__FUNCTION__.' '.$this->state);
     }
   }
   else {

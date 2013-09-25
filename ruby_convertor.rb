@@ -115,7 +115,7 @@ def extractSliders (f)
     end
     sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
     for i in 1..@@sliders_cnt
-      ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i}.jpg", ".jpg", 1024,768)
+      ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i}.jpg", ".jpg", 2048,1536)  #--1024 768
     end
     ppt.ActivePresentation.Close()
     ppt.quit()
