@@ -223,7 +223,11 @@ def listen
   	    #--read files upload_dir
 	     #--Dir.entries(UPLOAD_DIR).select {|f| !File.directory? f}
 	     files_to_convert=Dir[UPLOAD_DIR+"*.ppt"]+Dir[UPLOAD_DIR+"*.pptx"]
-
+       pt_files=files_to_convert.select {|i| i =~/pt_*\.ppt(x)/}
+       if pt_files.size >0
+          @@log.info("Have pt_ :")
+          next
+       end
 	      if files_to_convert.size == 0
 		      #@@log.close
 		      #abort
