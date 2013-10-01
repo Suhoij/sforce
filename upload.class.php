@@ -261,14 +261,25 @@ function setTypeSfFile($to) {
 }
 function uploadFromForce(){
   if ($_POST['cloud_token']== CLOUD_TOKEN){
-      $this->cloud_token=$_POST['cloud_token'];
-      $this->org_id  = $_POST['org_id'];
-      $this->app_id  = $_POST['app_id'];
-      $this->slide_id= $_POST['slide_id'];
-      $from    = $_FILES[$this->fieldname]["tmp_name"];
-      $to      = $_FILES[$this->fieldname]["name"];
-      $this->setTypeSfFile($to);
-      $this->uploaded_file_name=$to;
+      try {
+        $this->cloud_token=$_POST['cloud_token'];
+        if (isset($_POST['org_id'])) {
+              $this->org_id  = $_POST['org_id'];
+        }
+        if (isset($_POST['app_id'])) {
+              $this->app_id  = $_POST['app_id'];
+        }
+        if (isset($_POST['slide_id'])) {
+              $this->slide_id= $_POST['slide_id'];
+        }
+        $from    = $_FILES[$this->fieldname]["tmp_name"];
+        $to      = $_FILES[$this->fieldname]["name"];
+        $this->setTypeSfFile($to);
+        $this->uploaded_file_name=$to;
+      } catch (Exception $e) {
+        $this->state.=';error-input-data';
+        error_log(__FUNCTION__.'error input data: '.$e->getMessage());
+      }
       $part='';
       if (isset($_POST['action'])&&(preg_match('/delete/i',$_POST['action']))){
           if (preg_match('/ppt|pptx/i',$_POST['action'])) {
@@ -286,6 +297,7 @@ function uploadFromForce(){
           if ($_POST['data_part']==0) {
               $this->pickUpData();
               $this->moveData();
+              $this->writePptParams();
               return;
          }
       }
@@ -311,12 +323,12 @@ function uploadFromForce(){
 
          }
          //---extract and write json-data for ppt soap call
-         if (isset($_POST['ppt_session_id'])&&(isset($_POST['schema_url']))) {
-           $this->ppt_session_id=$_POST['ppt_session_id'];
-           $this->schema_url=$_POST['schema_url'];
-           $this->send_url=$_POST['send_url'];
-           $this->writePptParams();
-         }
+         //if (isset($_POST['ppt_session_id'])&&(isset($_POST['schema_url']))) {
+          // $this->ppt_session_id=$_POST['ppt_session_id'];
+         //  $this->schema_url=$_POST['schema_url'];
+         // $this->send_url=$_POST['send_url'];
+         $this->writePptParams();
+         //}
          $this->state='done';
 
       } else {
@@ -330,6 +342,10 @@ function uploadFromForce(){
 function writePptParams(){
 
   try {
+    if (isset($_POST['ppt_session_id'])&&(isset($_POST['schema_url']))) {
+    $this->ppt_session_id=$_POST['ppt_session_id'];
+    $this->schema_url=$_POST['schema_url'];
+    $this->send_url=$_POST['send_url'];
     if (!is_dir(PATH_PPTS.$this->org_id.'/'.$this->app_id)) {
        mkdir(PATH_PPTS.$this->org_id.'/'.$this->app_id);
        $this->state.=";warring-ppt_params-no dir";
@@ -343,6 +359,7 @@ function writePptParams(){
 
     file_put_contents($cur_path_ppt.'/ppt_params.php',$content);
     file_put_contents($cur_path_ppt.'/ppt_params.json',$json_str);
+    }
     } catch (Exception $e) {
         $this->state.=';error-writePptParams '. $e->getMessage();
         error_log(__FUNCTION__.' '.$this->state);
