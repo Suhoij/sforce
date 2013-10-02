@@ -95,6 +95,14 @@ function unzipFile($name, $dir_file_unzip) {
           error_log(__FUNCTION__.' '.$this->state);
         }
 }
+function deletePartFiles() {
+  try {
+    array_map('unlink', glob(PATH_UPLOAD."pt_*_".$this->org_id.ORG_APP_DELIM.$this->app_id.ORG_APP_DELIM."*"));
+  } catch (Exception $e) {
+      $this->state .= "error-delete-part-files";
+      error_log(__FUNCTION__.' '.$this->state);
+  }
+}
 function deleteFiles($tp_file) {
    try {
       if ($tp_file=='ppt'){
@@ -218,6 +226,7 @@ function pickUpData(){
             }
        }
     }
+    $this->deletePartFiles();
    } catch (Exception $e) {
      $this->state.=';error-pickupdata '. $e->getMessage();
      error_log(__FUNCTION__.' '.$this->state);

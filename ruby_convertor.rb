@@ -109,11 +109,13 @@ def extractSliders (f)
     @@sliders_cnt=ppt.ActivePresentation.Slides.Count()
     log.info(" ExtractSliders org_id=#{@@org_id} app_id=#{@@app_id} SLIDERS_CNT="+@@sliders_cnt.to_s)
     sleep 2 #---wait while ppt build sliders list
-
+    sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
+    #---clear old files in dir sliders
+    FileUtils.rm_rf(sliders_dir)
     if ! Dir.exist?(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
          Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
     end
-    sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
+
     for i in 1..@@sliders_cnt
       ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i}.jpg", ".jpg", 2048,1536)  #--1024 768
     end
@@ -130,7 +132,7 @@ end
 #------------------------extract ppt params----------
 def extractPptParams
   begin
-  content=File.read(PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE)
+   content=File.read(PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE)
    unless content.empty?
      require 'json'
      #--extract json string from content
@@ -223,11 +225,14 @@ def listen
   	    #--read files upload_dir
 	     #--Dir.entries(UPLOAD_DIR).select {|f| !File.directory? f}
 	     files_to_convert=Dir[UPLOAD_DIR+"*.ppt"]+Dir[UPLOAD_DIR+"*.pptx"]
-       pt_files=files_to_convert.select {|i| i =~/pt_*\.ppt(x)/}
-       if pt_files.size >0
-          @@log.info("Have pt_ :")
-          next
-       end
+       pt_files=Dir[UPLOAD_DIR+"*pt_*.ppt"] +Dir[UPLOAD_DIR+"*pt_*.pptx"]
+       files_to_convert=files_to_convert-pt_files
+       #pt_files=files_to_convert.select {|i| File.basename(i) =~/pt_*\.pptx/}
+       #if pt_files.size >0
+       #   @@log.info("Have pt_ :")
+       #   sleep 5
+       #   next
+       #end
 	      if files_to_convert.size == 0
 		      #@@log.close
 		      #abort
