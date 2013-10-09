@@ -8,12 +8,13 @@
          <hel:client>27.0</hel:client>
       </hel:CallOptions>
       <hel:SessionHeader>
-         <hel:sessionId>00DG0000000CkUd!AQ0AQAxXVKnoBXnd8ShtRFLlgmrPr4v39SryHDPflE1mN1xVAWJNcr2WtSu0pUNo4QW06lkGQ7CRmVTQu7BPuBAHqYgT0D1e</hel:sessionId>
+         <hel:sessionId>00DG0000000CkUd!AQ0AQASO7j5Ae1w4EEXNK0SzBcDqAJUh7CiTdDb4Jlp_.XRM7qWOzPy4NBKokqrrOUMIj6295JXBP2ZdlgTqzUCCjXE6UNBJ</hel:sessionId>
       </hel:SessionHeader>
    </soapenv:Header>
    <soapenv:Body>
       <hel:presentationUploaded>
-         <hel:sliders_cnt>10</hel:sliders_cnt>
+         <hel:sliders_cnt>10</hel:sliders_cnt>
+	 <hel:app_id>10</hel:app_id>
       </hel:presentationUploaded>
    </soapenv:Body>
 </soapenv:Envelope>

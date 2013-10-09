@@ -36,6 +36,7 @@ class ConvertorPPT_HTML
 def initialize
   require 'logger'
   require 'fileutils'
+  require 'json'
   @state='init'
   @@log=Logger.new(LOG_DIR+'logconvertor.log')
   @@log.level = Logger::INFO
@@ -44,6 +45,25 @@ def initialize
   @@schema_url='http://soap.sforce.com/schemas/class/HelperClass'
   @@ppt_session_id='00DG0000000CkUd!AQ0AQGm6koOyXnC8wEqRnUPgNXCl2d14HDwKJmsOovS0QC0On9eIr7F0kijnFUJI0A9oi5I_ewziKnewkLpFDQQtv2kV6DYC'
 
+end
+#----------------------writeState--------------------
+def writeState(state,job,mes='')
+  cur_state_file=Dir[LOG_DIR+'state_ppt.*'][0]
+  File.delete(LOG_DIR+cur_state_file) unless cur_state_file.nil?
+  stateHash = {
+      "state" => state,
+      "job" => job,
+      "time" => Time.now.strftime("%d/%m/%H/%M/%S")
+  }
+  stateHash[:mes]=mes if not mes.empty?
+  if job =~/convert|extract/
+     stateHash[:org_id] = @@org_id
+     stateHash[:app_id] = @@app_id
+  end
+  new_state_file = LOG_DIR+'state_ppt.'+job
+  File.open(new_state_file,"w") do |f|
+    f.write(stateHash.to_json)
+  end
 end
 #------------------------convert---------------------
 def convert(f)
@@ -54,6 +74,7 @@ def convert(f)
     file_out_dir=OUTPUT_DIR
   end
 	file_name=File.basename(f,"*.*")
+  writeState('work','convert')
 	#org_id=f.split('_')[0]
 	##----for many presentation------------------
 	#if ! org_id.nil?
@@ -90,11 +111,13 @@ def convert(f)
  	  @@log.info("Done convert file:"+f+"  time:"+time.inspect)
   rescue
  	  @@log.info("ERROR convert file:"+f)
+    writeState('error','convert',f)
 	end
 end
 #-----------------------extractor---------------------
 def extractSliders (f)
    begin
+    writeState('work','extract')
     require 'win32ole'
     log=Logger.new(LOG_DIR+'logextractor.log')
     log.level = Logger::INFO
@@ -107,7 +130,7 @@ def extractSliders (f)
     #-----ppt.visible = false
     presentation = ppt.Presentations.Open(INPUT_DIR+f);
     @@sliders_cnt=ppt.ActivePresentation.Slides.Count()
-    log.info(" ExtractSliders org_id=#{@@org_id} app_id=#{@@app_id} SLIDERS_CNT="+@@sliders_cnt.to_s)
+    log.info(" ExtractSliders org_id=#{@@org_id} app_id=#{@@app_id} SLIDERS_CNT="+@@sliders_cnt.to_s+" time:"+Time.now.strftime("%d/%m/%H/%M/%S"))
     sleep 2 #---wait while ppt build sliders list
     sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
     #---clear old files in dir sliders
@@ -123,8 +146,10 @@ def extractSliders (f)
     ppt.quit()
    rescue   RuntimeError => error
      log.info('Extract slider ERROR '+error.inspect)
+     writeState('error','extract',error.inspect)
    ensure
      log.info("Extract slider DONE! org_id=#{@@org_id} app_id=#{@@app_id}" )
+     writeState('work','extract-done-'+@@sliders_cnt,'done')
    end
 
 
@@ -132,18 +157,19 @@ end
 #------------------------extract ppt params----------
 def extractPptParams
   begin
+   writeState('work','extract-soap')
    content=File.read(PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE)
    unless content.empty?
      require 'json'
      #--extract json string from content
      ppt_params=JSON.parse(content)
-
    end
    @@send_url         = ppt_params['send_url']         if not ppt_params['schema_url'].empty?
    @@schema_url       = ppt_params['schema_url']       if not ppt_params['schema_url'].empty?
    @@ppt_session_id   = ppt_params['ppt_session_id']   if not ppt_params['ppt_session_id'].empty?
    rescue RuntimeError => error
      @@log.info('Extract PptParams ERROR '+error.inspect)
+     writeState('error','extract-soap',error.inspect)
    end
 end
 #-----------------------getSoapXml--------------------
@@ -180,6 +206,7 @@ def sendState
 begin
   extractPptParams()
   require 'rest-client'
+  writeState('work','send-state','start')
   RestClient.log=LOG_DIR+'send_sf.txt'   #--$stdout
   #send_url='https://c.na11.visual.force.com/apex/test'
   post_data=getSoapXml()
@@ -198,9 +225,10 @@ begin
   )
   RestClient.log << send_res.code
   RestClient.log << send_res.body
+  writeState('work','send-state','done')
 rescue RuntimeError => error
   @@log.info('SendState  ERROR '+error.inspect)
-
+  writeState('error','send-state',error.inspect)
 end
 end
 #-----------------------exec_every_seconds---------
@@ -219,7 +247,7 @@ def listen
      time = Time.now
      @@log.info("Start listen:  state:"+@state)
      while 1
-
+       writeState('work','wait')
        next if @state=='convert'
        sleep 2
   	    #--read files upload_dir
