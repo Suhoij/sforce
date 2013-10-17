@@ -149,7 +149,7 @@ def extractSliders (f)
      writeState('error','extract',error.inspect)
    ensure
      log.info("Extract slider DONE! org_id=#{@@org_id} app_id=#{@@app_id}" )
-     writeState('work','extract-done-'+@@sliders_cnt,'done')
+     writeState('work','extract-done-'+@@sliders_cnt.to_s,'done')
    end
 
 
