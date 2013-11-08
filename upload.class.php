@@ -356,6 +356,12 @@ function writePptParams(){
     $this->schema_url=$_POST['schema_url'];
     $this->send_url=$_POST['send_url'];
     if (!is_dir(PATH_PPTS.$this->org_id.'/'.$this->app_id)) {
+       if (!isset($this->org_id)) {
+           error_log(__FUNCTION__.' EMPTY org_id='.$this->org_id);
+       }
+       if (!isset($this->app_id)) {
+           error_log(__FUNCTION__.' EMPTY app_id='.$this->org_id);
+       }
        mkdir(PATH_PPTS.$this->org_id.'/'.$this->app_id);
        $this->state.=";warring-ppt_params-no dir";
     }
