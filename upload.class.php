@@ -274,9 +274,15 @@ function uploadFromForce(){
         $this->cloud_token=$_POST['cloud_token'];
         if (isset($_POST['org_id'])) {
               $this->org_id  = $_POST['org_id'];
+        } else {
+           error_log(__FUNCTION__.' EMPTY org_id=');
+
         }
         if (isset($_POST['app_id'])) {
               $this->app_id  = $_POST['app_id'];
+        } else {
+           error_log(__FUNCTION__.' EMPTY app_id=');
+
         }
         if (isset($_POST['slide_id'])) {
               $this->slide_id= $_POST['slide_id'];
