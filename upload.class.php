@@ -172,6 +172,7 @@ function moveData(){
    if  (($this->type_sf_file=='zip')&&(preg_match('/source/i',$this->uploaded_file_name))) {
          //---unzip source
          $this->unzipFile( $this->uploaded_file_name, $path_sliders_org_app);
+         rename($this->uploaded_file_name,$this->uploaded_file_name.'.done');
          //---unzip jslib
          $this->unzipFile(PATH_UPLOAD.'JSLibrary.zip', $path_sliders_org_app);
    }
