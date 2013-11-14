@@ -63,6 +63,7 @@ class Upload {
      if ( (!isset($_GET['all'])) && ($cur_ext=='zip')) { continue;}
      if ( (!isset($_GET['all'])) && ($cur_ext=='html')){ continue;}
      if ( (!isset($_GET['all'])) && ($cur_ext=='done')){ continue;}
+     if ( (!isset($_GET['all'])) && ($cur_ext=='config')){ continue;}
 
        if (substr("$dirArray[$index]", 0, 1) != ".") { // don't list hidden files
 
