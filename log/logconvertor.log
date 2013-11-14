@@ -1,627 +1,94 @@
-# Logfile created on 2013-09-30 18:18:26 +0330 by logger.rb/36483
-I, [2013-09-30T18:18:26.239981 #2452]  INFO -- : Start listen:  state:init
-I, [2013-09-30T18:19:14.515251 #2452]  INFO -- : Files in dir:1
-I, [2013-09-30T18:19:14.515251 #2452]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-09-30 18:19:14 +0330
-I, [2013-09-30T18:19:14.515251 #2452]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-09-30T18:19:14.518254 #2452]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
-I, [2013-09-30T18:19:16.588274 #2452]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-09-30 18:19:16 +0330
-I, [2013-09-30T18:23:26.160245 #2452]  INFO -- : Files in dir:1
-I, [2013-09-30T18:23:26.160245 #2452]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-09-30 18:23:26 +0330
-I, [2013-09-30T18:23:26.161246 #2452]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_CIS-EPD-Activity-Types-Mobile.pptx
-I, [2013-09-30T18:23:26.165249 #2452]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_CIS-EPD-Activity-Types-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
-I, [2013-09-30T18:23:28.527042 #2452]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-09-30 18:23:28 +0330
-I, [2013-09-30T18:25:19.158702 #2452]  INFO -- : Files in dir:1
-I, [2013-09-30T18:25:19.158702 #2452]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_demo-ppt-convert.pptx  time:2013-09-30 18:25:19 +0330
-I, [2013-09-30T18:25:19.158702 #2452]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_demo-ppt-convert.pptx
-I, [2013-09-30T18:25:19.158702 #2452]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
-I, [2013-09-30T18:25:20.780629 #2452]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_demo-ppt-convert.pptx  time:2013-09-30 18:25:20 +0330
-I, [2013-09-30T18:33:11.065921 #2452]  INFO -- : Files in dir:1
-I, [2013-09-30T18:33:11.065921 #2452]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/pt_1_00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt  time:2013-09-30 18:33:11 +0330
-I, [2013-09-30T18:33:11.065921 #2452]  INFO -- : Start convert:  file:pt_1_00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt
-I, [2013-09-30T18:33:11.065921 #2452]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\pt_1_00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt /o:c:\inetpub\wwwroot\preview\ppt\pt\1\index.html
-I, [2013-09-30T18:33:12.382524 #2452]  INFO -- : Done convert file:pt_1_00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt  time:2013-09-30 18:33:12 +0330
-I, [2013-09-30T18:39:28.163576 #3660]  INFO -- : Start listen:  state:init
-I, [2013-09-30T18:39:30.164663 #3660]  INFO -- : Files in dir:1
-I, [2013-09-30T18:39:30.164663 #3660]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt  time:2013-09-30 18:39:30 +0330
-I, [2013-09-30T18:39:30.164663 #3660]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt
-I, [2013-09-30T18:39:30.180281 #3660]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
-I, [2013-09-30T18:39:31.492841 #3660]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_example.ppt  time:2013-09-30 18:39:31 +0330
-I, [2013-09-30T18:46:07.755016 #3660]  INFO -- : Files in dir:1
-I, [2013-09-30T18:46:07.755016 #3660]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt  time:2013-09-30 18:46:07 +0330
-I, [2013-09-30T18:46:07.755016 #3660]  INFO -- : Start convert:  file:pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt
-I, [2013-09-30T18:46:07.772523 #3660]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt /o:c:\inetpub\wwwroot\preview\ppt\pt\1\index.html
-I, [2013-09-30T18:46:09.347792 #3660]  INFO -- : Done convert file:pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt  time:2013-09-30 18:46:09 +0330
-I, [2013-09-30T18:51:43.364755 #1484]  INFO -- : Start listen:  state:init
-I, [2013-09-30T18:51:45.382347 #1484]  INFO -- : Files in dir:1
-I, [2013-09-30T18:51:45.382347 #1484]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt  time:2013-09-30 18:51:45 +0330
-I, [2013-09-30T18:51:45.382347 #1484]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt
-I, [2013-09-30T18:51:45.382347 #1484]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T18:51:46.666703 #1484]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_example1234.ppt  time:2013-09-30 18:51:46 +0330
-I, [2013-09-30T19:02:09.762366 #1484]  INFO -- : Files in dir:1
-I, [2013-09-30T19:02:09.762366 #1484]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/pt_2_00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx  time:2013-09-30 19:02:09 +0330
-I, [2013-09-30T19:02:09.762366 #1484]  INFO -- : Start convert:  file:pt_2_00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx
-I, [2013-09-30T19:02:09.878001 #1484]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\pt_2_00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx /o:c:\inetpub\wwwroot\preview\ppt\pt\2\index.html
-I, [2013-09-30T19:02:11.163983 #1484]  INFO -- : Done convert file:pt_2_00DG0000000CkUdMAK_a01G000000DTkc0IAD_Abbott-Training-3.5-TR.pptx  time:2013-09-30 19:02:11 +0330
-I, [2013-09-30T19:03:41.206275 #2492]  INFO -- : Start listen:  state:init
-I, [2013-09-30T19:03:43.223909 #2492]  INFO -- : Files in dir:1
-I, [2013-09-30T19:03:43.223909 #2492]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_for-test.ppt  time:2013-09-30 19:03:43 +0330
-I, [2013-09-30T19:03:43.223909 #2492]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_for-test.ppt
-I, [2013-09-30T19:03:43.223909 #2492]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_for-test.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
-I, [2013-09-30T19:03:44.427275 #2492]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_for-test.ppt  time:2013-09-30 19:03:44 +0330
-I, [2013-09-30T19:15:33.045086 #3844]  INFO -- : Start listen:  state:init
-I, [2013-09-30T19:16:41.354620 #3844]  INFO -- : Files in dir:1
-I, [2013-09-30T19:16:41.354620 #3844]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_test-view.ppt  time:2013-09-30 19:16:41 +0330
-I, [2013-09-30T19:16:41.354620 #3844]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_test-view.ppt
-I, [2013-09-30T19:16:41.354620 #3844]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_test-view.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:16:42.581992 #3844]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_test-view.ppt  time:2013-09-30 19:16:42 +0330
-I, [2013-09-30T19:25:02.255184 #3844]  INFO -- : Files in dir:1
-I, [2013-09-30T19:25:02.255184 #3844]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty.ppt  time:2013-09-30 19:25:02 +0330
-I, [2013-09-30T19:25:02.256186 #3844]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty.ppt
-I, [2013-09-30T19:25:02.260188 #3844]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:25:03.661744 #3844]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty.ppt  time:2013-09-30 19:25:03 +0330
-I, [2013-09-30T19:29:06.741717 #3844]  INFO -- : Files in dir:1
-I, [2013-09-30T19:29:06.741717 #3844]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-09-30 19:29:06 +0330
-I, [2013-09-30T19:29:06.741717 #3844]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt
-I, [2013-09-30T19:29:06.741717 #3844]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:29:08.109465 #3844]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-09-30 19:29:08 +0330
-I, [2013-09-30T19:33:17.599762 #3844]  INFO -- : Files in dir:1
-I, [2013-09-30T19:33:17.599762 #3844]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt  time:2013-09-30 19:33:17 +0330
-I, [2013-09-30T19:33:17.599762 #3844]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt
-I, [2013-09-30T19:33:17.615375 #3844]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:33:18.851755 #3844]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt  time:2013-09-30 19:33:18 +0330
-I, [2013-09-30T19:34:09.932706 #3844]  INFO -- : Files in dir:1
-I, [2013-09-30T19:34:09.932706 #3844]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-09-30 19:34:09 +0330
-I, [2013-09-30T19:34:09.932706 #3844]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt
-I, [2013-09-30T19:34:09.932706 #3844]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:34:11.132830 #3844]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-09-30 19:34:11 +0330
-I, [2013-09-30T19:35:52.264569 #3844]  INFO -- : Files in dir:1
-I, [2013-09-30T19:35:52.264569 #3844]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt  time:2013-09-30 19:35:52 +0330
-I, [2013-09-30T19:35:52.264569 #3844]  INFO -- : Start convert:  file:pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt
-I, [2013-09-30T19:35:52.264569 #3844]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt /o:c:\inetpub\wwwroot\preview\ppt\pt\1\index.html
-I, [2013-09-30T19:35:53.522818 #3844]  INFO -- : Done convert file:pt_1_00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt  time:2013-09-30 19:35:53 +0330
-I, [2013-09-30T19:38:23.519428 #4024]  INFO -- : Start listen:  state:init
-I, [2013-09-30T19:38:25.535037 #4024]  INFO -- : Files in dir:2
-I, [2013-09-30T19:38:25.535037 #4024]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt  time:2013-09-30 19:38:25 +0330
-I, [2013-09-30T19:38:25.535037 #4024]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt
-I, [2013-09-30T19:38:25.550667 #4024]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:38:26.775869 #4024]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_123.ppt  time:2013-09-30 19:38:26 +0330
-I, [2013-09-30T19:38:36.957428 #4024]  INFO -- : Files in dir:1
-I, [2013-09-30T19:38:36.957428 #4024]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt  time:2013-09-30 19:38:36 +0330
-I, [2013-09-30T19:38:36.957428 #4024]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt
-I, [2013-09-30T19:38:36.973047 #4024]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:38:38.461351 #4024]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_example.ppt  time:2013-09-30 19:38:38 +0330
-I, [2013-09-30T19:41:15.837560 #4024]  INFO -- : Files in dir:1
-I, [2013-09-30T19:41:15.838561 #4024]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-09-30 19:41:15 +0330
-I, [2013-09-30T19:41:15.838561 #4024]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt
-I, [2013-09-30T19:41:15.841563 #4024]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-09-30T19:41:17.049121 #4024]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-09-30 19:41:17 +0330
-I, [2013-09-30T19:48:02.231931 #652]  INFO -- : Start listen:  state:init
-I, [2013-10-01T11:17:32.045633 #652]  INFO -- : Files in dir:1
-I, [2013-10-01T11:17:32.045633 #652]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-10-01 11:17:32 +0330
-I, [2013-10-01T11:17:32.045633 #652]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt
-I, [2013-10-01T11:17:32.061258 #652]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-01T11:17:33.264609 #652]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_qwerty123.ppt  time:2013-10-01 11:17:33 +0330
-I, [2013-10-01T12:49:55.620384 #2464]  INFO -- : Start listen:  state:init
-I, [2013-10-01T12:51:35.971077 #2784]  INFO -- : Start listen:  state:init
-I, [2013-10-01T12:52:35.487956 #3648]  INFO -- : Start listen:  state:init
-I, [2013-10-01T14:15:15.028251 #3648]  INFO -- : Files in dir:1
-I, [2013-10-01T14:15:15.028251 #3648]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt  time:2013-10-01 14:15:15 +0330
-I, [2013-10-01T14:15:15.028251 #3648]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt
-I, [2013-10-01T14:15:15.028251 #3648]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005C4GQAA0\index.html
-I, [2013-10-01T14:15:16.245613 #3648]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt  time:2013-10-01 14:15:16 +0330
-I, [2013-10-01T14:58:57.145759 #3668]  INFO -- : Start listen:  state:init
-I, [2013-10-01T14:58:59.165417 #3668]  INFO -- : Files in dir:6
-I, [2013-10-01T14:58:59.165417 #3668]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt  time:2013-10-01 14:58:59 +0330
-I, [2013-10-01T14:58:59.165417 #3668]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt
-I, [2013-10-01T14:58:59.194980 #3668]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005C4GQAA0\index.html
-I, [2013-10-01T14:59:00.417331 #3668]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt  time:2013-10-01 14:59:00 +0330
-I, [2013-10-01T14:59:09.748430 #3668]  INFO -- : Files in dir:5
-I, [2013-10-01T14:59:09.748430 #3668]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt  time:2013-10-01 14:59:09 +0330
-I, [2013-10-01T14:59:09.748430 #3668]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt
-I, [2013-10-01T14:59:09.764055 #3668]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005C4GQAA0\index.html
-I, [2013-10-01T14:59:11.077913 #3668]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt  time:2013-10-01 14:59:11 +0330
-I, [2013-10-01T14:59:19.054350 #3668]  INFO -- : Files in dir:4
-I, [2013-10-01T14:59:19.070248 #3668]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_qwerty123.ppt  time:2013-10-01 14:59:19 +0330
-I, [2013-10-01T14:59:19.070248 #3668]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_qwerty123.ppt
-I, [2013-10-01T14:59:19.070248 #3668]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T14:59:20.378458 #3668]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_qwerty123.ppt  time:2013-10-01 14:59:20 +0330
-I, [2013-10-01T14:59:29.089873 #3668]  INFO -- : Files in dir:3
-I, [2013-10-01T14:59:29.089873 #3668]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt  time:2013-10-01 14:59:29 +0330
-I, [2013-10-01T14:59:29.089873 #3668]  INFO -- : Start convert:  file:pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt
-I, [2013-10-01T14:59:29.105616 #3668]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt /o:c:\inetpub\wwwroot\preview\ppt\pt\1\index.html
-I, [2013-10-01T14:59:30.069484 #3668]  INFO -- : Done convert file:pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt  time:2013-10-01 14:59:30 +0330
-I, [2013-10-01T15:00:22.410903 #3224]  INFO -- : Start listen:  state:init
-I, [2013-10-01T15:00:24.440537 #3224]  INFO -- : Files in dir:3
-I, [2013-10-01T15:00:24.440537 #3224]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt  time:2013-10-01 15:00:24 +0330
-I, [2013-10-01T15:00:24.440537 #3224]  INFO -- : Start convert:  file:pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt
-I, [2013-10-01T15:00:24.440537 #3224]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt /o:c:\inetpub\wwwroot\preview\ppt\pt\1\index.html
-I, [2013-10-01T15:00:25.665275 #3224]  INFO -- : Done convert file:pt_1_00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty.ppt  time:2013-10-01 15:00:25 +0330
-I, [2013-10-01T15:04:54.963299 #3236]  INFO -- : Start listen:  state:init
-I, [2013-10-01T15:27:11.058298 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T15:27:11.077610 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_CME--Project-v2.pptx  time:2013-10-01 15:27:11 +0330
-I, [2013-10-01T15:27:11.077610 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_CME--Project-v2.pptx
-I, [2013-10-01T15:27:11.077610 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_CME--Project-v2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T15:27:12.380028 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_CME--Project-v2.pptx  time:2013-10-01 15:27:12 +0330
-I, [2013-10-01T15:57:59.469876 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T15:57:59.488443 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt  time:2013-10-01 15:57:59 +0330
-I, [2013-10-01T15:57:59.488443 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt
-I, [2013-10-01T15:57:59.488443 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-01T15:58:00.684248 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt  time:2013-10-01 15:58:00 +0330
-I, [2013-10-01T16:05:34.878328 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T16:05:34.878328 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt  time:2013-10-01 16:05:34 +0330
-I, [2013-10-01T16:05:34.878328 #3236]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt
-I, [2013-10-01T16:05:34.878328 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005C4GQAA0\index.html
-I, [2013-10-01T16:05:36.165960 #3236]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005C4GQAA0_qwerty123.ppt  time:2013-10-01 16:05:36 +0330
-I, [2013-10-01T17:38:30.918365 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T17:38:30.918365 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx  time:2013-10-01 17:38:30 +0330
-I, [2013-10-01T17:38:30.918365 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx
-I, [2013-10-01T17:38:30.918365 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-01T17:38:32.346736 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx  time:2013-10-01 17:38:32 +0330
-I, [2013-10-01T18:26:52.856244 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T18:26:52.856244 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx  time:2013-10-01 18:26:52 +0330
-I, [2013-10-01T18:26:52.856244 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx
-I, [2013-10-01T18:26:52.856244 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-01T18:26:54.040988 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx  time:2013-10-01 18:26:54 +0330
-I, [2013-10-01T18:29:17.290438 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T18:29:17.290438 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_newconceptofCTMobile.pptx  time:2013-10-01 18:29:17 +0330
-I, [2013-10-01T18:29:17.290438 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T18:29:17.306061 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-01T18:29:18.501816 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_newconceptofCTMobile.pptx  time:2013-10-01 18:29:18 +0330
-I, [2013-10-01T18:38:18.125837 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T18:38:18.125837 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_abboott.pptx  time:2013-10-01 18:38:18 +0330
-I, [2013-10-01T18:38:18.125837 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_abboott.pptx
-I, [2013-10-01T18:38:18.141463 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_abboott.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-01T18:38:19.340463 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_abboott.pptx  time:2013-10-01 18:38:19 +0330
-I, [2013-10-01T18:45:45.380879 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T18:45:45.381879 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx  time:2013-10-01 18:45:45 +0330
-I, [2013-10-01T18:45:45.381879 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx
-I, [2013-10-01T18:45:45.391880 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-01T18:45:46.725861 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx  time:2013-10-01 18:45:46 +0330
-I, [2013-10-01T18:54:43.429323 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T18:54:43.429323 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-01 18:54:43 +0330
-I, [2013-10-01T18:54:43.429323 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-01T18:54:43.429323 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-01T18:54:44.632698 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-01 18:54:44 +0330
-I, [2013-10-01T19:06:53.460303 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:06:53.460303 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-01 19:06:53 +0330
-I, [2013-10-01T19:06:53.460303 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-01T19:06:53.460303 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-01T19:06:54.681039 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-01 19:06:54 +0330
-I, [2013-10-01T19:09:04.614291 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:09:04.614291 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-01 19:09:04 +0330
-I, [2013-10-01T19:09:04.614291 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-01T19:09:04.614291 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-01T19:09:05.983527 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-01 19:09:05 +0330
-I, [2013-10-01T19:10:31.078926 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:10:31.078926 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:10:31 +0330
-I, [2013-10-01T19:10:31.078926 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:10:31.078926 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:10:32.257066 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:10:32 +0330
-I, [2013-10-01T19:19:31.609593 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:19:31.609593 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-01 19:19:31 +0330
-I, [2013-10-01T19:19:31.609593 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx
-I, [2013-10-01T19:19:31.609593 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-01T19:19:32.812964 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-01 19:19:32 +0330
-I, [2013-10-01T19:20:25.412588 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:20:25.431678 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-01 19:20:25 +0330
-I, [2013-10-01T19:20:25.431678 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx
-I, [2013-10-01T19:20:25.431678 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-01T19:20:26.607329 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-01 19:20:26 +0330
-I, [2013-10-01T19:22:02.730166 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:22:02.730166 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:22:02 +0330
-I, [2013-10-01T19:22:02.730166 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:22:02.730166 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:22:03.923535 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:22:03 +0330
-I, [2013-10-01T19:23:59.660553 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:23:59.660553 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-01 19:23:59 +0330
-I, [2013-10-01T19:23:59.660553 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-10-01T19:23:59.660553 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-01T19:24:00.844282 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-01 19:24:00 +0330
-I, [2013-10-01T19:27:08.776643 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:27:08.776643 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-01 19:27:08 +0330
-I, [2013-10-01T19:27:08.776643 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx
-I, [2013-10-01T19:27:08.793684 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-01T19:27:09.982637 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-01 19:27:09 +0330
-I, [2013-10-01T19:37:17.798128 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:37:17.798128 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:37:17 +0330
-I, [2013-10-01T19:37:17.798128 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:37:17.798128 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:37:18.993085 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:37:18 +0330
-I, [2013-10-01T19:39:23.115004 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:39:23.115004 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:39:23 +0330
-I, [2013-10-01T19:39:23.115004 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:39:23.130622 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:39:24.302742 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:39:24 +0330
-I, [2013-10-01T19:40:29.435128 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:40:29.435128 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:40:29 +0330
-I, [2013-10-01T19:40:29.435128 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:40:29.435128 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:40:30.647490 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:40:30 +0330
-I, [2013-10-01T19:44:01.566382 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:44:01.566382 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:44:01 +0330
-I, [2013-10-01T19:44:01.566382 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:44:01.566382 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:44:02.745123 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:44:02 +0330
-I, [2013-10-01T19:45:20.140729 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:45:20.140729 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:45:20 +0330
-I, [2013-10-01T19:45:20.140729 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:45:20.140729 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:45:21.342096 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:45:21 +0330
-I, [2013-10-01T19:46:12.275612 #3236]  INFO -- : Files in dir:1
-I, [2013-10-01T19:46:12.275612 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:46:12 +0330
-I, [2013-10-01T19:46:12.275612 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-01T19:46:12.275612 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-01T19:46:13.516847 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-01 19:46:13 +0330
-I, [2013-10-02T10:44:32.124582 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T10:44:32.124582 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 10:44:32 +0330
-I, [2013-10-02T10:44:32.124582 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T10:44:32.124582 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T10:44:33.640902 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 10:44:33 +0330
-I, [2013-10-02T10:52:21.306338 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T10:52:21.306338 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CME--Project-v2.pptx  time:2013-10-02 10:52:21 +0330
-I, [2013-10-02T10:52:21.306338 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CME--Project-v2.pptx
-I, [2013-10-02T10:52:21.321962 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CME--Project-v2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T10:52:22.508699 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CME--Project-v2.pptx  time:2013-10-02 10:52:22 +0330
-I, [2013-10-02T11:22:50.674151 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:22:50.674151 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-02 11:22:50 +0330
-I, [2013-10-02T11:22:50.674151 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-10-02T11:22:50.674151 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:22:51.908394 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-02 11:22:51 +0330
-I, [2013-10-02T11:24:53.596210 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:24:53.596210 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 11:24:53 +0330
-I, [2013-10-02T11:24:53.596210 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T11:24:53.596210 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:24:54.788947 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 11:24:54 +0330
-I, [2013-10-02T11:26:56.783329 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:26:56.783329 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-02 11:26:56 +0330
-I, [2013-10-02T11:26:56.783329 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx
-I, [2013-10-02T11:26:56.783329 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:26:57.987312 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-02 11:26:57 +0330
-I, [2013-10-02T11:28:30.670986 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:28:30.670986 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-02 11:28:30 +0330
-I, [2013-10-02T11:28:30.670986 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx
-I, [2013-10-02T11:28:30.670986 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:28:31.868341 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-02 11:28:31 +0330
-I, [2013-10-02T11:29:55.093548 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:29:55.093548 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-02 11:29:55 +0330
-I, [2013-10-02T11:29:55.093548 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-10-02T11:29:55.093548 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:29:56.373785 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-02 11:29:56 +0330
-I, [2013-10-02T11:31:03.506145 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:31:03.506145 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx  time:2013-10-02 11:31:03 +0330
-I, [2013-10-02T11:31:03.521762 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx
-I, [2013-10-02T11:31:03.521762 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:31:04.687501 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx  time:2013-10-02 11:31:04 +0330
-I, [2013-10-02T11:34:49.407387 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:34:49.407387 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-02 11:34:49 +0330
-I, [2013-10-02T11:34:49.407387 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx
-I, [2013-10-02T11:34:49.407387 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:34:50.589122 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-02 11:34:50 +0330
-I, [2013-10-02T11:35:18.305203 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:35:18.305203 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-02 11:35:18 +0330
-I, [2013-10-02T11:35:18.305203 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx
-I, [2013-10-02T11:35:18.305203 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:35:19.473940 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_demo-ppt-convert.pptx  time:2013-10-02 11:35:19 +0330
-I, [2013-10-02T11:40:04.565195 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:40:04.565195 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 11:40:04 +0330
-I, [2013-10-02T11:40:04.565195 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T11:40:04.565195 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:40:05.756553 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 11:40:05 +0330
-I, [2013-10-02T11:41:11.137888 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T11:41:11.137888 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx  time:2013-10-02 11:41:11 +0330
-I, [2013-10-02T11:41:11.137888 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx
-I, [2013-10-02T11:41:11.137888 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T11:41:12.336876 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx  time:2013-10-02 11:41:12 +0330
-I, [2013-10-02T12:03:10.052634 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:03:10.052634 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_newconceptofCTMobile.pptx  time:2013-10-02 12:03:10 +0330
-I, [2013-10-02T12:03:10.052634 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_newconceptofCTMobile.pptx
-I, [2013-10-02T12:03:10.052634 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-02T12:03:11.239380 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_newconceptofCTMobile.pptx  time:2013-10-02 12:03:11 +0330
-I, [2013-10-02T12:09:24.546059 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:09:24.546059 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-02 12:09:24 +0330
-I, [2013-10-02T12:09:24.546059 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_CIS-EPD-Activity-Types-Mobile.pptx
-I, [2013-10-02T12:09:24.546059 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_CIS-EPD-Activity-Types-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-02T12:09:25.754051 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_CIS-EPD-Activity-Types-Mobile.pptx  time:2013-10-02 12:09:25 +0330
-I, [2013-10-02T12:10:07.217533 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:10:07.217533 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx  time:2013-10-02 12:10:07 +0330
-I, [2013-10-02T12:10:07.217533 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx
-I, [2013-10-02T12:10:07.217533 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-02T12:10:08.410276 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx  time:2013-10-02 12:10:08 +0330
-I, [2013-10-02T12:24:47.540693 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:24:47.540693 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-02 12:24:47 +0330
-I, [2013-10-02T12:24:47.540693 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-10-02T12:24:47.540693 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-02T12:24:48.742441 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-02 12:24:48 +0330
-I, [2013-10-02T12:26:29.972211 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:26:29.972211 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx  time:2013-10-02 12:26:29 +0330
-I, [2013-10-02T12:26:29.972211 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx
-I, [2013-10-02T12:26:29.972211 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-02T12:26:31.205956 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx  time:2013-10-02 12:26:31 +0330
-I, [2013-10-02T12:28:12.048723 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:28:12.048723 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx  time:2013-10-02 12:28:12 +0330
-I, [2013-10-02T12:28:12.048723 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx
-I, [2013-10-02T12:28:12.064326 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-02T12:28:13.248070 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_ÑÑ‚Ð¾Ñ€Ð¸Ð±Ð¾Ñ€Ð´-Ð´Ð»Ñ-Ð²Ð¸Ð´ÐµÐ¾.pptx  time:2013-10-02 12:28:13 +0330
-I, [2013-10-02T12:32:50.321343 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:32:50.321343 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 12:32:50 +0330
-I, [2013-10-02T12:32:50.321343 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-02T12:32:50.321343 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T12:32:51.516088 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 12:32:51 +0330
-I, [2013-10-02T12:35:20.043739 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:35:20.043739 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 12:35:20 +0330
-I, [2013-10-02T12:35:20.043739 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T12:35:20.043739 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T12:35:21.244726 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 12:35:21 +0330
-I, [2013-10-02T12:41:13.784658 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T12:41:13.784658 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 12:41:13 +0330
-I, [2013-10-02T12:41:13.784658 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-02T12:41:13.800281 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T12:41:14.966019 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 12:41:14 +0330
-I, [2013-10-02T13:00:37.730062 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T13:00:37.730062 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx  time:2013-10-02 13:00:37 +0330
-I, [2013-10-02T13:00:37.731065 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx
-I, [2013-10-02T13:00:37.732065 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000008tMUZAA2\index.html
-I, [2013-10-02T13:00:39.054037 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000008tMUZAA2_demo-ppt-convert.pptx  time:2013-10-02 13:00:39 +0330
-I, [2013-10-02T13:43:27.435020 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T13:43:27.435020 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MzVHAA0_demo-ppt-convert.pptx  time:2013-10-02 13:43:27 +0330
-I, [2013-10-02T13:43:27.435020 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MzVHAA0_demo-ppt-convert.pptx
-I, [2013-10-02T13:43:27.435020 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MzVHAA0_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MzVHAA0\index.html
-I, [2013-10-02T13:43:28.742636 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MzVHAA0_demo-ppt-convert.pptx  time:2013-10-02 13:43:28 +0330
-I, [2013-10-02T14:08:35.435474 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T14:08:35.435474 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MzpXAAS_demo-ppt-convert.pptx  time:2013-10-02 14:08:35 +0330
-I, [2013-10-02T14:08:35.436477 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MzpXAAS_demo-ppt-convert.pptx
-I, [2013-10-02T14:08:35.437477 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MzpXAAS_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MzpXAAS\index.html
-I, [2013-10-02T14:08:36.651459 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MzpXAAS_demo-ppt-convert.pptx  time:2013-10-02 14:08:36 +0330
-I, [2013-10-02T14:16:36.080356 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T14:16:36.080356 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MzttAAC_newconceptofCTMobile.pptx  time:2013-10-02 14:16:36 +0330
-I, [2013-10-02T14:16:36.095970 #3236]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MzttAAC_newconceptofCTMobile.pptx
-I, [2013-10-02T14:16:36.095970 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MzttAAC_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MzttAAC\index.html
-I, [2013-10-02T14:16:37.265718 #3236]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MzttAAC_newconceptofCTMobile.pptx  time:2013-10-02 14:16:37 +0330
-I, [2013-10-02T16:26:17.282267 #3236]  INFO -- : Files in dir:1
-I, [2013-10-02T16:26:17.283269 #3236]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:26:17 +0330
-I, [2013-10-02T16:26:17.283269 #3236]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T16:26:17.285270 #3236]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:26:18.592251 #3236]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:26:18 +0330
-I, [2013-10-02T16:33:16.890014 #3692]  INFO -- : Start listen:  state:init
-I, [2013-10-02T16:33:27.011208 #3692]  INFO -- : Files in dir:1
-I, [2013-10-02T16:33:27.011208 #3692]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 16:33:27 +0330
-I, [2013-10-02T16:33:27.012211 #3692]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-02T16:33:27.014213 #3692]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:33:28.325192 #3692]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 16:33:28 +0330
-I, [2013-10-02T16:34:08.962002 #3692]  INFO -- : Files in dir:1
-I, [2013-10-02T16:34:08.962002 #3692]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:34:08 +0330
-I, [2013-10-02T16:34:08.962002 #3692]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T16:34:08.964004 #3692]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:34:10.346985 #3692]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:34:10 +0330
-I, [2013-10-02T16:37:32.946052 #3692]  INFO -- : Files in dir:1
-I, [2013-10-02T16:37:32.946052 #3692]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 16:37:32 +0330
-I, [2013-10-02T16:37:32.946052 #3692]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-02T16:37:32.948057 #3692]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:37:34.259004 #3692]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 16:37:34 +0330
-I, [2013-10-02T16:41:19.200163 #3692]  INFO -- : Files in dir:1
-I, [2013-10-02T16:41:19.201162 #3692]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 16:41:19 +0330
-I, [2013-10-02T16:41:19.201162 #3692]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-02T16:41:19.203165 #3692]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:41:20.397146 #3692]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-02 16:41:20 +0330
-I, [2013-10-02T16:43:23.759187 #3692]  INFO -- : Files in dir:1
-I, [2013-10-02T16:43:23.760189 #3692]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:43:23 +0330
-I, [2013-10-02T16:43:23.760189 #3692]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T16:43:23.762192 #3692]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:43:24.955174 #3692]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:43:24 +0330
-I, [2013-10-02T16:44:30.243669 #3196]  INFO -- : Start listen:  state:init
-I, [2013-10-02T16:44:32.269437 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T16:44:32.269437 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:44:32 +0330
-I, [2013-10-02T16:44:32.269437 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T16:44:32.271439 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:44:33.490420 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:44:33 +0330
-I, [2013-10-02T16:45:24.287163 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T16:45:24.287163 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:45:24 +0330
-I, [2013-10-02T16:45:24.287163 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx
-I, [2013-10-02T16:45:24.289167 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-02T16:45:25.484149 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_newconceptofCTMobile.pptx  time:2013-10-02 16:45:25 +0330
-I, [2013-10-02T17:14:09.157502 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T17:14:09.157502 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-02 17:14:09 +0330
-I, [2013-10-02T17:14:09.158505 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-02T17:14:09.160507 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-02T17:14:10.390488 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-02 17:14:10 +0330
-I, [2013-10-02T17:16:25.305283 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T17:16:25.305283 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:16:25 +0330
-I, [2013-10-02T17:16:25.305283 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx
-I, [2013-10-02T17:16:25.307287 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-02T17:16:26.499269 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:16:26 +0330
-I, [2013-10-02T17:17:39.208489 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T17:17:39.209491 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:17:39 +0330
-I, [2013-10-02T17:17:39.209491 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx
-I, [2013-10-02T17:17:39.211492 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-02T17:17:40.422474 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:17:40 +0330
-I, [2013-10-02T17:18:54.987703 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T17:18:54.988703 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:18:54 +0330
-I, [2013-10-02T17:18:54.988703 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx
-I, [2013-10-02T17:18:54.990704 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-02T17:18:56.336685 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:18:56 +0330
-I, [2013-10-02T17:20:39.487969 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T17:20:39.487969 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:20:39 +0330
-I, [2013-10-02T17:20:39.488971 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx
-I, [2013-10-02T17:20:39.490972 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-02T17:20:40.715954 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-02 17:20:40 +0330
-I, [2013-10-02T17:48:00.117776 #3196]  INFO -- : Files in dir:1
-I, [2013-10-02T17:48:00.117776 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Dc0000003jHEjEAM_a1Jc0000000q4zBEAQ_Stack.pptx  time:2013-10-02 17:48:00 +0330
-I, [2013-10-02T17:48:00.118778 #3196]  INFO -- : Start convert:  file:00Dc0000003jHEjEAM_a1Jc0000000q4zBEAQ_Stack.pptx
-I, [2013-10-02T17:48:00.120779 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Dc0000003jHEjEAM_a1Jc0000000q4zBEAQ_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Dc0000003jHEjEAM\a1Jc0000000q4zBEAQ\index.html
-I, [2013-10-02T17:48:01.608758 #3196]  INFO -- : Done convert file:00Dc0000003jHEjEAM_a1Jc0000000q4zBEAQ_Stack.pptx  time:2013-10-02 17:48:01 +0330
-I, [2013-10-03T13:27:25.368227 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T13:27:25.375230 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009NBE7AAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-03 13:27:25 +0330
-I, [2013-10-03T13:27:25.375230 #3196]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009NBE7AAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-10-03T13:27:25.377231 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009NBE7AAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009NBE7AAO\index.html
-I, [2013-10-03T13:27:26.780202 #3196]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009NBE7AAO_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-03 13:27:26 +0330
-I, [2013-10-03T14:27:20.826696 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T14:27:20.826696 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Abbott-Training-3.5-TR.pptx  time:2013-10-03 14:27:20 +0330
-I, [2013-10-03T14:27:20.826696 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Abbott-Training-3.5-TR.pptx
-I, [2013-10-03T14:27:20.903696 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Abbott-Training-3.5-TR.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T14:27:22.247668 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Abbott-Training-3.5-TR.pptx  time:2013-10-03 14:27:22 +0330
-I, [2013-10-03T15:50:19.880609 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T15:50:19.880609 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009NCa7AAG_fortest.ppt  time:2013-10-03 15:50:19 +0330
-I, [2013-10-03T15:50:19.881611 #3196]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009NCa7AAG_fortest.ppt
-I, [2013-10-03T15:50:19.884612 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009NCa7AAG_fortest.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009NCa7AAG\index.html
-I, [2013-10-03T15:50:21.114617 #3196]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009NCa7AAG_fortest.ppt  time:2013-10-03 15:50:21 +0330
-I, [2013-10-03T18:37:18.913657 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T18:37:18.913657 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:37:18 +0330
-I, [2013-10-03T18:37:18.913657 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T18:37:18.920661 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T18:37:20.358659 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:37:20 +0330
-I, [2013-10-03T18:38:16.780198 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T18:38:16.781199 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:38:16 +0330
-I, [2013-10-03T18:38:16.781199 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T18:38:16.783202 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T18:38:17.987200 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:38:17 +0330
-I, [2013-10-03T18:39:22.040340 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T18:39:22.041342 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:39:22 +0330
-I, [2013-10-03T18:39:22.041342 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T18:39:22.044346 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T18:39:23.253340 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:39:23 +0330
-I, [2013-10-03T18:40:49.655617 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T18:40:49.655617 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:40:49 +0330
-I, [2013-10-03T18:40:49.655617 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T18:40:49.657621 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T18:40:50.867626 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:40:50 +0330
-I, [2013-10-03T18:44:10.922508 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T18:44:10.922508 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:44:10 +0330
-I, [2013-10-03T18:44:10.922508 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T18:44:10.924510 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T18:44:12.127509 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:44:12 +0330
-I, [2013-10-03T18:50:17.976740 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T18:50:17.976740 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:50:17 +0330
-I, [2013-10-03T18:50:17.977741 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T18:50:17.978741 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T18:50:19.152739 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 18:50:19 +0330
-I, [2013-10-03T19:01:08.474340 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:01:08.475342 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 19:01:08 +0330
-I, [2013-10-03T19:01:08.475342 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T19:01:08.477344 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T19:01:09.696333 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 19:01:09 +0330
-I, [2013-10-03T19:05:42.576777 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:05:42.577778 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 19:05:42 +0330
-I, [2013-10-03T19:05:42.577778 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx
-I, [2013-10-03T19:05:42.580783 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-03T19:05:43.829770 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_Stack.pptx  time:2013-10-03 19:05:43 +0330
-I, [2013-10-03T19:11:44.352466 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:11:44.352466 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-03 19:11:44 +0330
-I, [2013-10-03T19:11:44.352466 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx
-I, [2013-10-03T19:11:44.355470 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:11:45.554459 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-03 19:11:45 +0330
-I, [2013-10-03T19:16:49.486772 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:16:49.486772 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:16:49 +0330
-I, [2013-10-03T19:16:49.487774 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-03T19:16:49.488774 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:16:50.756766 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:16:50 +0330
-I, [2013-10-03T19:28:03.475979 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:28:03.475979 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:28:03 +0330
-I, [2013-10-03T19:28:03.475979 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-03T19:28:03.477983 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:28:04.860971 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:28:04 +0330
-I, [2013-10-03T19:32:53.194081 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:32:53.194081 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:32:53 +0330
-I, [2013-10-03T19:32:53.195081 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-03T19:32:53.196082 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:32:54.516072 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:32:54 +0330
-I, [2013-10-03T19:36:13.669401 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:36:13.670403 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:36:13 +0330
-I, [2013-10-03T19:36:13.670403 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-03T19:36:13.673404 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:36:14.966393 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:36:14 +0330
-I, [2013-10-03T19:42:00.875389 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:42:00.876390 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-03 19:42:00 +0330
-I, [2013-10-03T19:42:00.876390 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx
-I, [2013-10-03T19:42:00.878393 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:42:02.047382 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-03 19:42:02 +0330
-I, [2013-10-03T19:44:24.979242 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:44:24.979242 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:44:24 +0330
-I, [2013-10-03T19:44:24.979242 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx
-I, [2013-10-03T19:44:24.981245 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:44:26.242233 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_newconceptofCTMobile.pptx  time:2013-10-03 19:44:26 +0330
-I, [2013-10-03T19:46:07.863685 #3196]  INFO -- : Files in dir:1
-I, [2013-10-03T19:46:07.864691 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-03 19:46:07 +0330
-I, [2013-10-03T19:46:07.864691 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx
-I, [2013-10-03T19:46:07.867693 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vJUyAAM\index.html
-I, [2013-10-03T19:46:09.055678 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vJUyAAM_Stack.pptx  time:2013-10-03 19:46:09 +0330
-I, [2013-10-04T09:18:34.231692 #3196]  INFO -- : Files in dir:1
-I, [2013-10-04T09:18:34.241700 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx  time:2013-10-04 09:18:34 +0330
-I, [2013-10-04T09:18:34.241700 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx
-I, [2013-10-04T09:18:34.252694 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-04T09:18:35.624674 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Abbott-Training-3.5-TR.pptx  time:2013-10-04 09:18:35 +0330
-I, [2013-10-04T09:19:26.467336 #3196]  INFO -- : Files in dir:1
-I, [2013-10-04T09:19:26.467336 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt  time:2013-10-04 09:19:26 +0330
-I, [2013-10-04T09:19:26.467336 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt
-I, [2013-10-04T09:19:26.471341 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-04T09:19:27.664231 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt  time:2013-10-04 09:19:27 +0330
-I, [2013-10-07T10:31:09.372603 #3196]  INFO -- : Files in dir:1
-I, [2013-10-07T10:31:09.381616 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt  time:2013-10-07 10:31:09 +0330
-I, [2013-10-07T10:31:09.382609 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt
-I, [2013-10-07T10:31:09.388611 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-07T10:31:10.846574 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_qwerty123.ppt  time:2013-10-07 10:31:10 +0330
-I, [2013-10-07T10:36:20.707092 #3196]  INFO -- : Files in dir:1
-I, [2013-10-07T10:36:20.707092 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx  time:2013-10-07 10:36:20 +0330
-I, [2013-10-07T10:36:20.708095 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx
-I, [2013-10-07T10:36:20.710095 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-07T10:36:21.907072 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx  time:2013-10-07 10:36:21 +0330
-I, [2013-10-07T10:37:52.401422 #3196]  INFO -- : Files in dir:1
-I, [2013-10-07T10:37:52.401422 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx  time:2013-10-07 10:37:52 +0330
-I, [2013-10-07T10:37:52.402428 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx
-I, [2013-10-07T10:37:52.416427 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-07T10:37:53.575398 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_CME--Project-v2.pptx  time:2013-10-07 10:37:53 +0330
-I, [2013-10-07T10:42:04.307405 #3196]  INFO -- : Files in dir:1
-I, [2013-10-07T10:42:04.307405 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx  time:2013-10-07 10:42:04 +0330
-I, [2013-10-07T10:42:04.308409 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx
-I, [2013-10-07T10:42:04.310411 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006vTWlAAM\index.html
-I, [2013-10-07T10:42:05.477384 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006vTWlAAM_Stack.pptx  time:2013-10-07 10:42:05 +0330
-I, [2013-10-07T11:02:32.419522 #3196]  INFO -- : Files in dir:1
-I, [2013-10-07T11:02:32.420524 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Di0000000JC2ZEAW_a00i0000006wMiIAAU_qwerty123.ppt  time:2013-10-07 11:02:32 +0330
-I, [2013-10-07T11:02:32.420524 #3196]  INFO -- : Start convert:  file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_qwerty123.ppt
-I, [2013-10-07T11:02:32.424528 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Di0000000JC2ZEAW_a00i0000006wMiIAAU_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Di0000000JC2ZEAW\a00i0000006wMiIAAU\index.html
-I, [2013-10-07T11:02:33.672499 #3196]  INFO -- : Done convert file:00Di0000000JC2ZEAW_a00i0000006wMiIAAU_qwerty123.ppt  time:2013-10-07 11:02:33 +0330
-I, [2013-10-07T13:53:04.732580 #3196]  INFO -- : Files in dir:1
-I, [2013-10-07T13:53:04.732580 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DJOKAA4_qwerty123.ppt  time:2013-10-07 13:53:04 +0330
-I, [2013-10-07T13:53:04.732580 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DJOKAA4_qwerty123.ppt
-I, [2013-10-07T13:53:04.739584 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DJOKAA4_qwerty123.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DJOKAA4\index.html
-I, [2013-10-07T13:53:05.996573 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DJOKAA4_qwerty123.ppt  time:2013-10-07 13:53:05 +0330
-I, [2013-10-07T18:08:46.071869 #3196]  INFO -- : Files in dir:1
-I, [2013-10-07T18:08:46.071869 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DOaBAAW_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-07 18:08:46 +0330
-I, [2013-10-07T18:08:46.072871 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DOaBAAW_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-10-07T18:08:46.074873 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DOaBAAW_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DOaBAAW\index.html
-I, [2013-10-07T18:08:47.245847 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DOaBAAW_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-10-07 18:08:47 +0330
-I, [2013-10-08T09:38:43.475649 #3196]  INFO -- : Files in dir:1
-I, [2013-10-08T09:38:43.486659 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx  time:2013-10-08 09:38:43 +0330
-I, [2013-10-08T09:38:43.487653 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx
-I, [2013-10-08T09:38:43.497651 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DldgAAC\index.html
-I, [2013-10-08T09:38:44.864632 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx  time:2013-10-08 09:38:44 +0330
-I, [2013-10-08T14:41:40.485127 #3196]  INFO -- : Files in dir:1
-I, [2013-10-08T14:41:40.485127 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx  time:2013-10-08 14:41:40 +0330
-I, [2013-10-08T14:41:40.486130 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx
-I, [2013-10-08T14:41:40.493131 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DldgAAC\index.html
-I, [2013-10-08T14:41:42.065098 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DldgAAC_arlanis-Reply-AG-kurz-DEU.pptx  time:2013-10-08 14:41:42 +0330
-I, [2013-10-08T14:41:58.857043 #3196]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/CTEDET/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00Db0000000KeXW!AQoAQNH6SQszquUJ_Zz__yaQKnxUDp5s7Dnpldb0eKvJiGoiG1RMTAT1ve6BLUJwSeMhj3ivcWbVh8IJuLMklGFHy3UpzZpG</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
-I, [2013-10-08T15:55:18.343059 #3196]  INFO -- : Files in dir:1
-I, [2013-10-08T15:55:18.343059 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx  time:2013-10-08 15:55:18 +0330
-I, [2013-10-08T15:55:18.344062 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx
-I, [2013-10-08T15:55:18.355064 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DtgqAAC\index.html
-I, [2013-10-08T15:55:19.584041 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx  time:2013-10-08 15:55:19 +0330
-I, [2013-10-08T15:56:03.057559 #3196]  INFO -- : Files in dir:1
-I, [2013-10-08T15:56:03.057559 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx  time:2013-10-08 15:56:03 +0330
-I, [2013-10-08T15:56:03.058563 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx
-I, [2013-10-08T15:56:03.066563 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DtgqAAC\index.html
-I, [2013-10-08T15:56:04.267545 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DtgqAAC_arlanis-Reply-AG-kurz-ENG.pptx  time:2013-10-08 15:56:04 +0330
-I, [2013-10-08T16:03:12.437089 #3196]  INFO -- : Files in dir:1
-I, [2013-10-08T16:03:12.437089 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DqBTAA0_Projekte@arlanis.pptx  time:2013-10-08 16:03:12 +0330
-I, [2013-10-08T16:03:12.438092 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DqBTAA0_Projekte@arlanis.pptx
-I, [2013-10-08T16:03:12.446093 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DqBTAA0_Projekte@arlanis.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DqBTAA0\index.html
-I, [2013-10-08T16:03:13.688073 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DqBTAA0_Projekte@arlanis.pptx  time:2013-10-08 16:03:13 +0330
-I, [2013-10-08T16:12:46.662239 #3196]  INFO -- : Files in dir:1
-I, [2013-10-08T16:12:46.662239 #3196]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005DtVPAA0_arlanis-Reply-AG---References.pptx  time:2013-10-08 16:12:46 +0330
-I, [2013-10-08T16:12:46.663241 #3196]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005DtVPAA0_arlanis-Reply-AG---References.pptx
-I, [2013-10-08T16:12:46.668244 #3196]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005DtVPAA0_arlanis-Reply-AG---References.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005DtVPAA0\index.html
-I, [2013-10-08T16:12:47.922225 #3196]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005DtVPAA0_arlanis-Reply-AG---References.pptx  time:2013-10-08 16:12:47 +0330
-I, [2013-10-09T14:16:21.036396 #4376]  INFO -- : Start listen:  state:init
-I, [2013-10-09T14:17:06.234733 #4176]  INFO -- : Start listen:  state:init
-I, [2013-10-09T14:18:13.413815 #1672]  INFO -- : Start listen:  state:init
-I, [2013-10-09T14:19:33.158462 #4408]  INFO -- : Start listen:  state:init
-I, [2013-10-09T18:37:42.533096 #4160]  INFO -- : Start listen:  state:init
+# Logfile created on 2013-10-17 19:31:08 +0330 by logger.rb/36483
+I, [2013-10-17T19:31:08.431941 #3776]  INFO -- : Start listen:  state:init
+I, [2013-10-21T14:44:32.792412 #3776]  INFO -- : Files in dir:1
+I, [2013-10-21T14:44:32.792412 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000KeXWEA0_a02b0000005eQiZAAU_TEST.pptx  time:2013-10-21 14:44:32 +0330
+I, [2013-10-21T14:44:32.792412 #3776]  INFO -- : Start convert:  file:00Db0000000KeXWEA0_a02b0000005eQiZAAU_TEST.pptx
+I, [2013-10-21T14:44:32.808043 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000KeXWEA0_a02b0000005eQiZAAU_TEST.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000KeXWEA0\a02b0000005eQiZAAU\index.html
+I, [2013-10-21T14:44:36.825814 #3776]  INFO -- : Done convert file:00Db0000000KeXWEA0_a02b0000005eQiZAAU_TEST.pptx  time:2013-10-21 14:44:36 +0330
+I, [2013-10-22T14:58:44.343356 #3776]  INFO -- : Files in dir:1
+I, [2013-10-22T14:58:44.343356 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx  time:2013-10-22 14:58:44 +0330
+I, [2013-10-22T14:58:44.343356 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx
+I, [2013-10-22T14:58:44.357819 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
+I, [2013-10-22T14:58:47.420935 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx  time:2013-10-22 14:58:47 +0330
+I, [2013-10-22T15:00:02.539484 #3776]  INFO -- : Files in dir:1
+I, [2013-10-22T15:00:02.539484 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx  time:2013-10-22 15:00:02 +0330
+I, [2013-10-22T15:00:02.539484 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx
+I, [2013-10-22T15:00:02.555108 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
+I, [2013-10-22T15:00:03.758218 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx  time:2013-10-22 15:00:03 +0330
+I, [2013-10-22T15:01:19.555656 #3776]  INFO -- : Files in dir:1
+I, [2013-10-22T15:01:19.555656 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx  time:2013-10-22 15:01:19 +0330
+I, [2013-10-22T15:01:19.555656 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx
+I, [2013-10-22T15:01:19.555656 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009MVEjAAO\index.html
+I, [2013-10-22T15:01:21.008764 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009MVEjAAO_Factsheet.pptx  time:2013-10-22 15:01:21 +0330
+I, [2013-10-29T18:33:47.177873 #3776]  INFO -- : Files in dir:1
+I, [2013-10-29T18:33:47.177873 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx  time:2013-10-29 18:33:47 +0330
+I, [2013-10-29T18:33:47.193499 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx
+I, [2013-10-29T18:33:47.193499 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009vIcnAAE\index.html
+I, [2013-10-29T18:33:49.505968 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx  time:2013-10-29 18:33:49 +0330
+I, [2013-10-29T18:55:32.005541 #3776]  INFO -- : Files in dir:1
+I, [2013-10-29T18:55:32.005541 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx  time:2013-10-29 18:55:32 +0330
+I, [2013-10-29T18:55:32.005541 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx
+I, [2013-10-29T18:55:32.005541 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009vIcnAAE\index.html
+I, [2013-10-29T18:55:33.193013 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009vIcnAAE_Factsheet.pptx  time:2013-10-29 18:55:33 +0330
+I, [2013-10-30T16:17:28.086026 #3776]  INFO -- : Files in dir:1
+I, [2013-10-30T16:17:28.101649 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx  time:2013-10-30 16:17:28 +0330
+I, [2013-10-30T16:17:28.101649 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx
+I, [2013-10-30T16:17:28.101649 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009vIcnAAE\index.html
+I, [2013-10-30T16:17:29.445374 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx  time:2013-10-30 16:17:29 +0330
+I, [2013-10-30T16:19:25.599618 #3776]  INFO -- : Files in dir:1
+I, [2013-10-30T16:19:25.599618 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009vIcnAAE_TRANSMASH.pptx  time:2013-10-30 16:19:25 +0330
+I, [2013-10-30T16:19:25.599618 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009vIcnAAE_TRANSMASH.pptx
+I, [2013-10-30T16:19:25.599618 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009vIcnAAE_TRANSMASH.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009vIcnAAE\index.html
+I, [2013-10-30T16:19:26.896467 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009vIcnAAE_TRANSMASH.pptx  time:2013-10-30 16:19:26 +0330
+I, [2013-10-30T16:30:09.266263 #3776]  INFO -- : Files in dir:1
+I, [2013-10-30T16:30:09.266263 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx  time:2013-10-30 16:30:09 +0330
+I, [2013-10-30T16:30:09.266263 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx
+I, [2013-10-30T16:30:09.281887 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009vIcnAAE\index.html
+I, [2013-10-30T16:30:10.453738 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx  time:2013-10-30 16:30:10 +0330
+I, [2013-10-30T17:37:12.893557 #3776]  INFO -- : Files in dir:1
+I, [2013-10-30T17:37:12.893557 #3776]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx  time:2013-10-30 17:37:12 +0330
+I, [2013-10-30T17:37:12.893557 #3776]  INFO -- : Start convert:  file:00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx
+I, [2013-10-30T17:37:12.893557 #3776]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000a285EAA\a00b0000009vIcnAAE\index.html
+I, [2013-10-30T17:37:14.065412 #3776]  INFO -- : Done convert file:00Db0000000a285EAA_a00b0000009vIcnAAE_CT-Consulting-CLM-tool-Overview-v2-EK-short.pptx  time:2013-10-30 17:37:14 +0330
+I, [2013-11-04T13:10:27.627640 #2720]  INFO -- : Start listen:  state:init
+I, [2013-11-12T10:01:30.518021 #2720]  INFO -- : Files in dir:1
+I, [2013-11-12T10:01:30.518021 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx  time:2013-11-12 10:01:30 +0330
+I, [2013-11-12T10:01:30.518021 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx
+I, [2013-11-12T10:01:30.518021 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6mzkAAB\index.html
+I, [2013-11-12T10:01:41.243136 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx  time:2013-11-12 10:01:41 +0330
+I, [2013-11-12T13:02:24.476499 #2720]  INFO -- : Files in dir:4
+I, [2013-11-12T13:02:24.476499 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt  time:2013-11-12 13:02:24 +0330
+I, [2013-11-12T13:02:24.476499 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt
+I, [2013-11-12T13:02:24.507380 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6n3lAAB\index.html
+I, [2013-11-12T13:02:25.679241 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt  time:2013-11-12 13:02:25 +0330
+I, [2013-11-12T13:02:29.132983 #2720]  INFO -- : Files in dir:3
+I, [2013-11-12T13:02:29.132983 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€-ÐšÑƒÐ·Ð½ÐµÑ†Ð¾Ð²-Abbott.ppt  time:2013-11-12 13:02:29 +0330
+I, [2013-11-12T13:02:29.132983 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€-ÐšÑƒÐ·Ð½ÐµÑ†Ð¾Ð²-Abbott.ppt
+I, [2013-11-12T13:02:29.148566 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€-ÐšÑƒÐ·Ð½ÐµÑ†Ð¾Ð²-Abbott.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6n3lAAB\index.html
+I, [2013-11-12T13:02:30.101671 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€-ÐšÑƒÐ·Ð½ÐµÑ†Ð¾Ð²-Abbott.ppt  time:2013-11-12 13:02:30 +0330
+I, [2013-11-12T13:02:34.201977 #2720]  INFO -- : Files in dir:2
+I, [2013-11-12T13:02:34.201977 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6mzkAAB_Abbott-Training-3.5-TR.pptx  time:2013-11-12 13:02:34 +0330
+I, [2013-11-12T13:02:34.201977 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_Abbott-Training-3.5-TR.pptx
+I, [2013-11-12T13:02:34.217559 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6mzkAAB_Abbott-Training-3.5-TR.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6mzkAAB\index.html
+I, [2013-11-12T13:02:35.623782 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_Abbott-Training-3.5-TR.pptx  time:2013-11-12 13:02:35 +0330
+I, [2013-11-12T13:02:40.469585 #2720]  INFO -- : Files in dir:1
+I, [2013-11-12T13:02:40.469585 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6n3gAAB_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-11-12 13:02:40 +0330
+I, [2013-11-12T13:02:40.469585 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6n3gAAB_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
+I, [2013-11-12T13:02:40.469585 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6n3gAAB_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6n3gAAB\index.html
+I, [2013-11-12T13:02:41.453942 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6n3gAAB_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-11-12 13:02:41 +0330
+I, [2013-11-12T13:02:52.051160 #2720]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00Db0000000bdbk!ARUAQI55QgZzMCOhsWIyV7cH0W.mBeN1baQne0fgNZatqHeHvS3hJqyfFhCcJg6ER38jPoZQ6K7TaBsBIEoajNuxUnvtw6h1</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+I, [2013-11-12T14:46:13.219966 #2720]  INFO -- : Files in dir:1
+I, [2013-11-12T14:46:13.219966 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt  time:2013-11-12 14:46:13 +0330
+I, [2013-11-12T14:46:13.219966 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt
+I, [2013-11-12T14:46:13.235751 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6n3lAAB\index.html
+I, [2013-11-12T14:46:14.454317 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6n3lAAB_3---AK-Abbott.ppt  time:2013-11-12 14:46:14 +0330
+I, [2013-11-12T16:37:23.586109 #2720]  INFO -- : Files in dir:1
+I, [2013-11-12T16:37:23.586109 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx  time:2013-11-12 16:37:23 +0330
+I, [2013-11-12T16:37:23.586109 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx
+I, [2013-11-12T16:37:23.586109 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6mzkAAB\index.html
+I, [2013-11-12T16:37:24.570471 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_Stack.pptx  time:2013-11-12 16:37:24 +0330
+I, [2013-11-12T16:43:58.994051 #2720]  INFO -- : Files in dir:1
+I, [2013-11-12T16:43:58.994051 #2720]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F6mzkAAB_CME--Project-v2.pptx  time:2013-11-12 16:43:58 +0330
+I, [2013-11-12T16:43:58.994051 #2720]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_CME--Project-v2.pptx
+I, [2013-11-12T16:43:58.994051 #2720]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F6mzkAAB_CME--Project-v2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F6mzkAAB\index.html
+I, [2013-11-12T16:44:00.244009 #2720]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F6mzkAAB_CME--Project-v2.pptx  time:2013-11-12 16:44:00 +0330
