@@ -288,9 +288,12 @@ def listen
 	            extractSliders File.basename(file)
               sendState(file_name)
               #------------rename upload-input file-------------------------------------------
-
-              File.rename("#{INPUT_DIR}#{file_name}","#{INPUT_DIR}#{file_name}"+".done")
-              File.rename("#{UPLOAD_DIR}#{file_name}","#{UPLOAD_DIR}#{file_name}"+".done")
+              if File.exist?("#{INPUT_DIR}#{file_name}")
+                  File.rename("#{INPUT_DIR}#{file_name}","#{INPUT_DIR}#{file_name}"+".done")
+              end
+              if File.exist?("#{UPLOAD_DIR}#{file_name}")
+                  File.rename("#{UPLOAD_DIR}#{file_name}","#{UPLOAD_DIR}#{file_name}"+".done")
+              end
            end
 	      end
   	
