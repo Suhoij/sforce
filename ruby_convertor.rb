@@ -202,7 +202,7 @@ tpl=%{
 }
 end
 #------------------------send state-------------------
-def sendState
+def sendState (file_name)
 begin
   extractPptParams()
   require 'rest-client'
@@ -229,6 +229,7 @@ begin
 rescue RuntimeError => error
   @@log.info('SendState  ERROR '+error.inspect)
   writeState('error','send-state',error.inspect)
+  File.rename("#{UPLOAD_DIR}#{file_name}","#{UPLOAD_DIR}#{file_name}"+".error_send")
 end
 end
 #-----------------------exec_every_seconds---------
@@ -285,7 +286,7 @@ def listen
               end
 	            convert File.basename(file)
 	            extractSliders File.basename(file)
-              sendState()
+              sendState(file_name)
               #------------rename upload-input file-------------------------------------------
 
               File.rename("#{INPUT_DIR}#{file_name}","#{INPUT_DIR}#{file_name}"+".done")
