@@ -157,8 +157,14 @@ end
 #------------------------extract ppt params----------
 def extractPptParams
   begin
+   file_params=PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE
+   if not File.exist?(file_params)
+      @@log.info('Error file-PptParams NO FILE PARAMS')
+      writeState('error','extract-Ppt-Params',"no params file org_id=#{@@org_id} app_id=#{@@app_id}")
+      return
+   end
    writeState('work','extract-soap')
-   content=File.read(PPT_DIR+@@org_id+'/'+@@app_id+'/'+PPT_PARAMS_FILE)
+   content=File.read(file_params)
    unless content.empty?
      require 'json'
      #--extract json string from content
