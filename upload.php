@@ -10,27 +10,31 @@
 
 	include 'upload.class.php';
     $upload = new Upload('file', 'application/zip', 'upload/' );
-    switch ($_GET['action']) {
-      case 'list':
-        $upload->show_files();
-        break;
-      case 'convert':
-        include 'sf_ext.php';
-        echo "<br> include";
-        $sf=new SfExt();
-        echo "<br> new";
-        $sf->takeFile($_GET['f_id']);
-        $f_full_name=getcwd()."\\upload\\$f_name";
-        $handle = fopen($f_full_name, 'w');
-        $res=fwrite($handle, 'test');
-        fclose($handle);
-        echo "<br>Take done";
-        break;
-      case 'send':
-         $upload->uploaded();
-         break;
-      default:
-         $upload->uploaded();
+    if (isset($_GET['action'])) {
+          switch ($_GET['action']) {
+            case 'list':
+              $upload->show_files();
+              break;
+            case 'convert':
+              include 'sf_ext.php';
+              echo "<br> include";
+              $sf=new SfExt();
+              echo "<br> new";
+              $sf->takeFile($_GET['f_id']);
+              $f_full_name=getcwd()."\\upload\\$f_name";
+              $handle = fopen($f_full_name, 'w');
+              $res=fwrite($handle, 'test');
+              fclose($handle);
+              echo "<br>Take done";
+              break;
+            case 'send':
+               $upload->uploaded();
+               break;
+            default:
+               $upload->uploaded();
+          }
+    } else {
+          $upload->uploaded();
     }
 
 ?>
