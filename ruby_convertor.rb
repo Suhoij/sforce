@@ -37,6 +37,8 @@ class ConvertorPPT_HTML
     require 'logger'
     require 'fileutils'
     require 'json'
+    require 'rest-client'
+    require 'win32ole'
     @state='init'
     @@log=Logger.new(LOG_DIR+'logconvertor.log')
     @@log.level = Logger::INFO
@@ -121,7 +123,7 @@ class ConvertorPPT_HTML
   def extractSliders (f)
     begin
       writeState('work', 'extract')
-      require 'win32ole'
+
       log=Logger.new(LOG_DIR+'logextractor.log')
       log.level = Logger::INFO
       begin
@@ -134,7 +136,7 @@ class ConvertorPPT_HTML
       presentation = ppt.Presentations.Open(INPUT_DIR+f);
       @@sliders_cnt=ppt.ActivePresentation.Slides.Count()
       log.info(" ExtractSliders org_id=#{@@org_id} app_id=#{@@app_id} SLIDERS_CNT="+@@sliders_cnt.to_s+" time:"+Time.now.strftime("%d/%m/%H/%M/%S"))
-      sleep 2 #---wait while ppt build sliders list
+      sleep 1 #---wait while ppt build sliders list
       sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
       #---clear old files in dir sliders
       FileUtils.rm_rf(sliders_dir)
@@ -217,7 +219,7 @@ class ConvertorPPT_HTML
   def sendState (file_name)
     begin
       extractPptParams()
-      require 'rest-client'
+
       writeState('work', 'send-state', 'start')
       RestClient.log=LOG_DIR+'send_sf.txt' #--$stdout
       #send_url='https://c.na11.visual.force.com/apex/test'
@@ -264,7 +266,7 @@ class ConvertorPPT_HTML
     while 1
       writeState('work', 'wait')
       next if @state=='convert'
-      sleep 2
+      sleep 1
       #--read files upload_dir
       #--Dir.entries(UPLOAD_DIR).select {|f| !File.directory? f}
       files_to_convert=Dir[UPLOAD_DIR+"*.ppt"]+Dir[UPLOAD_DIR+"*.pptx"]
