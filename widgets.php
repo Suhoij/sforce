@@ -12,10 +12,11 @@ require_once ('widgets_config.php');
 //----------------------------
 //$_FROM=$_POST;
 $_FROM=$_GET;
+$org_id=$_FROM['org_id'];
+$app_id=$_FROM['app_id'];
+$slide_id=$_FROM['slide_id'];
 if (isset($_FROM['action'])&&($_FROM['action']=='getPlaceVar')) {
-    $org_id=$_FROM['org_id'];
-    $app_id=$_FROM['app_id'];
-    $slide_id=$_FROM['slide_id'];
+
     //------Check slide in SF
     $file_json_var=PATH_SLIDE.$org_id."/".$app_id."/".$slide_id.'/index.html';
     $index_html=file_get_contents($file_json_var);
@@ -52,8 +53,15 @@ if (isset($_FROM['action'])&&($_FROM['action']=='checkSlide')) {
       };
      exit(0);
 }
-//----------------------------
+//---------------------------- CHECK if params points to valid path -------------
 $_FROM=$_POST;
+if (isset($_FROM['action'])&&($_FROM['action']=='isSlideValid')) {
+     $dir=PATH_SLIDE.$org_id."/".$app_id."/".$slide_id;
+     if (realpath($dir)) {
+       echo 'yes';
+     } else {echo 'no';}
+};
+//---------------------------sendWidgets------------------------------------------
 if (isset($_FROM['action'])&&($_FROM['action']=='sendWidgets')) {
     $cur_slide_id= $_FROM['slide_id'] ;
     //$blocks_list = json_decode($_FROM['blocks_list']);
@@ -63,7 +71,8 @@ if (isset($_FROM['action'])&&($_FROM['action']=='sendWidgets')) {
     error_log("\n\nCount=".count($blocks_list));
     error_log("\n\n0)Type=".$blocks_list[0]['type']);                           //---widget type--
     error_log("\n\n0)model_prop WidgetID=".$blocks_list[0]['model_prop']['WidgetID']);                           //---widget type--
-    error_log("\n\n1)Type=".$blocks_list[1]['type']);                           //---widget type--
+    error_log("\n\n1)Type=".$blocks_list[1]['type']);
+     error_log("\n\n1)model_prop WidgetID=".$blocks_list[1]['model_prop']['WidgetID']);                           //---widget type--
     //error_log("\n\nT0)Type=".$blocks_list[0]['model_prop']['IsActive']);        //---model data---
     //error_log("\n\nT0)Type=".$blocks_list[0]['data_coll_prop'][0]['data_name']);//---collection data
     // error_log("\n\n0)Type=".$blocks_list[1]['type']);
@@ -121,10 +130,11 @@ if (isset($_FROM['action'])&&($_FROM['action']=='sendWidgets')) {
             $filled_fields['Type__c']    = $blocks_list[$i]['type'];
             $filled_fields['SlideId__c'] = $cur_slide_id;
             $records[$i]->fields         = $filled_fields;
-            error_log("\n filled fields: ".var_export($records[$i]->fields,true));
-            error_log("\n records: ".var_export($records,true));
+            //error_log("\n filled fields: ".var_export($records[$i]->fields,true));
+
 
         }
+        error_log("\n records: ".var_export($records,true));
       	$upsertResponse = $mySforceConnection->update($records);
        	error_log("<br>------SF answer:-------i=$i-----------------");
        	error_log("Response: ".var_export($upsertResponse,true));
