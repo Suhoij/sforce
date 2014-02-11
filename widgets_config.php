@@ -6,5 +6,4 @@
  "Slider"=>array("WidgetID","PlaceholderId","IsActive","Theme","CustomStyle","Title","Min","Max","sStep","ObjectName","FieldName"),
  "Video"=>array("WidgetID","PlaceholderId","IsActive","Width","Height","VideoSource","VideoId","VideoUrl","Autoplay")
  );
-
 ?>
