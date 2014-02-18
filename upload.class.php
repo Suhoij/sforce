@@ -32,14 +32,16 @@ class Upload {
   var $app_id;
   var $slide_id;
   var $ppt_session_id;//--sessionId from active SF all
+  var $rewrite_ppt;//--what to do with slides: 1- rewrite 0 -add
   var $schema_url;        //--SF soap schema url
   var $send_url;        //--SF soap endpoint post send url
+  var $deny_content;    //--deny index.php content
   function __construct($n_fieldname, $n_type, $n_upload_dir) {
     $this->fieldname = $n_fieldname;
     $this->type = $n_type;
     $this->type_arr = array('application/ppt', 'application/pptx', 'application/vnd.ms-powerpoint');
     $this->upload_dir = $n_upload_dir;
-
+    $this->deny_content='<?php  ?><img src="/ctmobile.logo.png" />';
   }
   function show_files() {
     $myDirectory = opendir($this->upload_dir);
@@ -157,14 +159,27 @@ function moveSlide(){
       error_log(__FUNCTION__.' '.$this->state);
    }
 }
+function createDenyFile($path){
+  try {
+      $deny_file=$path.'/index.php';
+      if (!file_exist($deny_file)) {
+          file_put_contents($deny_file,$this->deny_content);
+      }
+  } catch (Exception $e) {
+          $this->state.=';error-create-Deny-file '. $e->getMessage().' path='.$path;
+          error_log(__FUNCTION__.' '.$this->state);
+  }
+}
 function moveData(){
   $this->state.= ";move data";
   try {
   if (!is_dir(PATH_SLIDERS.$this->org_id)) {
           mkdir(PATH_SLIDERS.$this->org_id);
+          $this->createDenyFile(PATH_SLIDERS.$this->org_id);
    }
    if (!is_dir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id)) {
           mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id);
+          $this->createDenyFile(PATH_SLIDERS.$this->org_id.'/'.$this->app_id);
    }
    if (!is_dir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/sources')) {
           mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/sources');
@@ -363,6 +378,11 @@ function writePptParams(){
     $this->ppt_session_id=$_POST['ppt_session_id'];
     $this->schema_url=$_POST['schema_url'];
     $this->send_url=$_POST['send_url'];
+    if (isset($_POST['rewrite_ppt'])) {
+       $this->rewrite_ppt = (string)$_POST['rewrite_ppt'];
+    } else {
+       $this->rewrite_ppt = "0";
+    }
     if (!is_dir(PATH_PPTS.$this->org_id.'/'.$this->app_id)) {
        if (!isset($this->org_id)) {
            error_log(__FUNCTION__.' EMPTY org_id='.$this->org_id);
@@ -374,7 +394,7 @@ function writePptParams(){
        $this->state.=";warring-ppt_params-no dir";
     }
     $cur_path_ppt=PATH_PPTS.$this->org_id.'/'.$this->app_id;
-    $json_str='{"ppt_session_id":"'.$this->ppt_session_id.'","schema_url":"'.$this->schema_url.'","send_url":"'.$this->send_url.'"}';
+    $json_str='{"rewrite_ppt":"'.$this->rewrite_ppt.'","ppt_session_id":"'.$this->ppt_session_id.'","schema_url":"'.$this->schema_url.'","send_url":"'.$this->send_url.'"}';
     $content='<?php'.chr(10).chr(13);
     $content.='$ppt_params='."'".$json_str."';"."\n\n";
     $content.='var_dump($ppt_params);'."\n\n";
@@ -382,6 +402,7 @@ function writePptParams(){
 
     file_put_contents($cur_path_ppt.'/ppt_params.php',$content);
     file_put_contents($cur_path_ppt.'/ppt_params.json',$json_str);
+    file_put_contents($cur_path_ppt.'/index.php',$this->deny_content);
     }
     } catch (Exception $e) {
         $this->state.=';error-writePptParams '. $e->getMessage();

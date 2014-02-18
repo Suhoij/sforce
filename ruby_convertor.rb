@@ -46,7 +46,7 @@ class ConvertorPPT_HTML
     @@send_url='https://na11.salesforce.com/services/Soap/class/HelperClass'
     @@schema_url='http://soap.sforce.com/schemas/class/HelperClass'
     @@ppt_session_id='00DG0000000CkUd!AQ0AQGm6koOyXnC8wEqRnUPgNXCl2d14HDwKJmsOovS0QC0On9eIr7F0kijnFUJI0A9oi5I_ewziKnewkLpFDQQtv2kV6DYC'
-
+    @@rewrite_ppt =0
   end
 
   #----------------------writeState--------------------
@@ -176,9 +176,10 @@ class ConvertorPPT_HTML
         #--extract json string from content
         ppt_params=JSON.parse(content)
       end
-      @@send_url = ppt_params['send_url'] if not ppt_params['schema_url'].empty?
-      @@schema_url = ppt_params['schema_url'] if not ppt_params['schema_url'].empty?
+      @@send_url       = ppt_params['send_url'] if not ppt_params['schema_url'].empty?
+      @@schema_url     = ppt_params['schema_url'] if not ppt_params['schema_url'].empty?
       @@ppt_session_id = ppt_params['ppt_session_id'] if not ppt_params['ppt_session_id'].empty?
+      @@rewrite_ppt    = ppt_params['rewrite_ppt'] if not ppt_params['ppt_session_id'].empty?
     rescue RuntimeError => error
       @@log.info('Extract PptParams ERROR '+error.inspect)
       writeState('error', 'extract-soap', error.inspect)
