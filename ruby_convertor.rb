@@ -129,7 +129,7 @@ class ConvertorPPT_HTML
     n_arr.max()
     rescue  RuntimeError => error
       @@log.info('ERROR getSlideLastN '+error.inspect)
-      1
+      0
     end
   end
   #-----------------------extractor---------------------
@@ -152,7 +152,7 @@ class ConvertorPPT_HTML
       sleep 1 #---wait while ppt build sliders list
       sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
       #---clear old files in dir sliders
-      FileUtils.rm_rf(sliders_dir)
+
       if !Dir.exist?(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
         Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
       end
@@ -161,6 +161,8 @@ class ConvertorPPT_HTML
          #----get slide_last_n
          sliders_max_n = getSlideLastN(sliders_dir)
          @@log.info("ADD NEW SLIDERS max_n= #{sliders_max_n} " +OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
+      else
+         FileUtils.rm_rf(sliders_dir)
       end
 
       for i in 1..@@sliders_cnt
