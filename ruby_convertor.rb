@@ -127,7 +127,8 @@ class ConvertorPPT_HTML
                                 end
     }
     n_arr.max()
-    rescue
+    rescue  RuntimeError => error
+      @@log.info('ERROR getSlideLastN '+error.inspect)
       1
     end
   end
@@ -159,6 +160,7 @@ class ConvertorPPT_HTML
       if @@rewrite_ppt == 0   #---add new files to folder
          #----get slide_last_n
          sliders_max_n = getSlideLastN(sliders_dir)
+         @@log.info("ADD NEW SLIDERS max_n= #{sliders_max_n} " +OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
       end
 
       for i in 1..@@sliders_cnt
