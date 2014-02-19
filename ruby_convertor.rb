@@ -120,9 +120,16 @@ class ConvertorPPT_HTML
   end
   # ----------------------get last slide n--------------
   def getSlideLastN (path)
+    begin
     n_arr =[]
-    Dir.entries(path).select {|f| !File.directory? n_arr.push (f.split('_')[1]).to_i}
+    Dir.entries(path).each {|f| if !File.directory?(f)
+                                    n_arr.push f.split('_')[1].to_i
+                                end
+    }
     n_arr.max()
+    rescue
+      1
+    end
   end
   #-----------------------extractor---------------------
   def extractSliders (f)
@@ -148,9 +155,14 @@ class ConvertorPPT_HTML
       if !Dir.exist?(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
         Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
       end
-      #----get slide_last_n
+      sliders_max_n=0
+      if @@rewrite_ppt == 0   #---add new files to folder
+         #----get slide_last_n
+         sliders_max_n = getSlideLastN(sliders_dir)
+      end
+
       for i in 1..@@sliders_cnt
-        ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i}.jpg", ".jpg", 2048, 1536) #--1024 768
+        ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i+sliders_max_n}.jpg", ".jpg", 2048, 1536) #--1024 768
       end
       ppt.ActivePresentation.Close()
       ppt.quit()
