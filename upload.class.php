@@ -183,6 +183,7 @@ function moveData(){
    }
    if (!is_dir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/sources')) {
           mkdir(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/sources');
+          $this->createDenyFile(PATH_SLIDERS.$this->org_id.'/'.$this->app_id.'/sources');
    }
    $path_sliders_org_app = PATH_SLIDERS. $this->org_id.'/'.$this->app_id.'/sources';
    if  (($this->type_sf_file=='zip')&&(preg_match('/source/i',$this->uploaded_file_name))) {
