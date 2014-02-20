@@ -1,10 +1,77 @@
+#-------------------commands-----------
+#------deleteTable--------------------
+#------createTokens--------------------
+#------updateToken--------------------
+require "securerandom"
 require "azure"
+
 Azure.config.storage_account_name = "sfclmstorage"
 Azure.config.storage_access_key = "JtyoTzjNZHBAWVuDQNpN3LaJcPWjc51bMvRT7xG4hZA7vpT6qZTjKoJUU6z8sY2+zsvsGe7j05OupWmumABz5A=="
 
-azure_table_service = Azure::TableService.new
-query = { :filter => "org_id eq '00D20000000Caz4EAC'" }
-result, token = azure_table_service.query_entities("sftokens", query)
+SLIDERS_DIR ='c:/inetpub/wwwroot/preview/slide/'
+PPT_DIR     ='c:/inetpub/wwwroot/preview/ppt/'
 
-print result
-print token
+azure_table_service = Azure::TableService.new
+
+if ARGV[0] == "deleteTable"
+  p "deleteTable..."
+  azure_table_service.delete_table("sftokens")
+  abort
+end
+
+if ARGV[0] == "createTable"
+  p "createTable..."
+  azure_table_service.create_table("sftokens")
+  abort
+end
+
+if ARGV[0] == "createTokens"
+tokens_cnt=0
+org_cnt=app_cnt=0
+bad_dir_arr = [".","..","index.php","ppt_params.json","ppt_params.php","sliders","1","2","css","data","scripts"]
+Dir.entries(PPT_DIR).each_with_index do |org_id_name,org_index|
+  if File.directory?(PPT_DIR+org_id_name) and ( bad_dir_arr.include?(org_id_name)==false)
+     org_cnt+=1
+     app_cnt=0
+     app_id_arr=Dir.entries(PPT_DIR+org_id_name)
+     app_id_arr.each_with_index do |app_id_name,app_index|
+     if File.directory?(PPT_DIR+"/"+org_id_name+"/"+app_id_name)  and ( bad_dir_arr.include?(app_id_name)==false)
+        app_cnt+=1
+        entity = {:PartitionKey =>org_id_name,:RowKey =>app_id_name,:token=>SecureRandom.hex(12) }
+        azure_table_service.insert_entity("sftokens", entity)
+        tokens_cnt=tokens_cnt+org_cnt+app_cnt;
+        p "Done:#{tokens_cnt}"
+     end
+     end
+     p "-----------------"
+  end
+end
+  abort
+end
+if ARGV[0] == "updateTokens"
+  org_id=ARGV[1]
+  app_id=ARGV[2]
+  token=SecureRandom.hex(12);
+  result.properties["PartitionKey"] = org_id
+  result.properties["RowKey"]       = app_id
+  result.properties["token"]        = token
+  begin
+  azure_table_service.update_entity("sftokens", result.properties)
+  rescue RuntimeError => error
+    p "Error update:"+error.inspect
+  end
+  p "New token is "+token
+  abort
+end
+#query = { :filter => "org_id eq 'test org_id'" }
+#query = { :filter => "PartitionKey eq '1'" }
+#result, token = azure_table_service.query_entities("sftokens", query)
+
+#--entity = { "org_id" => "test org_id", :partition_key => "test-partition-key", :row_key => "1" }
+#entity = { :org_id => "test org_id", :app_id =>"test app_it",:token=>"987654321",:PartitionKey => "test-org_id-app_id",:RowKey => "4" }
+
+
+
+###print result.inspect
+
+#print token.inspect
