@@ -32,7 +32,7 @@ class ConvertorPPT_HTML
   @@log=''
   @@org_id=''
   @@app_id=''
-  #------------------------init------------------------
+                                                     #------------------------init------------------------
   def initialize
     require 'logger'
     require 'fileutils'
@@ -118,20 +118,28 @@ class ConvertorPPT_HTML
       writeState('error', 'convert', f)
     end
   end
+
   # ----------------------get last slide n--------------
   def getSlideLastN (path)
     begin
-    n_arr =[]
-    Dir.entries(path).each {|f| if !File.directory?(f)
-                                    n_arr.push f.split('_')[1].to_i
-                                end
-    }
-    n_arr.max()
-    rescue  RuntimeError => error
+      n_arr =[]
+      Dir.entries(path).each { |f|
+        if !File.directory?(f)
+          n_arr.push f.split('_')[1].to_i
+        end
+      }
+      if n_arr.length ==0
+         0
+      else
+         n_arr.max()
+      end
+
+    rescue RuntimeError => error
       @@log.info('ERROR getSlideLastN '+error.inspect)
       0
     end
   end
+
   #-----------------------extractor---------------------
   def extractSliders (f)
     begin
@@ -156,13 +164,15 @@ class ConvertorPPT_HTML
       if !Dir.exist?(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
         Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
       end
+      extractPptParams()
       sliders_max_n=0
-      if @@rewrite_ppt == 0   #---add new files to folder
-         #----get slide_last_n
-         sliders_max_n = getSlideLastN(sliders_dir)
-         @@log.info("ADD NEW SLIDERS max_n= #{sliders_max_n} " +OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
+      if @@rewrite_ppt.to_i() == 0 #---add new files to folder
+                            #----get slide_last_n
+        sliders_max_n = getSlideLastN(sliders_dir)
+        @@log.info("ADD NEW SLIDERS max_n= #{sliders_max_n} " +OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
       else
-         FileUtils.rm_rf(sliders_dir)
+        #FileUtils.rm_rf(sliders_dir)
+        FileUtils.rm Dir.glob(sliders_dir+'*.jpg')
       end
 
       for i in 1..@@sliders_cnt
@@ -193,14 +203,13 @@ class ConvertorPPT_HTML
       writeState('work', 'extract-soap')
       content=File.read(file_params)
       unless content.empty?
-        require 'json'
         #--extract json string from content
         ppt_params=JSON.parse(content)
       end
-      @@send_url       = ppt_params['send_url'] if not ppt_params['schema_url'].empty?
-      @@schema_url     = ppt_params['schema_url'] if not ppt_params['schema_url'].empty?
-      @@ppt_session_id = ppt_params['ppt_session_id'] if not ppt_params['ppt_session_id'].empty?
-      @@rewrite_ppt    = ppt_params['rewrite_ppt'] if not ppt_params['ppt_session_id'].empty?
+      @@send_url        = ppt_params['send_url'] if not ppt_params['schema_url'].empty?
+      @@schema_url      = ppt_params['schema_url'] if not ppt_params['schema_url'].empty?
+      @@ppt_session_id  = ppt_params['ppt_session_id'] if not ppt_params['ppt_session_id'].empty?
+      @@rewrite_ppt     = ppt_params['rewrite_ppt'] if not ppt_params['rewrite_ppt'].empty?
     rescue RuntimeError => error
       @@log.info('Extract PptParams ERROR '+error.inspect)
       writeState('error', 'extract-soap', error.inspect)
@@ -244,9 +253,9 @@ class ConvertorPPT_HTML
 
       writeState('work', 'send-state', 'start')
       RestClient.log=LOG_DIR+'send_sf.txt' #--$stdout
-      #send_url='https://c.na11.visual.force.com/apex/test'
+                                           #send_url='https://c.na11.visual.force.com/apex/test'
       post_data=getSoapXml()
-      #---ENV['PERL_LWP_SSL_VERIFY_HOSTNAME']=0;
+                                           #---ENV['PERL_LWP_SSL_VERIFY_HOSTNAME']=0;
       send_res = RestClient.post(
           @@send_url,
           post_data, {
@@ -323,14 +332,24 @@ class ConvertorPPT_HTML
             Dir.mkdir(OUTPUT_DIR+@@org_id+"\\"+@@app_id)
           end
           convert File.basename(file)
+
           extractSliders File.basename(file)
           sendState(file_name)
           #------------rename upload-input file-------------------------------------------
-          if File.exist?("#{INPUT_DIR}#{file_name}")
-            File.rename("#{INPUT_DIR}#{file_name}", "#{INPUT_DIR}#{file_name}"+".done")
+          begin
+            if File.exist?("#{INPUT_DIR}#{file_name}")
+               File.rename("#{INPUT_DIR}#{file_name}", "#{INPUT_DIR}#{file_name}"+".done")
+            end
+          rescue
+            @@log.info("ERROR rename INPUT file:#{file_name}")
+            File.delete("#{INPUT_DIR}#{file_name}")
           end
+          begin
           if File.exist?("#{UPLOAD_DIR}#{file_name}")
-            File.rename("#{UPLOAD_DIR}#{file_name}", "#{UPLOAD_DIR}#{file_name}"+".done")
+             File.rename("#{UPLOAD_DIR}#{file_name}", "#{UPLOAD_DIR}#{file_name}"+".done")
+          end
+          rescue
+            @@log.info("ERROR rename UPLOAD file:#{file_name}")
           end
         end
       end
