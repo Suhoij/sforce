@@ -67,6 +67,19 @@ class AzureStore {
         error_log(__FUNCTION__.' '.$this->state."  ".$code.$error_message);
      }
   }
+  function getToken($org_id,$app_id) {
+        $filter = "PartitionKey eq '$org_id' and RowKey eq '$app_id'";
+        $cur_token='0';
+        try {
+            $result = $this->az_table_proxy->queryEntities($this->az_table_tokens, $filter);
+            $entities = $result->getEntities();
+            $cur_token=$entities[0]->getProperty("token")->getValue();
+        }  catch(ServiceException $e){
+            $cur_token ='-1';
+            error_log(__FUNCTION__.' '. $e->getCode().' '.$e->getMessage());
+        }
+        return $cur_token;
+  }
   function findByToken($tk) {
        $filter = "token eq '$tk'";
        try {
