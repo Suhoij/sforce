@@ -48,20 +48,39 @@ Dir.entries(PPT_DIR).each_with_index do |org_id_name,org_index|
 end
   abort
 end
-if ARGV[0] == "updateTokens"
+if ARGV[0] == "updateToken"
   org_id=ARGV[1]
   app_id=ARGV[2]
-  token=SecureRandom.hex(12);
-  result.properties["PartitionKey"] = org_id
-  result.properties["RowKey"]       = app_id
-  result.properties["token"]        = token
+  token=SecureRandom.hex(12)
+  result=Azure::Table::Entity.new
+  #p result.to_json
+  #result.properties.PartitionKey = org_id
+  #result.properties.RowKey      = app_id
+  #result.properties.token       = token
+  entity = { :PartitionKey => org_id, :RowKey => app_id,:token=> token }
+  result.properties = entity
+  p "Start update: org_id=#{org_id}  app_id=#{app_id}";
   begin
+  #azure_table_service.update_entity("sftokens", entity)
   azure_table_service.update_entity("sftokens", result.properties)
   rescue RuntimeError => error
-    p "Error update:"+error.inspect
+  p "Error update:"+error.inspect
   end
   p "New token is "+token
   abort
+end
+
+if ARGV[0] == "addToken"
+  org_id=ARGV[1]
+  app_id=ARGV[2]
+  token=SecureRandom.hex(12);
+  begin
+  entity = { :token => token,:PartitionKey => org_id, :RowKey => app_id }
+  azure_table_service.insert_entity("sftokens", entity)
+  rescue  RuntimeError => error
+    p "Error update:"+error.inspect
+  end
+  p "done token:"+token
 end
 #query = { :filter => "org_id eq 'test org_id'" }
 #query = { :filter => "PartitionKey eq '1'" }
