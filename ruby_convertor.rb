@@ -167,16 +167,24 @@ class ConvertorPPT_HTML
       extractPptParams()
       sliders_max_n=0
       if @@rewrite_ppt.to_i() == 0 #---add new files to folder
-                            #----get slide_last_n
-        sliders_max_n = getSlideLastN(sliders_dir)
-        @@log.info("ADD NEW SLIDERS max_n= #{sliders_max_n} " +OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
+         #----get slide_last_n
+         sliders_max_n = getSlideLastN(sliders_dir)
+         @@log.info("ADD NEW SLIDERS max_n= #{sliders_max_n} " +OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
       else
-        #FileUtils.rm_rf(sliders_dir)
-        FileUtils.rm Dir.glob(sliders_dir+'*.jpg')
+         #FileUtils.rm_rf(sliders_dir)
+         FileUtils.rm Dir.glob(sliders_dir+'*.jpg')
       end
-
+      begin
+        log.info(" !!!) slide width=#{ppt.ActivePresentation.PageSetup.SlideWidth}  slide height=#{ppt.ActivePresentation.PageSetup.SlideHeight}")
+      rescue
+        log.info("1=#{i} ERROR slide width")
+      end
       for i in 1..@@sliders_cnt
-        ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i+sliders_max_n}.jpg", ".jpg", 2048, 1536) #--1024 768
+        if ppt.ActivePresentation.PageSetup.SlideWidth < ppt.ActivePresentation.PageSetup.SlideHeight
+           ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i+sliders_max_n}.jpg", ".jpg",1536, 2048) #--768 1024
+        else
+           ppt.ActivePresentation.Slides(i).Export(sliders_dir+"slide_#{i+sliders_max_n}.jpg", ".jpg", 2048, 1536) #--1024 768
+        end
       end
       ppt.ActivePresentation.Close()
       ppt.quit()
