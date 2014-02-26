@@ -248,6 +248,7 @@ class ConvertorPPT_HTML
       <hel:presentationUploaded>
          <hel:sliders_cnt>#{cur_sliders_cnt}</hel:sliders_cnt>
          <hel:app_id>#{cur_app_id}</hel:app_id>
+         <hel:rewrite_ppt>#{ @@rewrite_ppt.to_s()}</hel:rewrite_ppt>
       </hel:presentationUploaded>
    </soapenv:Body>
 </soapenv:Envelope>
