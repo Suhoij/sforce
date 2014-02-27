@@ -10,8 +10,12 @@
 
 	include 'upload.class.php';
     $upload = new Upload('file', 'application/zip', 'upload/' );
-    if (isset($_GET['action'])) {
-          switch ($_GET['action']) {
+    $_REQUEST['action']
+    if (isset( $_REQUEST['action'] )) {
+          switch ( $_REQUEST['action'] ) {
+            case 'delete-slides':
+              $upload->deleteSlides();
+              break;
             case 'list':
               $upload->show_files();
               break;

@@ -106,6 +106,32 @@ function deletePartFiles() {
       error_log(__FUNCTION__.' '.$this->state);
   }
 }
+function deleteSlides() {
+  if ((isset($_POST['cloud_token']) == false) or ($_POST['cloud_token'] != CLOUD_TOKEN)) {
+      echo "error";
+      return ;
+  }
+  if (isset($_POST['slide_token'])) {
+      require_once "sftk.php";
+      $az_store= new AzureStore();
+      if ($az_store->findByToken($_POST['slide_token']) == true) {
+          $org_id=$_POST['org_id'];
+          $app_id=$_POST['app_id'];
+          $dir_to_delete=getcwd().'/preview/ppt/'.$org_id.'/'.$app_id.'/sliders/';
+          if (preg_match('/all/i',$_POST['slide_id'])) {
+
+             array_map('unlink', glob($dir_to_delete."*.jpg"));
+           } else {
+                $slide_del_arr=explod(',',$_POST['slide_id']);
+                foreach ($slide_del_arr as $slide_n) {
+                   $file_name=$dir_to_delete.'slide_'.$slide_n.'.jpg';
+                   unlink($file_name);
+                   error_log('DELETED file '.$file_name);
+                }
+           }
+      }
+  }
+}
 function deleteFiles($tp_file) {
    try {
       if ($tp_file=='ppt'){
