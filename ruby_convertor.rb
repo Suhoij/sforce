@@ -175,6 +175,7 @@ class ConvertorPPT_HTML
          FileUtils.mkdir(sliders_dir)
          #FileUtils.rm Dir.glob(sliders_dir+'*.jpg')
       end
+      sliders_dir = OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders\\"
       begin
         log.info(" !!!) slide width=#{ppt.ActivePresentation.PageSetup.SlideWidth}  slide height=#{ppt.ActivePresentation.PageSetup.SlideHeight}")
       rescue
