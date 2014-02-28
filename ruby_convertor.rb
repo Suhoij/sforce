@@ -171,8 +171,9 @@ class ConvertorPPT_HTML
          sliders_max_n = getSlideLastN(sliders_dir)
          @@log.info("ADD NEW SLIDERS max_n= #{sliders_max_n} " +OUTPUT_DIR+@@org_id+"\\"+@@app_id+"\\sliders")
       else
-         #FileUtils.rm_rf(sliders_dir)
-         FileUtils.rm Dir.glob(sliders_dir+'*.jpg')
+         FileUtils.rm_rf(sliders_dir)
+         FileUtils.mkdir(sliders_dir)
+         #FileUtils.rm Dir.glob(sliders_dir+'*.jpg')
       end
       begin
         log.info(" !!!) slide width=#{ppt.ActivePresentation.PageSetup.SlideWidth}  slide height=#{ppt.ActivePresentation.PageSetup.SlideHeight}")

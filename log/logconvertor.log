@@ -1,323 +1,136 @@
-# Logfile created on 2013-11-18 18:18:40 +0330 by logger.rb/36483
-I, [2013-11-18T18:18:40.130097 #3680]  INFO -- : Start listen:  state:init
-I, [2013-11-18T19:09:05.739190 #3896]  INFO -- : Start listen:  state:init
-I, [2013-12-14T23:10:54.589659 #4056]  INFO -- : Start listen:  state:init
-I, [2013-12-14T23:10:55.597582 #4056]  INFO -- : Files in dir:3
-I, [2013-12-14T23:10:55.598667 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odScnEAE_newconceptofCTMobile.pptx  time:2013-12-14 23:10:55 +0330
-I, [2013-12-14T23:10:55.610583 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odScnEAE_newconceptofCTMobile.pptx
-I, [2013-12-14T23:10:55.630717 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odScnEAE_newconceptofCTMobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odScnEAE\index.html
-I, [2013-12-14T23:11:01.771539 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odScnEAE_newconceptofCTMobile.pptx  time:2013-12-14 23:11:01 +0330
-I, [2013-12-14T23:11:09.897149 #4056]  INFO -- : Error file-PptParams NO FILE PARAMS
-I, [2013-12-14T23:11:12.928407 #4056]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00DG0000000CkUd!AQ0AQGm6koOyXnC8wEqRnUPgNXCl2d14HDwKJmsOovS0QC0On9eIr7F0kijnFUJI0A9oi5I_ewziKnewkLpFDQQtv2kV6DYC</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
-I, [2013-12-14T23:11:13.943993 #4056]  INFO -- : Files in dir:2
-I, [2013-12-14T23:11:13.943993 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx  time:2013-12-14 23:11:13 +0330
-I, [2013-12-14T23:11:13.943993 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx
-I, [2013-12-14T23:11:13.943993 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odSfIEAU\index.html
-I, [2013-12-14T23:11:14.959555 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx  time:2013-12-14 23:11:14 +0330
-I, [2013-12-14T23:11:20.396855 #4056]  INFO -- : Error file-PptParams NO FILE PARAMS
-I, [2013-12-14T23:11:21.037416 #4056]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00DG0000000CkUd!AQ0AQGm6koOyXnC8wEqRnUPgNXCl2d14HDwKJmsOovS0QC0On9eIr7F0kijnFUJI0A9oi5I_ewziKnewkLpFDQQtv2kV6DYC</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
-I, [2013-12-14T23:11:22.052939 #4056]  INFO -- : Files in dir:1
-I, [2013-12-14T23:11:22.052939 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000F7vjnAAB_presentation.pptx  time:2013-12-14 23:11:22 +0330
-I, [2013-12-14T23:11:22.052939 #4056]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000F7vjnAAB_presentation.pptx
-I, [2013-12-14T23:11:22.068573 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000F7vjnAAB_presentation.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000F7vjnAAB\index.html
-I, [2013-12-14T23:11:23.005978 #4056]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000F7vjnAAB_presentation.pptx  time:2013-12-14 23:11:23 +0330
-I, [2013-12-14T23:34:13.667358 #4056]  INFO -- : Files in dir:1
-I, [2013-12-14T23:34:13.667358 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx  time:2013-12-14 23:34:13 +0330
-I, [2013-12-14T23:34:13.667358 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx
-I, [2013-12-14T23:34:13.667358 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odSfIEAU\index.html
-I, [2013-12-14T23:34:14.886053 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odSfIEAU_Arlanis.pptx  time:2013-12-14 23:34:14 +0330
-I, [2013-12-14T23:34:35.378812 #4056]  INFO -- : Files in dir:1
-I, [2013-12-14T23:34:35.378812 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odScnEAE_demo-ppt-convert.pptx  time:2013-12-14 23:34:35 +0330
-I, [2013-12-14T23:34:35.378812 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odScnEAE_demo-ppt-convert.pptx
-I, [2013-12-14T23:34:35.378812 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odScnEAE_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odScnEAE\index.html
-I, [2013-12-14T23:34:36.597512 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odScnEAE_demo-ppt-convert.pptx  time:2013-12-14 23:34:36 +0330
-I, [2013-12-15T07:20:52.873047 #4056]  INFO -- : Files in dir:1
-I, [2013-12-15T07:20:52.873047 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odScnEAE_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-12-15 07:20:52 +0330
-I, [2013-12-15T07:20:52.873047 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odScnEAE_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx
-I, [2013-12-15T07:20:52.873047 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odScnEAE_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odScnEAE\index.html
-I, [2013-12-15T07:20:54.373019 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odScnEAE_Ð¾Ñ€Ð³-ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°-CT-Mobile.pptx  time:2013-12-15 07:20:54 +0330
-I, [2013-12-16T07:06:41.083001 #4056]  INFO -- : Files in dir:1
-I, [2013-12-16T07:06:41.083001 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odSfIEAU_demo-ppt-convert.pptx  time:2013-12-16 07:06:41 +0330
-I, [2013-12-16T07:06:41.083001 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odSfIEAU_demo-ppt-convert.pptx
-I, [2013-12-16T07:06:41.083001 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odSfIEAU_demo-ppt-convert.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odSfIEAU\index.html
-I, [2013-12-16T07:06:42.457939 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odSfIEAU_demo-ppt-convert.pptx  time:2013-12-16 07:06:42 +0330
-I, [2013-12-16T18:50:22.164892 #4056]  INFO -- : Files in dir:1
-I, [2013-12-16T18:50:22.164892 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 18:50:22 +0330
-I, [2013-12-16T18:50:22.164892 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx
-I, [2013-12-16T18:50:22.164892 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odSfIEAU\index.html
-I, [2013-12-16T18:50:23.727332 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 18:50:23 +0330
-I, [2013-12-16T19:04:06.368382 #4056]  INFO -- : Files in dir:1
-I, [2013-12-16T19:04:06.368382 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 19:04:06 +0330
-I, [2013-12-16T19:04:06.368382 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx
-I, [2013-12-16T19:04:06.383961 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odSfIEAU\index.html
-I, [2013-12-16T19:04:07.649570 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 19:04:07 +0330
-I, [2013-12-16T19:04:21.535701 #4056]  INFO -- : Files in dir:1
-I, [2013-12-16T19:04:21.535701 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 19:04:21 +0330
-I, [2013-12-16T19:04:21.535701 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx
-I, [2013-12-16T19:04:21.535701 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odSfIEAU\index.html
-I, [2013-12-16T19:04:22.738764 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odSfIEAU_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 19:04:22 +0330
-I, [2013-12-16T19:20:34.525061 #4056]  INFO -- : Files in dir:1
-I, [2013-12-16T19:20:34.525061 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odTX1EAM_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 19:20:34 +0330
-I, [2013-12-16T19:20:34.540703 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odTX1EAM_ANI-Chicago-December-visit---EK.pptx
-I, [2013-12-16T19:20:34.540703 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odTX1EAM_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odTX1EAM\index.html
-I, [2013-12-16T19:20:35.712560 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odTX1EAM_ANI-Chicago-December-visit---EK.pptx  time:2013-12-16 19:20:35 +0330
-I, [2013-12-19T15:36:46.033929 #4056]  INFO -- : Files in dir:1
-I, [2013-12-19T15:36:46.033929 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odYx4EAE_Ensure-Plus-Advance-eSales-Aid-Training.pptx  time:2013-12-19 15:36:46 +0330
-I, [2013-12-19T15:36:46.033929 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odYx4EAE_Ensure-Plus-Advance-eSales-Aid-Training.pptx
-I, [2013-12-19T15:36:46.049510 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odYx4EAE_Ensure-Plus-Advance-eSales-Aid-Training.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odYx4EAE\index.html
-I, [2013-12-19T15:36:47.736987 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odYx4EAE_Ensure-Plus-Advance-eSales-Aid-Training.pptx  time:2013-12-19 15:36:47 +0330
-I, [2013-12-19T16:47:07.416297 #4056]  INFO -- : Files in dir:1
-I, [2013-12-19T16:47:07.416297 #4056]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odZ5JEAU_Ensure-Plus-Advance-eSales-Aid-Training.pptx  time:2013-12-19 16:47:07 +0330
-I, [2013-12-19T16:47:07.416297 #4056]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odZ5JEAU_Ensure-Plus-Advance-eSales-Aid-Training.pptx
-I, [2013-12-19T16:47:07.431922 #4056]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odZ5JEAU_Ensure-Plus-Advance-eSales-Aid-Training.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odZ5JEAU\index.html
-I, [2013-12-19T16:47:08.666286 #4056]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odZ5JEAU_Ensure-Plus-Advance-eSales-Aid-Training.pptx  time:2013-12-19 16:47:08 +0330
-I, [2014-01-23T20:55:51.933054 #4036]  INFO -- : Start listen:  state:init
-I, [2014-01-23T20:55:52.948716 #4036]  INFO -- : Files in dir:1
-I, [2014-01-23T20:55:52.964296 #4036]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odv2YEAQ_Presentation1.ppt  time:2014-01-23 20:55:52 +0330
-I, [2014-01-23T20:55:52.964296 #4036]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odv2YEAQ_Presentation1.ppt
-I, [2014-01-23T20:55:52.964296 #4036]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odv2YEAQ_Presentation1.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odv2YEAQ\index.html
-I, [2014-01-23T20:55:54.479911 #4036]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odv2YEAQ_Presentation1.ppt  time:2014-01-23 20:55:54 +0330
-I, [2014-01-23T20:56:03.745520 #4036]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00D20000000Caz4!AQgAQN46tMaO2IDPlPWfQgfBdjAYIC6Ab07bFYHgSw_Ipen5xj1yuPDsgw7F3q_dF5DJFFJP5OFizHE3iiEwLSr0bLbLXecs</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
-I, [2014-01-24T15:58:24.433397 #3456]  INFO -- : Start listen:  state:init
-I, [2014-01-24T19:02:00.214936 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T19:02:00.214936 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odx4UEAQ_test.ppt  time:2014-01-24 19:02:00 +0330
-I, [2014-01-24T19:02:00.214936 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odx4UEAQ_test.ppt
-I, [2014-01-24T19:02:00.230518 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odx4UEAQ_test.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odx4UEAQ\index.html
-I, [2014-01-24T19:02:01.527375 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odx4UEAQ_test.ppt  time:2014-01-24 19:02:01 +0330
-I, [2014-01-24T19:22:14.260932 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T19:22:14.260932 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIpEAI_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:22:14 +0330
-I, [2014-01-24T19:22:14.260932 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIpEAI_ANI-Chicago-December-visit---EK.pptx
-I, [2014-01-24T19:22:14.260932 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIpEAI_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIpEAI\index.html
-I, [2014-01-24T19:22:15.542164 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIpEAI_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:22:15 +0330
-I, [2014-01-24T19:22:50.592813 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T19:22:50.592813 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odv2YEAQ_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:22:50 +0330
-I, [2014-01-24T19:22:50.608395 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odv2YEAQ_ANI-Chicago-December-visit---EK.pptx
-I, [2014-01-24T19:22:50.608395 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odv2YEAQ_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odv2YEAQ\index.html
-I, [2014-01-24T19:22:51.795879 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odv2YEAQ_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:22:51 +0330
-I, [2014-01-24T19:24:10.180970 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T19:24:10.180970 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:24:10 +0330
-I, [2014-01-24T19:24:10.180970 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx
-I, [2014-01-24T19:24:10.180970 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T19:24:11.368452 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:24:11 +0330
-I, [2014-01-24T19:46:50.624160 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T19:46:50.624160 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:46:50 +0330
-I, [2014-01-24T19:46:50.626162 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx
-I, [2014-01-24T19:46:50.627162 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T19:46:51.884145 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_ANI-Chicago-December-visit---EK.pptx  time:2014-01-24 19:46:51 +0330
-I, [2014-01-24T19:48:13.049176 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T19:48:13.050177 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx  time:2014-01-24 19:48:13 +0330
-I, [2014-01-24T19:48:13.051179 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx
-I, [2014-01-24T19:48:13.054180 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T19:48:14.255161 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx  time:2014-01-24 19:48:14 +0330
-I, [2014-01-24T19:56:40.351107 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T19:56:40.351107 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx  time:2014-01-24 19:56:40 +0330
-I, [2014-01-24T19:56:40.353110 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx
-I, [2014-01-24T19:56:40.356111 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T19:56:41.599092 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test.pptx  time:2014-01-24 19:56:41 +0330
-I, [2014-01-24T20:24:36.704747 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:24:36.705748 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:24:36 +0330
-I, [2014-01-24T20:24:36.706751 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:24:36.710750 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:24:37.925733 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:24:37 +0330
-I, [2014-01-24T20:25:20.112099 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:25:20.113100 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_South-Africa-Glucerna.ppt  time:2014-01-24 20:25:20 +0330
-I, [2014-01-24T20:25:20.114103 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_South-Africa-Glucerna.ppt
-I, [2014-01-24T20:25:20.126103 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_South-Africa-Glucerna.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:25:21.336085 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_South-Africa-Glucerna.ppt  time:2014-01-24 20:25:21 +0330
-I, [2014-01-24T20:26:02.315389 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:26:02.316390 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:26:02 +0330
-I, [2014-01-24T20:26:02.318390 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:26:02.322409 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:26:03.493375 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:26:03 +0330
-I, [2014-01-24T20:27:16.551619 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:27:16.551619 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:27:16 +0330
-I, [2014-01-24T20:27:16.552624 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:27:16.559622 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:27:18.870168 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:27:18 +0330
-I, [2014-01-24T20:27:54.277013 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:27:54.284015 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:27:54 +0330
-I, [2014-01-24T20:27:54.289016 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:27:54.294016 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:27:55.515999 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:27:55 +0330
-I, [2014-01-24T20:28:27.596483 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:28:27.598485 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:28:27 +0330
-I, [2014-01-24T20:28:27.599486 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:28:27.606485 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:28:28.879468 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:28:28 +0330
-I, [2014-01-24T20:29:55.036848 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:29:55.037849 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:29:55 +0330
-I, [2014-01-24T20:29:55.038852 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:29:55.043620 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:29:56.324832 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:29:56 +0330
-I, [2014-01-24T20:33:10.348848 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:33:10.349849 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:33:10 +0330
-I, [2014-01-24T20:33:10.359850 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:33:10.370851 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:33:11.596833 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:33:11 +0330
-I, [2014-01-24T20:51:54.139362 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:51:54.140363 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:51:54 +0330
-I, [2014-01-24T20:51:54.149363 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:51:54.160364 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:51:55.372347 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:51:55 +0330
-I, [2014-01-24T20:54:32.943661 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T20:54:32.943661 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:54:32 +0330
-I, [2014-01-24T20:54:32.958663 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T20:54:33.001663 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T20:54:34.169646 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 20:54:34 +0330
-I, [2014-01-24T21:39:38.157472 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T21:39:38.158472 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 21:39:38 +0330
-I, [2014-01-24T21:39:38.159474 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T21:39:38.170473 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T21:39:39.443456 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 21:39:39 +0330
-I, [2014-01-24T21:44:17.256334 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T21:44:17.256334 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 21:44:17 +0330
-I, [2014-01-24T21:44:17.258335 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx
-I, [2014-01-24T21:44:17.269335 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxIuEAI\index.html
-I, [2014-01-24T21:44:18.530317 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxIuEAI_test---Copy.pptx  time:2014-01-24 21:44:18 +0330
-I, [2014-01-24T23:13:11.853866 #3456]  INFO -- : Files in dir:1
-I, [2014-01-24T23:13:11.854871 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000odxQTEAY_test---Copy.pptx  time:2014-01-24 23:13:11 +0330
-I, [2014-01-24T23:13:11.856869 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000odxQTEAY_test---Copy.pptx
-I, [2014-01-24T23:13:11.866869 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000odxQTEAY_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000odxQTEAY\index.html
-I, [2014-01-24T23:13:13.039845 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000odxQTEAY_test---Copy.pptx  time:2014-01-24 23:13:13 +0330
-I, [2014-01-29T13:06:47.706465 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T13:06:47.707468 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx  time:2014-01-29 13:06:47 +0330
-I, [2014-01-29T13:06:47.710468 #3456]  INFO -- : Start convert:  file:00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx
-I, [2014-01-29T13:06:47.717469 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Dg0000003L8WpEAK\a08g00000023fZ8AAI\index.html
-I, [2014-01-29T13:06:49.203438 #3456]  INFO -- : Done convert file:00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx  time:2014-01-29 13:06:49 +0330
-I, [2014-01-29T13:06:55.154325 #3456]  INFO -- : Error file-PptParams NO FILE PARAMS
-I, [2014-01-29T13:06:55.955705 #3456]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00D20000000Caz4!AQgAQO0fnyq_TznJ4RV7pvXgmiLwy_Oxs_GgM1O1hvyI..BQG3kBvNNTPuQ8OuN6.SNPTP9JDExPUamyMq9Qb5MfNhyAT91w</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
-I, [2014-01-29T13:10:21.194930 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T13:10:21.194930 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx  time:2014-01-29 13:10:21 +0330
-I, [2014-01-29T13:10:21.196932 #3456]  INFO -- : Start convert:  file:00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx
-I, [2014-01-29T13:10:21.202933 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Dg0000003L8WpEAK\a08g00000023HoiAAE\index.html
-I, [2014-01-29T13:10:22.416908 #3456]  INFO -- : Done convert file:00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx  time:2014-01-29 13:10:22 +0330
-I, [2014-01-29T13:18:14.255193 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T13:18:14.256198 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx  time:2014-01-29 13:18:14 +0330
-I, [2014-01-29T13:18:14.258362 #3456]  INFO -- : Start convert:  file:00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx
-I, [2014-01-29T13:18:14.300194 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Dg0000003L8WpEAK\a08g00000023HoiAAE\index.html
-I, [2014-01-29T13:18:15.466170 #3456]  INFO -- : Done convert file:00Dg0000003L8WpEAK_a08g00000023HoiAAE_test---Copy.pptx  time:2014-01-29 13:18:15 +0330
-I, [2014-01-29T13:22:25.136393 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T13:22:25.137396 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx  time:2014-01-29 13:22:25 +0330
-I, [2014-01-29T13:22:25.138397 #3456]  INFO -- : Start convert:  file:00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx
-I, [2014-01-29T13:22:25.147397 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00Dg0000003L8WpEAK\a08g00000023fZ8AAI\index.html
-I, [2014-01-29T13:22:26.359371 #3456]  INFO -- : Done convert file:00Dg0000003L8WpEAK_a08g00000023fZ8AAI_test---Copy.pptx  time:2014-01-29 13:22:26 +0330
-I, [2014-01-29T14:24:10.946167 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T14:24:10.946167 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 14:24:10 +0330
-I, [2014-01-29T14:24:10.947170 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T14:24:10.959169 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T14:24:12.400149 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 14:24:12 +0330
-I, [2014-01-29T14:25:25.050942 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T14:25:25.051944 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 14:25:25 +0330
-I, [2014-01-29T14:25:25.053944 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T14:25:25.065945 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T14:25:26.260928 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 14:25:26 +0330
-I, [2014-01-29T14:26:42.008934 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T14:26:42.009936 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 14:26:42 +0330
-I, [2014-01-29T14:26:42.010936 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T14:26:42.021939 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T14:26:43.239920 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 14:26:43 +0330
-I, [2014-01-29T15:04:26.529324 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T15:04:26.535324 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 15:04:26 +0330
-I, [2014-01-29T15:04:26.546326 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T15:04:26.560325 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T15:04:27.805309 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 15:04:27 +0330
-I, [2014-01-29T15:05:17.326501 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T15:05:17.327502 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 15:05:17 +0330
-I, [2014-01-29T15:05:17.328503 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T15:05:17.339504 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T15:05:18.555478 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 15:05:18 +0330
-I, [2014-01-29T16:19:44.883989 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:19:44.887992 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:19:44 +0330
-I, [2014-01-29T16:19:44.888994 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T16:19:44.901992 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T16:19:46.282971 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:19:46 +0330
-I, [2014-01-29T16:25:10.263569 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:25:10.263569 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:25:10 +0330
-I, [2014-01-29T16:25:10.282571 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T16:25:10.294572 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T16:25:11.601553 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:25:11 +0330
-I, [2014-01-29T16:32:27.566992 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:32:27.567994 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:32:27 +0330
-I, [2014-01-29T16:32:27.568994 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T16:32:27.580993 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T16:32:28.814975 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:32:28 +0330
-I, [2014-01-29T16:34:30.349096 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:34:30.350098 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:34:30 +0330
-I, [2014-01-29T16:34:30.351100 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T16:34:30.362099 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T16:34:31.595083 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:34:31 +0330
-I, [2014-01-29T16:37:46.962440 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:37:46.963443 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:37:46 +0330
-I, [2014-01-29T16:37:46.966444 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T16:37:46.978445 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T16:37:48.300424 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:37:48 +0330
-I, [2014-01-29T16:43:46.816187 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:43:46.817195 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:43:46 +0330
-I, [2014-01-29T16:43:46.820193 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx
-I, [2014-01-29T16:43:46.831187 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EfjyFIAR\index.html
-I, [2014-01-29T16:43:48.006170 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EfjyFIAR_testÑopy.pptx  time:2014-01-29 16:43:48 +0330
-I, [2014-01-29T16:44:35.242175 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:44:35.242175 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 16:44:35 +0330
-I, [2014-01-29T16:44:35.244178 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx
-I, [2014-01-29T16:44:35.255179 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000Efku3IAB\index.html
-I, [2014-01-29T16:44:36.470161 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 16:44:36 +0330
-I, [2014-01-29T16:53:39.266232 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T16:53:39.267233 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 16:53:39 +0330
-I, [2014-01-29T16:53:39.269235 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx
-I, [2014-01-29T16:53:39.280236 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000Efku3IAB\index.html
-I, [2014-01-29T16:53:40.635216 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 16:53:40 +0330
-I, [2014-01-29T17:01:39.047541 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T17:01:39.051544 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 17:01:39 +0330
-I, [2014-01-29T17:01:39.071544 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx
-I, [2014-01-29T17:01:39.115543 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000Efku3IAB\index.html
-I, [2014-01-29T17:01:40.376524 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 17:01:40 +0330
-I, [2014-01-29T17:13:44.440971 #3456]  INFO -- : Files in dir:1
-I, [2014-01-29T17:13:44.440971 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 17:13:44 +0330
-I, [2014-01-29T17:13:44.442973 #3456]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx
-I, [2014-01-29T17:13:44.457971 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000Efku3IAB\index.html
-I, [2014-01-29T17:13:45.713956 #3456]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000Efku3IAB_testÑopy.pptx  time:2014-01-29 17:13:45 +0330
-I, [2014-02-03T18:00:36.417767 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T18:00:36.417767 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe40mEAA_Glucerna-2014-pvt-detail-aid--visit-1.ppt  time:2014-02-03 18:00:36 +0330
-I, [2014-02-03T18:00:36.419769 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe40mEAA_Glucerna-2014-pvt-detail-aid--visit-1.ppt
-I, [2014-02-03T18:00:36.428770 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe40mEAA_Glucerna-2014-pvt-detail-aid--visit-1.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe40mEAA\index.html
-I, [2014-02-03T18:00:37.846755 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe40mEAA_Glucerna-2014-pvt-detail-aid--visit-1.ppt  time:2014-02-03 18:00:37 +0330
-I, [2014-02-03T18:46:29.978677 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T18:46:29.983682 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe42AEAQ_Glucerna-2014-pvt-detail-aid--visit-1.ppt  time:2014-02-03 18:46:29 +0330
-I, [2014-02-03T18:46:29.984681 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe42AEAQ_Glucerna-2014-pvt-detail-aid--visit-1.ppt
-I, [2014-02-03T18:46:29.995680 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe42AEAQ_Glucerna-2014-pvt-detail-aid--visit-1.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe42AEAQ\index.html
-I, [2014-02-03T18:46:31.255654 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe42AEAQ_Glucerna-2014-pvt-detail-aid--visit-1.ppt  time:2014-02-03 18:46:31 +0330
-I, [2014-02-03T19:05:51.903075 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T19:05:51.904076 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe42PEAQ_Glucerna-2014-pvt-detail-aid--visit-3.ppt  time:2014-02-03 19:05:51 +0330
-I, [2014-02-03T19:05:51.905079 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe42PEAQ_Glucerna-2014-pvt-detail-aid--visit-3.ppt
-I, [2014-02-03T19:05:51.915076 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe42PEAQ_Glucerna-2014-pvt-detail-aid--visit-3.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe42PEAQ\index.html
-I, [2014-02-03T19:05:53.120053 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe42PEAQ_Glucerna-2014-pvt-detail-aid--visit-3.ppt  time:2014-02-03 19:05:53 +0330
-I, [2014-02-03T19:28:58.324755 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T19:28:58.325833 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe42tEAA_PediaSure-pvt-visit-2.pptx  time:2014-02-03 19:28:58 +0330
-I, [2014-02-03T19:28:58.326759 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe42tEAA_PediaSure-pvt-visit-2.pptx
-I, [2014-02-03T19:28:58.331759 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe42tEAA_PediaSure-pvt-visit-2.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe42tEAA\index.html
-I, [2014-02-03T19:28:59.616740 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe42tEAA_PediaSure-pvt-visit-2.pptx  time:2014-02-03 19:28:59 +0330
-I, [2014-02-03T19:41:55.135509 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T19:41:55.139513 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe44jEAA_PediaSure-pvt-visit-3.pptx  time:2014-02-03 19:41:55 +0330
-I, [2014-02-03T19:41:55.140513 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe44jEAA_PediaSure-pvt-visit-3.pptx
-I, [2014-02-03T19:41:55.146513 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe44jEAA_PediaSure-pvt-visit-3.pptx /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe44jEAA\index.html
-I, [2014-02-03T19:41:56.342488 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe44jEAA_PediaSure-pvt-visit-3.pptx  time:2014-02-03 19:41:56 +0330
-I, [2014-02-03T20:05:06.904823 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T20:05:06.909828 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt  time:2014-02-03 20:05:06 +0330
-I, [2014-02-03T20:05:06.911826 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt
-I, [2014-02-03T20:05:06.919826 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe45PEAQ\index.html
-I, [2014-02-03T20:05:08.151808 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt  time:2014-02-03 20:05:08 +0330
-I, [2014-02-03T20:06:01.147174 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T20:06:01.148176 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid---Copy.ppt  time:2014-02-03 20:06:01 +0330
-I, [2014-02-03T20:06:01.149178 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid---Copy.ppt
-I, [2014-02-03T20:06:01.157177 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid---Copy.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe45PEAQ\index.html
-I, [2014-02-03T20:06:02.444158 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid---Copy.ppt  time:2014-02-03 20:06:02 +0330
-I, [2014-02-03T20:09:55.929523 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T20:09:55.930525 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt  time:2014-02-03 20:09:55 +0330
-I, [2014-02-03T20:09:55.931527 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt
-I, [2014-02-03T20:09:55.939527 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe45PEAQ\index.html
-I, [2014-02-03T20:09:57.205508 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe45PEAQ_Nepro-detail-aid.ppt  time:2014-02-03 20:09:57 +0330
-I, [2014-02-03T20:13:41.958769 #3456]  INFO -- : Files in dir:1
-I, [2014-02-03T20:13:41.959773 #3456]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oe45tEAA_Nepro-detail-aid---Copy.ppt  time:2014-02-03 20:13:41 +0330
-I, [2014-02-03T20:13:41.960774 #3456]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oe45tEAA_Nepro-detail-aid---Copy.ppt
-I, [2014-02-03T20:13:41.967774 #3456]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oe45tEAA_Nepro-detail-aid---Copy.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oe45tEAA\index.html
-I, [2014-02-03T20:13:43.264754 #3456]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oe45tEAA_Nepro-detail-aid---Copy.ppt  time:2014-02-03 20:13:43 +0330
+# Logfile created on 2014-02-26 16:15:14 +0330 by logger.rb/36483
+I, [2014-02-26T16:15:14.666994 #4520]  INFO -- : Start listen:  state:init
+I, [2014-02-26T16:15:15.716020 #4520]  INFO -- : Files in dir:9
+I, [2014-02-26T16:15:15.716020 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000bdbkEAA_a08b000000MF8VoAAL_testÑopy2.ppt  time:2014-02-26 16:15:15 +0330
+I, [2014-02-26T16:15:15.718023 #4520]  INFO -- : Start convert:  file:00Db0000000bdbkEAA_a08b000000MF8VoAAL_testÑopy2.ppt
+I, [2014-02-26T16:15:15.723024 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000bdbkEAA_a08b000000MF8VoAAL_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000MF8VoAAL\index.html
+I, [2014-02-26T16:15:17.007006 #4520]  INFO -- : Done convert file:00Db0000000bdbkEAA_a08b000000MF8VoAAL_testÑopy2.ppt  time:2014-02-26 16:15:17 +0330
+I, [2014-02-26T16:15:19.549314 #4520]  INFO -- : ADD NEW SLIDERS max_n= 0 c:\inetpub\wwwroot\preview\ppt\00Db0000000bdbkEAA\a08b000000MF8VoAAL\sliders
+I, [2014-02-26T16:15:27.034005 #4520]  INFO -- : Files in dir:8
+I, [2014-02-26T16:15:27.035007 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_horizontal.ppt  time:2014-02-26 16:15:27 +0330
+I, [2014-02-26T16:15:27.036024 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_horizontal.ppt
+I, [2014-02-26T16:15:27.039007 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_horizontal.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-26T16:15:28.465839 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_horizontal.ppt  time:2014-02-26 16:15:28 +0330
+I, [2014-02-26T16:15:34.621095 #4520]  INFO -- : Files in dir:7
+I, [2014-02-26T16:15:34.621095 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt  time:2014-02-26 16:15:34 +0330
+I, [2014-02-26T16:15:34.622097 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt
+I, [2014-02-26T16:15:34.625097 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-26T16:15:36.001935 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt  time:2014-02-26 16:15:36 +0330
+I, [2014-02-26T16:15:41.586578 #4520]  INFO -- : Files in dir:6
+I, [2014-02-26T16:15:41.587579 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒ.ppt  time:2014-02-26 16:15:41 +0330
+I, [2014-02-26T16:15:41.588579 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒ.ppt
+I, [2014-02-26T16:15:41.591585 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒ.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-26T16:15:42.948473 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒ.ppt  time:2014-02-26 16:15:42 +0330
+I, [2014-02-26T16:15:48.472826 #4520]  INFO -- : Files in dir:5
+I, [2014-02-26T16:15:48.472826 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒ.ppt  time:2014-02-26 16:15:48 +0330
+I, [2014-02-26T16:15:48.474828 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒ.ppt
+I, [2014-02-26T16:15:48.476829 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒ.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-26T16:15:49.874719 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒ.ppt  time:2014-02-26 16:15:49 +0330
+I, [2014-02-26T16:15:55.331515 #4520]  INFO -- : Files in dir:4
+I, [2014-02-26T16:15:55.331515 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt  time:2014-02-26 16:15:55 +0330
+I, [2014-02-26T16:15:55.333515 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt
+I, [2014-02-26T16:15:55.335515 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-26T16:15:56.723545 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt  time:2014-02-26 16:15:56 +0330
+I, [2014-02-26T16:16:02.646213 #4520]  INFO -- : Files in dir:3
+I, [2014-02-26T16:16:02.646213 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F8dtoIAB_horizontal.ppt  time:2014-02-26 16:16:02 +0330
+I, [2014-02-26T16:16:02.648215 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F8dtoIAB_horizontal.ppt
+I, [2014-02-26T16:16:02.651217 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F8dtoIAB_horizontal.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8dtoIAB\index.html
+I, [2014-02-26T16:16:03.960197 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F8dtoIAB_horizontal.ppt  time:2014-02-26 16:16:03 +0330
+I, [2014-02-26T16:16:07.718175 #4520]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00DG0000000CkUd!AQ0AQHFaE725GZdbeKR.RZRzgmt3sl576L4gOCH9Cu.9z6LIVSNSHvxSnqwuPsaqKXqBwABEFKl3fLcBS2KtKFccOqRBGU0s</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+I, [2014-02-26T16:16:08.846877 #4520]  INFO -- : Files in dir:2
+I, [2014-02-26T16:16:08.846877 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testppt2.ppt  time:2014-02-26 16:16:08 +0330
+I, [2014-02-26T16:16:08.848878 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testppt2.ppt
+I, [2014-02-26T16:16:08.849878 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000FBC0ZIAX\index.html
+I, [2014-02-26T16:16:10.219858 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testppt2.ppt  time:2014-02-26 16:16:10 +0330
+I, [2014-02-26T16:16:12.672060 #4520]  INFO -- : ADD NEW SLIDERS max_n= 3 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000FBC0ZIAX\sliders
+I, [2014-02-26T16:16:17.360659 #4520]  INFO -- : Files in dir:1
+I, [2014-02-26T16:16:17.361660 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testÑopy2.ppt  time:2014-02-26 16:16:17 +0330
+I, [2014-02-26T16:16:17.362662 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testÑopy2.ppt
+I, [2014-02-26T16:16:17.366662 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000FBC0ZIAX\index.html
+I, [2014-02-26T16:16:18.670643 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000FBC0ZIAX_testÑopy2.ppt  time:2014-02-26 16:16:18 +0330
+I, [2014-02-26T16:16:21.242559 #4520]  INFO -- : ADD NEW SLIDERS max_n= 10 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000FBC0ZIAX\sliders
+I, [2014-02-26T16:17:35.027340 #4520]  INFO -- : Files in dir:1
+I, [2014-02-26T16:17:35.030339 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt  time:2014-02-26 16:17:35 +0330
+I, [2014-02-26T16:17:35.032342 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt
+I, [2014-02-26T16:17:35.037341 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8duJIAR\index.html
+I, [2014-02-26T16:17:36.377324 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt  time:2014-02-26 16:17:36 +0330
+I, [2014-02-26T16:18:57.650417 #4520]  INFO -- : Files in dir:1
+I, [2014-02-26T16:18:57.650417 #4520]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt  time:2014-02-26 16:18:57 +0330
+I, [2014-02-26T16:18:57.652420 #4520]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt
+I, [2014-02-26T16:18:57.654421 #4520]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8duJIAR\index.html
+I, [2014-02-26T16:19:02.298359 #4520]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt  time:2014-02-26 16:19:02 +0330
+I, [2014-02-26T16:19:12.349547 #4520]  INFO -- : ADD NEW SLIDERS max_n= 9 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8duJIAR\sliders
+I, [2014-02-26T17:44:37.757651 #884]  INFO -- : Start listen:  state:init
+I, [2014-02-26T17:45:51.248431 #884]  INFO -- : Files in dir:1
+I, [2014-02-26T17:45:51.249432 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:45:51 +0330
+I, [2014-02-26T17:45:51.250433 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt
+I, [2014-02-26T17:45:51.254434 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-26T17:45:52.845421 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:45:52 +0330
+I, [2014-02-26T17:45:55.938403 #884]  INFO -- : ADD NEW SLIDERS max_n= 10 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\sliders
+I, [2014-02-26T17:46:00.214917 #884]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><soapenv:Fault><faultcode>soapenv:Client</faultcode><faultstring>No such parameter rewrite_ppt defined for the operation, please check the WSDL for the service.</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+I, [2014-02-26T17:47:11.909579 #884]  INFO -- : Files in dir:1
+I, [2014-02-26T17:47:11.910795 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:47:11 +0330
+I, [2014-02-26T17:47:11.912581 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt
+I, [2014-02-26T17:47:11.916582 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-26T17:47:13.704569 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:47:13 +0330
+I, [2014-02-26T17:47:18.553541 #884]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><soapenv:Fault><faultcode>soapenv:Client</faultcode><faultstring>No such parameter rewrite_ppt defined for the operation, please check the WSDL for the service.</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+I, [2014-02-26T17:48:32.595094 #884]  INFO -- : Files in dir:1
+I, [2014-02-26T17:48:32.595094 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:48:32 +0330
+I, [2014-02-26T17:48:32.597095 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt
+I, [2014-02-26T17:48:32.601095 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-26T17:48:33.940086 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:48:33 +0330
+I, [2014-02-26T17:48:39.935653 #884]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><soapenv:Fault><faultcode>soapenv:Client</faultcode><faultstring>No such parameter rewrite_ppt defined for the operation, please check the WSDL for the service.</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+I, [2014-02-26T17:58:45.039956 #884]  INFO -- : Files in dir:1
+I, [2014-02-26T17:58:45.039956 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:58:45 +0330
+I, [2014-02-26T17:58:45.041958 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt
+I, [2014-02-26T17:58:45.046959 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-26T17:58:46.373948 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:58:46 +0330
+I, [2014-02-26T17:59:31.588436 #884]  INFO -- : Files in dir:1
+I, [2014-02-26T17:59:31.589438 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:59:31 +0330
+I, [2014-02-26T17:59:31.590441 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt
+I, [2014-02-26T17:59:31.594441 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-26T17:59:32.912440 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-26 17:59:32 +0330
+I, [2014-02-26T17:59:35.388374 #884]  INFO -- : ADD NEW SLIDERS max_n= 13 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\sliders
+I, [2014-02-27T08:55:15.750332 #884]  INFO -- : Files in dir:1
+I, [2014-02-27T08:55:15.751334 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F8duJIAR_testÑopy2.ppt  time:2014-02-27 08:55:15 +0330
+I, [2014-02-27T08:55:15.753335 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F8duJIAR_testÑopy2.ppt
+I, [2014-02-27T08:55:15.758336 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F8duJIAR_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8duJIAR\index.html
+I, [2014-02-27T08:55:17.331302 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F8duJIAR_testÑopy2.ppt  time:2014-02-27 08:55:17 +0330
+I, [2014-02-27T08:55:20.658714 #884]  INFO -- : ADD NEW SLIDERS max_n= 11 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8duJIAR\sliders
+I, [2014-02-27T08:58:47.863222 #884]  INFO -- : Files in dir:1
+I, [2014-02-27T08:58:47.864223 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt  time:2014-02-27 08:58:47 +0330
+I, [2014-02-27T08:58:47.866224 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt
+I, [2014-02-27T08:58:47.868225 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8duJIAR\index.html
+I, [2014-02-27T08:58:49.185199 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F8duJIAR_vertical.ppt  time:2014-02-27 08:58:49 +0330
+I, [2014-02-27T08:58:52.170143 #884]  INFO -- : ADD NEW SLIDERS max_n= 14 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F8duJIAR\sliders
+I, [2014-02-27T09:01:07.852891 #884]  INFO -- : Files in dir:1
+I, [2014-02-27T09:01:07.853892 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-27 09:01:07 +0330
+I, [2014-02-27T09:01:07.855893 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt
+I, [2014-02-27T09:01:07.858895 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-27T09:01:09.141868 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_testÑopy2.ppt  time:2014-02-27 09:01:09 +0330
+I, [2014-02-27T09:02:06.868348 #884]  INFO -- : Files in dir:1
+I, [2014-02-27T09:02:06.869350 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt  time:2014-02-27 09:02:06 +0330
+I, [2014-02-27T09:02:06.870352 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt
+I, [2014-02-27T09:02:06.873352 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\index.html
+I, [2014-02-27T09:02:08.200323 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000F70h2IAB_vertical.ppt  time:2014-02-27 09:02:08 +0330
+I, [2014-02-27T09:02:11.023309 #884]  INFO -- : ADD NEW SLIDERS max_n= 16 c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000F70h2IAB\sliders
+I, [2014-02-27T09:48:49.958846 #884]  INFO -- : Files in dir:1
+I, [2014-02-27T09:48:49.959850 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00D20000000Caz4EAC_a0E2000000oeQ6KEAU_testÑopy2.ppt  time:2014-02-27 09:48:49 +0330
+I, [2014-02-27T09:48:49.961848 #884]  INFO -- : Start convert:  file:00D20000000Caz4EAC_a0E2000000oeQ6KEAU_testÑopy2.ppt
+I, [2014-02-27T09:48:49.966849 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00D20000000Caz4EAC_a0E2000000oeQ6KEAU_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oeQ6KEAU\index.html
+I, [2014-02-27T09:48:51.243823 #884]  INFO -- : Done convert file:00D20000000Caz4EAC_a0E2000000oeQ6KEAU_testÑopy2.ppt  time:2014-02-27 09:48:51 +0330
+I, [2014-02-27T09:48:54.611022 #884]  INFO -- : ADD NEW SLIDERS max_n= 0 c:\inetpub\wwwroot\preview\ppt\00D20000000Caz4EAC\a0E2000000oeQ6KEAU\sliders
+I, [2014-02-27T16:33:31.714107 #884]  INFO -- : Files in dir:1
+I, [2014-02-27T16:33:31.716111 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00Db0000000HGxuEAG_a0tb0000000RptQAAS_testÑopy2.ppt  time:2014-02-27 16:33:31 +0330
+I, [2014-02-27T16:33:31.718111 #884]  INFO -- : Start convert:  file:00Db0000000HGxuEAG_a0tb0000000RptQAAS_testÑopy2.ppt
+I, [2014-02-27T16:33:31.722111 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00Db0000000HGxuEAG_a0tb0000000RptQAAS_testÑopy2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00Db0000000HGxuEAG\a0tb0000000RptQAAS\index.html
+I, [2014-02-27T16:33:33.247089 #884]  INFO -- : Done convert file:00Db0000000HGxuEAG_a0tb0000000RptQAAS_testÑopy2.ppt  time:2014-02-27 16:33:33 +0330
+I, [2014-02-27T16:33:35.921931 #884]  INFO -- : Error file-PptParams NO FILE PARAMS
+I, [2014-02-27T16:33:36.429923 #884]  INFO -- : ADD NEW SLIDERS max_n= 0 c:\inetpub\wwwroot\preview\ppt\00Db0000000HGxuEAG\a0tb0000000RptQAAS\sliders
+I, [2014-02-27T16:33:38.032904 #884]  INFO -- : Error file-PptParams NO FILE PARAMS
+I, [2014-02-27T16:33:38.798551 #884]  INFO -- : SendState  ERROR 500 Internal Server Error: <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="http://soap.sforce.com/schemas/class/HelperClass"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00D20000000Caz4!AQgAQCVnBGisnxFxKI39afwJ5.m8mj6lsO4MjydWPJJYddIMqnFdnt8zyW4m8i0W7QSPORtwvGy9EQWslP_vyRIFLPFEEL2D</faultstring></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+I, [2014-02-28T13:38:44.673604 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T13:38:44.674604 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt  time:2014-02-28 13:38:44 +0330
+I, [2014-02-28T13:38:44.676604 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt
+I, [2014-02-28T13:38:44.680605 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T13:38:46.214555 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt  time:2014-02-28 13:38:46 +0330
