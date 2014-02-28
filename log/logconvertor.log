@@ -134,3 +134,43 @@ I, [2014-02-28T13:38:44.674604 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/
 I, [2014-02-28T13:38:44.676604 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt
 I, [2014-02-28T13:38:44.680605 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
 I, [2014-02-28T13:38:46.214555 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_vertical.ppt  time:2014-02-28 13:38:46 +0330
+I, [2014-02-28T16:14:17.451631 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T16:14:17.455634 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:14:17 +0330
+I, [2014-02-28T16:14:17.457632 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T16:14:17.458634 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T16:14:19.038600 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:14:19 +0330
+I, [2014-02-28T16:25:48.540728 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T16:25:48.540728 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:25:48 +0330
+I, [2014-02-28T16:25:48.542731 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T16:25:48.543731 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T16:25:49.868704 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:25:49 +0330
+I, [2014-02-28T16:27:26.894343 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T16:27:26.894343 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:27:26 +0330
+I, [2014-02-28T16:27:26.896344 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T16:27:26.897345 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T16:27:28.222319 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:27:28 +0330
+I, [2014-02-28T16:28:30.346113 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T16:28:30.349116 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:28:30 +0330
+I, [2014-02-28T16:28:30.350116 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T16:28:30.352116 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T16:28:31.967083 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:28:31 +0330
+I, [2014-02-28T16:29:18.798647 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T16:29:18.927616 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:29:18 +0330
+I, [2014-02-28T16:29:18.929616 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T16:29:18.930615 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T16:29:20.266588 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:29:20 +0330
+I, [2014-02-28T16:35:23.225130 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T16:35:23.226133 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:35:23 +0330
+I, [2014-02-28T16:35:23.227134 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T16:35:23.229134 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T16:35:24.605105 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 16:35:24 +0330
+I, [2014-02-28T18:04:25.548566 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T18:04:25.552569 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 18:04:25 +0330
+I, [2014-02-28T18:04:25.553570 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T18:04:25.555570 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T18:04:26.881550 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 18:04:26 +0330
+I, [2014-02-28T18:19:29.247631 #884]  INFO -- : Files in dir:1
+I, [2014-02-28T18:19:29.248635 #884]  INFO -- : Convert file:c:/inetpub/wwwroot/upload/00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 18:19:29 +0330
+I, [2014-02-28T18:19:29.249635 #884]  INFO -- : Start convert:  file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt
+I, [2014-02-28T18:19:29.251633 #884]  INFO -- : Convert string:c:\inetpub\wwwroot\files_for_redistribution\ppt2html5.exe /i:c:\inetpub\wwwroot\input_ppt\00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt /o:c:\inetpub\wwwroot\preview\ppt\00DG0000000CkUdMAK\a01G000000EuvfVIAR\index.html
+I, [2014-02-28T18:19:30.586616 #884]  INFO -- : Done convert file:00DG0000000CkUdMAK_a01G000000EuvfVIAR_testppt2.ppt  time:2014-02-28 18:19:30 +0330

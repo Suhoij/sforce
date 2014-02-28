@@ -331,10 +331,14 @@ function uploadFromForce(){
         if (isset($_POST['slide_id'])) {
               $this->slide_id= $_POST['slide_id'];
         }
-        $from    = $_FILES[$this->fieldname]["tmp_name"];
-        $to      = $_FILES[$this->fieldname]["name"];
-        $this->setTypeSfFile($to);
-        $this->uploaded_file_name=$to;
+        if  ((!empty($_FILES[$this->fieldname]["tmp_name"])) && (!empty($_FILES[$this->fieldname]["name"]) ) )   {
+             $from    = $_FILES[$this->fieldname]["tmp_name"];
+             $to      = $_FILES[$this->fieldname]["name"];
+             $this->setTypeSfFile($to);
+             $this->uploaded_file_name=$to;
+        } else {
+             error_log(__FUNCTION__.'EMPTY files-fieldname');
+        }
       } catch (Exception $e) {
         $this->state.=';error-input-data';
         error_log(__FUNCTION__.'error input data: '.$e->getMessage());
