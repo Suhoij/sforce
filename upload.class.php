@@ -107,7 +107,7 @@ function deletePartFiles() {
   }
 }
 function deleteSlides() {
-  if ((isset($_POST['cloud_token']) == false) or ($_POST['cloud_token'] != CLOUD_TOKEN)) {
+  if (($_POST['cloud_token'] != CLOUD_TOKEN)) {
       echo "error";
       return ;
   }
@@ -115,21 +115,29 @@ function deleteSlides() {
       require_once "sftk.php";
       $az_store= new AzureStore();
       if ($az_store->findByToken($_POST['slide_token']) == true) {
-          $org_id=$_POST['org_id'];
-          $app_id=$_POST['app_id'];
+          $org_id   =$_POST['org_id'];
+          $app_id   =$_POST['app_id'];
+          $slide_id =$_POST['slide_id'];
           $dir_to_delete=getcwd().'/preview/ppt/'.$org_id.'/'.$app_id.'/sliders/';
           if (preg_match('/all/i',$_POST['slide_id'])) {
 
              array_map('unlink', glob($dir_to_delete."*.jpg"));
+             echo "done";return ;
            } else {
-                $slide_del_arr=explod(',',$_POST['slide_id']);
+                error_log('TRY DELETED  '.$slide_id);
+                $slide_del_arr=explode('_',$slide_id);
                 foreach ($slide_del_arr as $slide_n) {
                    $file_name=$dir_to_delete.'slide_'.$slide_n.'.jpg';
                    unlink($file_name);
                    error_log('DELETED file '.$file_name);
                 }
+                echo "done";return ;
            }
+      } else {
+             error_log('ERROR INVALID azure slide token '.$_POST['slide_token']);
       }
+  } else {
+      error_log('ERROR DELETED - no slide_token '.$slide_token);
   }
 }
 function deleteFiles($tp_file) {
