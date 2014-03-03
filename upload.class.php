@@ -120,8 +120,8 @@ function deleteSlides() {
           $slide_id =$_POST['slide_id'];
           $dir_to_delete=getcwd().'/preview/ppt/'.$org_id.'/'.$app_id.'/sliders/';
           if (preg_match('/all/i',$_POST['slide_id'])) {
-
              array_map('unlink', glob($dir_to_delete."*.jpg"));
+             error_log('DELETED all slides for org_id= '.$org_id.' app_id='.$app_id);
              echo "done";return ;
            } else {
                 error_log('TRY DELETED  '.$slide_id);
