@@ -188,7 +188,7 @@ function moveSlide(){
 function createDenyFile($path){
   try {
       $deny_file=$path.'/index.php';
-      if (!file_exist($deny_file)) {
+      if (!file_exists($deny_file)) {
           file_put_contents($deny_file,$this->deny_content);
       }
   } catch (Exception $e) {
