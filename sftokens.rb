@@ -48,7 +48,7 @@ def createOrgTokens
       org_cnt+=1
     end
   end
-  p "Done "+org_cnt
+  p "Done #{org_cnt} "
 end
 #-------------------main-------------------------------------
 if ARGV[0] == "deleteTable"
@@ -91,7 +91,7 @@ if ARGV[0] == "updateToken"
   rescue RuntimeError => error
   p "Error update:"+error.inspect
   end
-  p "New token is "+token
+  p "New token is #{token}"
   abort
 end
 
