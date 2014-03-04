@@ -11,7 +11,7 @@ Azure.config.storage_access_key = "JtyoTzjNZHBAWVuDQNpN3LaJcPWjc51bMvRT7xG4hZA7v
 SLIDERS_DIR ='c:/inetpub/wwwroot/preview/slide/'
 PPT_DIR     ='c:/inetpub/wwwroot/preview/ppt/'
 
-azure_table_service = Azure::TableService.new
+@azure_table_service = Azure::TableService.new
 #------------------------------------methods--------------------------
 def createSlideTokens
   tokens_cnt=0
@@ -26,7 +26,7 @@ def createSlideTokens
         if File.directory?(PPT_DIR+"/"+org_id_name+"/"+app_id_name)  and ( bad_dir_arr.include?(app_id_name)==false)
           app_cnt+=1
           entity = {:PartitionKey =>org_id_name,:RowKey =>app_id_name,:token=>SecureRandom.hex(12) }
-          azure_table_service.insert_entity("sftokens", entity)
+          @azure_table_service.insert_entity("sftokens", entity)
           tokens_cnt=tokens_cnt+org_cnt+app_cnt;
           p "Done:#{tokens_cnt}"
         end
@@ -44,7 +44,7 @@ def createOrgTokens
   Dir.entries(PPT_DIR).each_with_index do |org_id_name,org_index|
     if File.directory?(PPT_DIR+org_id_name) and ( bad_dir_arr.include?(org_id_name)==false)
       entity = {:PartitionKey =>org_id_name,:RowKey =>org_id_name,:token=>SecureRandom.hex(12) }
-      azure_table_service.insert_entity("orgtokens", entity)
+      @azure_table_service.insert_entity("orgtokens", entity)
       org_cnt+=1
     end
   end
@@ -53,7 +53,7 @@ end
 #-------------------main-------------------------------------
 if ARGV[0] == "deleteTable"
   p "deleteTable..."
-  azure_table_service.delete_table("sftokens")
+  @azure_table_service.delete_table("sftokens")
   abort
 end
 
@@ -62,7 +62,7 @@ if ARGV[0] == "createTable"
   table_name = ARGV[1]
   if not table_name.nil?
      #azure_table_service.create_table("sftokens")
-     azure_table_service.create_table(table_name)
+     @azure_table_service.create_table(table_name)
      p " created table "+table_name
   end
   abort
@@ -87,7 +87,7 @@ if ARGV[0] == "updateToken"
   p "Start update: org_id=#{org_id}  app_id=#{app_id}";
   begin
   #azure_table_service.update_entity("sftokens", entity)
-  azure_table_service.update_entity("sftokens", result.properties)
+  @azure_table_service.update_entity("sftokens", result.properties)
   rescue RuntimeError => error
   p "Error update:"+error.inspect
   end
@@ -101,7 +101,7 @@ if ARGV[0] == "addToken"
   token=SecureRandom.hex(12);
   begin
   entity = { :token => token,:PartitionKey => org_id, :RowKey => app_id }
-  azure_table_service.insert_entity("sftokens", entity)
+  @azure_table_service.insert_entity("sftokens", entity)
   rescue  RuntimeError => error
     p "Error update:"+error.inspect
   end
