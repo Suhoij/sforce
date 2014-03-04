@@ -6,7 +6,8 @@ if (gethostname()==$dev) {
    define("PATH_AZURE_PHP", "pear/WindowsAzure/");
    //define("PATH_AZURE_PHP", "services/azure-sdk-for-php/");
 } else {
-   define("PATH_AZURE_PHP", "pear/WindowsAzure/");
+   //define("PATH_AZURE_PHP", "pear/WindowsAzure/");
+   define("PATH_AZURE_PHP", "services/azure-sdk-for-php/");  
 
 }
 
@@ -48,7 +49,8 @@ foreach($entities as $entity){
 class AzureStore {
   var $state;
   var $az_table_proxy;
-  var $az_table_tokens;
+  var $az_table_slide_tokens;
+  var $az_table_org_tokens;
   var $az_table_name;
   var $org_id='';
   var $app_id='';
@@ -56,7 +58,8 @@ class AzureStore {
      $name='sfclmstorage';
      $key='JtyoTzjNZHBAWVuDQNpN3LaJcPWjc51bMvRT7xG4hZA7vpT6qZTjKoJUU6z8sY2+zsvsGe7j05OupWmumABz5A==';
      $connectionString  = "DefaultEndpointsProtocol=http;AccountName=$name;AccountKey=$key";
-     $this->az_table_tokens="sftokens";
+     $this->az_table_slide_tokens="sftokens";
+     $this->az_table_org_tokens  ="orgtokens";
      try {
         $this->az_table_proxy = ServicesBuilder::getInstance()->createTableService($connectionString);
         $this->state.=';conected';
@@ -67,7 +70,7 @@ class AzureStore {
         error_log(__FUNCTION__.' '.$this->state."  ".$code.$error_message);
      }
   }
-  function addToken($org_id,$app_id) {
+  function addSlideToken($org_id,$app_id) {
         $entity = new Entity();
         $entity->setPartitionKey($org_id);
         $entity->setRowKey($app_id);
@@ -75,18 +78,18 @@ class AzureStore {
         $entity->addProperty("token", null, $cur_token);
         //$entity->addProperty("DueDate",EdmType::DATETIME,new DateTime("2012-11-05T08:15:00-08:00"));
         try {
-            $this->az_table_proxy->insertEntity($this->az_table_tokens, $entity);
+            $this->az_table_proxy->insertEntity($this->az_table_slide_tokens, $entity);
             return $cur_token;
         } catch (ServiceException $e) {
             error_log(__FUNCTION__.' '. $e->getCode().' '.$e->getMessage());
             return 0;
         }
   }
-  function getToken($org_id,$app_id) {
-        $filter = "PartitionKey eq '$org_id' and RowKey eq '$app_id'";
-        $cur_token='0';
-        try {
-            $result = $this->az_table_proxy->queryEntities($this->az_table_tokens, $filter);
+  function getOrgToken($org_id) {
+       $filter = "PartitionKey eq '$org_id'";
+       $cur_token='0';
+       try {
+            $result = $this->az_table_proxy->queryEntities($this->az_table_org_tokens, $filter);
             $entities = $result->getEntities();
             $cur_token=$entities[0]->getProperty("token")->getValue();
         }  catch(ServiceException $e){
@@ -95,11 +98,24 @@ class AzureStore {
         }
         return $cur_token;
   }
-  function findByToken($tk) {
+  function getSlideToken($org_id,$app_id) {
+        $filter = "PartitionKey eq '$org_id' and RowKey eq '$app_id'";
+        $cur_token='0';
+        try {
+            $result = $this->az_table_proxy->queryEntities($this->az_table_slide_tokens, $filter);
+            $entities = $result->getEntities();
+            $cur_token=$entities[0]->getProperty("token")->getValue();
+        }  catch(ServiceException $e){
+            $cur_token ='-1';
+            error_log(__FUNCTION__.' '. $e->getCode().' '.$e->getMessage());
+        }
+        return $cur_token;
+  }
+  function findSlideByToken($tk) {
        $filter = "token eq '$tk'";
        try {
           //echo "findByKey <br>filter=$filter";
-          $result = $this->az_table_proxy->queryEntities($this->az_table_tokens, $filter);
+          $result = $this->az_table_proxy->queryEntities($this->az_table_slide_tokens, $filter);
           $entities = $result->getEntities();
           //var_dump($entities);
           $this->state.=';table-conected';
@@ -116,10 +132,10 @@ class AzureStore {
           return false;
       }
   }
-  function findByOrgApp($org_id,$app_id) {
+  function findSlideByOrgApp($org_id,$app_id) {
          $filter = "PartitionKey eq '$org_id' and RowKey eq '$app_id'";
          try {
-            $result = $this->az_table_proxy->queryEntities($this->az_table_tokens, $filter);
+            $result = $this->az_table_proxy->queryEntities($this->az_table_slide_tokens, $filter);
             $entities = $result->getEntities();
             if (count($entities)>=1){
                 $this->org_id=$org_id;
