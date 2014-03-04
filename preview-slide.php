@@ -18,12 +18,12 @@ require_once "sftk.php";
 $az_store= new AzureStore();
 $file=getcwd()."/ctmobile.app@2x.png";
 if (($org_id !="") && ($app_id !="")) {
-      if ($az_store->findByOrgApp($org_id,$app_id) ) { //---by org app
+      if ($az_store->findSlideByOrgApp($org_id,$app_id) ) { //---by org app
           outputImg('OrgApp');
       }
-}elseif ($az_store->findByToken($token) ) { //---by token
+}elseif ($az_store->findSlideByToken($token) ) { //---by token
      outputImg('token');
-} elseif ($az_store->findByOrgApp($org_id,$app_id)) {//---by org_id,app_id
+} elseif ($az_store->findSlideByOrgApp($org_id,$app_id)) {//---by org_id,app_id
      outputImg('token-not-OrgApp-try');
     exit;
 }
