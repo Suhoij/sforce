@@ -43,8 +43,18 @@ def createOrgTokens
   bad_dir_arr = [".","..","index.php","ppt_params.json","ppt_params.php","sliders","1","2","css","data","scripts"]
   Dir.entries(PPT_DIR).each_with_index do |org_id_name,org_index|
     if File.directory?(PPT_DIR+org_id_name) and ( bad_dir_arr.include?(org_id_name)==false)
-      entity = {:PartitionKey =>org_id_name,:RowKey =>org_id_name,:token=>SecureRandom.hex(12) }
-      @azure_table_service.insert_entity("orgtokens", entity)
+      begin  #---insert---
+        entity = {:PartitionKey =>org_id_name,:RowKey =>org_id_name,:token=>SecureRandom.hex(12) }
+        @azure_table_service.insert_entity("orgtokens", entity)
+      rescue
+        p "Error org_id=#{org_id_name}"
+        p "Try update..."
+        begin #---update---
+          @azure_table_service.update_entity("orgtokens", entity)
+        rescue
+          p "Error update org_id=#{org_id_name}"
+        end
+      end
       org_cnt+=1
     end
   end
