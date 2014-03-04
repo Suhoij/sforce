@@ -7,7 +7,7 @@ if (gethostname()==$dev) {
    //define("PATH_AZURE_PHP", "services/azure-sdk-for-php/");
 } else {
    //define("PATH_AZURE_PHP", "pear/WindowsAzure/");
-   define("PATH_AZURE_PHP", "services/WindowsAzure/azure-sdk-for-php/");
+   define("PATH_AZURE_PHP", "services/azure-sdk-for-php/WindowsAzure/");
 
 }
 
