@@ -20,6 +20,23 @@ if ((isset($_GET['action']))&&($_GET['action']=='tk-add')) {
         exit;
   }
 }
+//----------------------------- add org token ---------------------------------------------
+if ((isset($_GET['action']))&&($_GET['action']=='tk-org-add')) {
+  if ((isset($_GET['org_id']))&&(isset($_GET['app_id']))) {
+        $org_id=$_GET['org_id'];
+        require_once "sftk.php";
+        $cur_token="0";
+        $az_store= new AzureStore();
+        try {
+            $cur_token = $az_store->addOrgToken($org_id);
+        } catch (Exception $e) {
+            $cur_token="-2";
+            error_log(__FILE__.' ->token->'.$e->getMessage());
+        }
+        echo $cur_token;
+        exit;
+  }
+}
 //----------------------------- out org token   ---------------------------------------------
 if ((isset($_GET['action']))&&($_GET['action']=='tk-org')) {
     if ((isset($_GET['org_id']))) {

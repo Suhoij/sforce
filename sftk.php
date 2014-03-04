@@ -70,11 +70,26 @@ class AzureStore {
         error_log(__FUNCTION__.' '.$this->state."  ".$code.$error_message);
      }
   }
+  function addOrgToken($org_id) {
+        $entity = new Entity();
+        $entity->setPartitionKey($org_id);
+        $entity->setRowKey($org_id);
+        $cur_token=uniqid('',true);
+        $entity->addProperty("token", null, $cur_token);
+        //$entity->addProperty("DueDate",EdmType::DATETIME,new DateTime("2012-11-05T08:15:00-08:00"));
+        try {
+            $this->az_table_proxy->insertEntity($this->az_table_org_tokens, $entity);
+            return $cur_token;
+        } catch (ServiceException $e) {
+            error_log(__FUNCTION__.' '. $e->getCode().' '.$e->getMessage());
+            return 0;
+        }
+  }
   function addSlideToken($org_id,$app_id) {
         $entity = new Entity();
         $entity->setPartitionKey($org_id);
         $entity->setRowKey($app_id);
-        $cur_token=uniqid();
+        $cur_token=uniqid('',true);
         $entity->addProperty("token", null, $cur_token);
         //$entity->addProperty("DueDate",EdmType::DATETIME,new DateTime("2012-11-05T08:15:00-08:00"));
         try {

@@ -28,6 +28,7 @@ class Upload {
   var $type_sf_file;//--html,zip,ppt
   var $cloud_toke='???';
   var $action='';
+  var $org_token;
   var $org_id;
   var $app_id;
   var $slide_id;
@@ -320,7 +321,22 @@ function setTypeSfFile($to) {
         $this->type_sf_file ='zip';
    }
 }
+function getOrgToken(){
+  try {
+     require_once "sftk.php";
+     $az_store= new AzureStore();
+     $this->org_token = $az_store->getOrgToken($org_id);
+  } catch (Exception $e) {
+     error_log(__FUNCTION__.'Azure ERROR : '.$e->getMessage());
+  }
+}
 function uploadFromForce(){
+  if (isset($_POST['org_token'])){
+      if ($_POST['org_token'] != $this->org_token) {
+          error_log(__FUNCTION__.' ERROR ORG_TOKEN');
+          die();
+      }
+  }
   if ($_POST['cloud_token']== CLOUD_TOKEN){
       try {
         $this->cloud_token=$_POST['cloud_token'];
@@ -450,6 +466,9 @@ function writePptParams(){
 
 }
 function uploaded() {
+  if (isset($_POST['org_token'])) {
+      $this->getOrgToken();
+  }
   if (isset($_POST['cloud_token'])) {
       $this->uploadFromForce();
       return ;
