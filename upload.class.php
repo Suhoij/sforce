@@ -114,7 +114,7 @@ function deleteSlides() {
   if (isset($_POST['slide_token'])) {
       require_once "sftk.php";
       $az_store= new AzureStore();
-      if ($az_store->findByToken($_POST['slide_token']) == true) {
+      if ($az_store->findSlideByToken($_POST['slide_token']) == true) {
           $org_id   =$_POST['org_id'];
           $app_id   =$_POST['app_id'];
           $slide_id =$_POST['slide_id'];
