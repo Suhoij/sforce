@@ -19,10 +19,12 @@ if ((isset($_GET['action']))&&($_GET['action']=='tk-add')) {
         echo $cur_token;
         exit;
   }
+  echo "error org_id,app_id...";
+  exit;
 }
 //----------------------------- add org token ---------------------------------------------
 if ((isset($_GET['action']))&&($_GET['action']=='tk-org-add')) {
-  if ((isset($_GET['org_id']))&&(isset($_GET['app_id']))) {
+  if ((isset($_GET['org_id']))) {
         $org_id=$_GET['org_id'];
         require_once "sftk.php";
         $cur_token="0";
@@ -36,6 +38,8 @@ if ((isset($_GET['action']))&&($_GET['action']=='tk-org-add')) {
         echo $cur_token;
         exit;
   }
+  echo "error org_id...";
+  exit;
 }
 //----------------------------- out org token   ---------------------------------------------
 if ((isset($_GET['action']))&&($_GET['action']=='tk-org')) {
@@ -71,6 +75,8 @@ if ((isset($_GET['action']))&&($_GET['action']=='tk')) {
         echo $cur_token;
         exit;
    }
+   echo "error org_id,app_id...";
+   exit;
 }
 //------------------------------ out state --------------------------------------------
 try {
